@@ -1,0 +1,103 @@
+This is not a SQL file. This is for Glenn to remember  
+
+
+
+UPDATE ItemCategories
+SET ItemCategoryTitle = 'Updated Title',
+    ItemCategoryDescription = 'Updated Description'
+WHERE ItemCategoryID = 1;
+
+
+
+UPDATE PriceAdjustment
+SET Title = 'New Title',
+    ReasonDescription = 'New Reason',
+    IsFixed = 1,
+    FixedAmount = 15.00,
+    IsPercent = 0,
+    Percent = NULL
+WHERE PriceAdjustmentID = 1;
+
+
+UPDATE UserType
+SET Description = 'New Description'
+WHERE UserTypeID = 1;
+
+
+UPDATE CatalogItems
+SET CatalogItemName = 'New Catalog Item Name', 
+	BuyCost = 15.99,
+	ManufacturerID = 0,
+    ItemCategoryID = 0,
+WHERE CatalogItemID = 123;
+
+UPDATE InventoryItems
+SET CatalogItemID = <new CatalogItemID value>,
+    StockQuantity = <new StockQuantity value>,
+    ItemSerialNumber = '<new ItemSerialNumber value>',
+    SellPrice = <new SellPrice value>
+WHERE InventoryItemID = <existing InventoryItemID value>;
+
+/***
+
+Replace <new CatalogItemID value>, <new StockQuantity value>, <new ItemSerialNumber value>, and <new SellPrice value> with the new values you want to set for the corresponding columns, and replace <existing InventoryItemID value> with the ID of the row you want to update.
+
+***/
+
+UPDATE Address
+SET StreetAddress = '123 Main St',
+    City = 'New York',
+    State = 'NY',
+    Country = 'USA',
+    PostalCode = '10001'
+WHERE AddressID = 1;
+
+
+UPDATE Manufacturers
+SET ManufacturerName = 'New Manufacturer Name', 
+    ManufacturerDescription = 'New Manufacturer Description',
+    AddressID = 2
+WHERE ManufacturerID = 1;
+
+UPDATE Customers
+SET CustomerName = 'New Customer Name', AddressID = 2
+WHERE CustomerID = 1;
+
+
+UPDATE Users 
+SET AddressID = 123, 
+    CustomerID = 456, 
+    ManufacturerID = 789, 
+    FirstName = 'John', 
+    LastName = 'Doe', 
+    Telephone = '555-1234', 
+    Email = 'john.doe@example.com', 
+    UserTypeID = 1, 
+    UserLogon = 'johndoe'
+WHERE UserID = 1;
+
+
+
+UPDATE LineItems
+SET 
+    InvoiceID = 123,
+    InventoryItemID = 456,
+    CostAdjustmentID = 789,
+    SellPrice = 9.99,
+    Quantity = 10
+WHERE LineItemID = 1;
+
+
+UPDATE Invoices
+SET CustomerID = 5678,
+    CostAdjustmentID = 91011,
+    DateInvoiced = '2022-03-15',
+    DateInvoiceDue = '2022-04-15',
+    InvoiceSubTotal = 1234.56,
+    TaxPercent = 7,
+    TaxAmount = 86.42,
+    InvoiceTotalDue = 1321.98
+WHERE InvoiceID = 1234;
+
+
+

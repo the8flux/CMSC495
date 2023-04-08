@@ -1,0 +1,22 @@
+UPDATE ItemCategories
+SET ItemCategoryTitle = 'Updated Title',
+    ItemCategoryDescription = 'Updated Description'
+WHERE ItemCategoryID = 1;
+
+
+
+UPDATE PriceAdjustment
+SET Title = 'New Title',
+    ReasonDescription = 'New Reason',
+    IsFixed = 1,
+    FixedAmount = 15.00,
+    IsPercent = 0,
+    Percent = NULL
+WHERE PriceAdjustmentID = 1;
+
+
+UPDATE UserType
+SET Description = 'New Description'
+WHERE UserTypeID = 1;
+
+
