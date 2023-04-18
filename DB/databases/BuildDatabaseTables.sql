@@ -113,7 +113,8 @@ CREATE TABLE Users (
   Telephone TEXT NOT NULL,
   Email TEXT NOT NULL,
   UserTypeID INTEGER REFERENCES UserType(UserTypeID),
-  UserLogon TEXT NOT NULL
+  UserLogon TEXT NOT NULL,
+  UserPasswordHash TEXT DEFAULT 'password'
 );
 
 CREATE TABLE LineItems (
