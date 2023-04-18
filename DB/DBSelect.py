@@ -35,7 +35,7 @@ class DBSelect:
         """
         self._EventViewerSource = "DBSelect"
         self.db = DBExecute.DBExecute(db_name)
-        self.pprint_all_views()
+        #self.pprint_all_views()
 
     def _log_it(self, msg):
         """
@@ -124,6 +124,72 @@ class DBSelect:
         """"
         """
         query = " SELECT * FROM VIEW_UserManufacturers;"
+        return self._fetch(query)
+
+    def ItemCategories(self):
+        """"
+        """
+        query = " SELECT * FROM ItemCategories;"
+        return self._fetch(query)
+
+    def PriceAdjustment(self):
+        """"
+        """
+        query = " SELECT * FROM PriceAdjustment;"
+        return self._fetch(query)
+
+    def UserType(self):
+        """"
+        """
+        query = " SELECT * FROM UserType;"
+        return self._fetch(query)
+
+    def CatalogItems(self):
+        """"
+        """
+        query = " SELECT * FROM CatalogItems;"
+        return self._fetch(query)
+
+    def InventoryItems(self):
+        """"
+        """
+        query = " SELECT * FROM InventoryItems;"
+        return self._fetch(query)
+
+    def Address(self):
+        """"
+        """
+        query = " SELECT * FROM Address;"
+        return self._fetch(query)
+
+    def Manufacturers(self):
+        """"
+        """
+        query = " SELECT * FROM Manufacturers;"
+        return self._fetch(query)
+
+    def Customers(self):
+        """"
+        """
+        query = " SELECT * FROM Customers;"
+        return self._fetch(query)
+
+    def Users(self):
+        """"
+        """
+        query = " SELECT * FROM Users;"
+        return self._fetch(query)
+
+    def LineItems(self):
+        """"
+        """
+        query = " SELECT * FROM LineItems;"
+        return self._fetch(query)
+
+    def Invoices(self):
+        """"
+        """
+        query = " SELECT * FROM Invoices;"
         return self._fetch(query)
 
     def pprint_all_views(self):
