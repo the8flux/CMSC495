@@ -15,7 +15,7 @@ import bcrypt
 from flask import Flask
 from flask import redirect
 from flask import request
-from flask import render_template
+from flask import session
 from datetime import datetime
 from datetime import timedelta
 from FrontEnd import CSSLoader
@@ -137,12 +137,12 @@ class WebApp:
                 status = True
             return status
 
-        def isCommonPassword(value):
-            ''' Find if value a common password '''
-            passwords = ''
-            with open('static/commonpassword.txt', 'r') as fh:
-                passwords = fh.read().splitlines()
-            return (value in passwords)
+        # def isCommonPassword(value):
+        #     ''' Find if value a common password '''
+        #     passwords = ''
+        #     with open('static/commonpassword.txt', 'r') as fh:
+        #         passwords = fh.read().splitlines()
+        #     return (value in passwords)
 
         def send2Logger(datetimeVar, IPVar, msgVar):
             ''' Log Some event '''
@@ -188,7 +188,6 @@ class WebApp:
               </body>
             </html> 
              '''.format(self.css, pattern, html5CodeBody)
-
             return html5
 
         def presentPasswordUpdatePage(html5CodeBody=''):
@@ -202,7 +201,8 @@ class WebApp:
             <style>{}</style>
             </head>
             <body>
-            <h1>{} Update Password</h1>
+            <div class="view-div">
+            <h2 class="color-1">{} Update Password</h2>
             <form action='/update/' method='POST'>
         
             <label>New Password<label><br>
@@ -218,9 +218,12 @@ class WebApp:
             <input type='submit' class='submit' name='updatePwd' value='Update'>
             </form><br>
             {}
+            </div>
+            <div class="view-div">{}
+            </div>
             </body>
             </html>
-            '''.format(self.css ,user_name, pattern, pattern, user_name, html5CodeBody)
+            '''.format(self.css ,user_name, pattern, pattern, user_name, html5CodeBody, self.div)
             return html5
 
         @self.app.route('/', methods=['POST', 'GET'])
@@ -284,12 +287,14 @@ class WebApp:
             <style>{}</style>
             </head>
             <body>
-            <h1>Inventory Main Page</h1>
+            <div class="view-div">
+            <h2 class="color-1">Main Menu</h2>
             <label><u>{}</u> is logged in.<label><hr>
             <a href='/log'>View Access Log</a><br>
             <a href='/update'>Reset Password for {}</a><br>
             <a href='/logoff'>Log off as {}</a><br>
             <br>{}
+            </div>
             </body>
             </html> 
             '''.format(self.css, user_name, user_name, user_name, msg)
@@ -325,9 +330,9 @@ class WebApp:
                         msg += "<br>Error: Password must be 8 - 64 Characters."
                         validPW = False
 
-                    if isCommonPassword(usrPass1):
-                        msg += "<br>Error: Password to common to use."
-                        validPW = False
+                    # if isCommonPassword(usrPass1):
+                    #     msg += "<br>Error: Password to common to use."
+                    #     validPW = False
 
                     if validPW:
                         updateUserNewPassword(usrName, usrPass1)
@@ -351,3 +356,7 @@ class WebApp:
             passwordResult = isPasswordValid(password, userData['hPword'])
             myReply = ' {} \n{} \n'.format(user, passwordResult)
             return myReply
+
+
+
+
