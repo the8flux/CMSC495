@@ -28,7 +28,7 @@ class DBSelect:
 
     def __init__(self, db_name):
         """
-        Initializes a new DBInsert object.
+        Initializes a new Select object.
 
         Args:
             db_name (str): The name of the database file.

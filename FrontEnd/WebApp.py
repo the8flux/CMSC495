@@ -7,7 +7,7 @@
 '''
 
 '''
-
+import DB.GUIControls
 import sys
 import json
 import csv
@@ -16,6 +16,7 @@ from flask import Flask
 from flask import redirect
 from flask import request
 from flask import session
+from flask import render_template
 from datetime import datetime
 from datetime import timedelta
 from FrontEnd import CSSLoader
@@ -279,6 +280,14 @@ class WebApp:
         @self.app.route('/usr/')
         def presentSucessLogonPage(msg=''):
             global user_name
+            tElement = DB.GUIControls.GUIControlData()
+            div2 = tElement.get_select_element(table='VIEW_GUICustomers',
+                                        has_label='True',
+                                        label_prompt='Customer List',
+                                        html_name='Customers',
+                                        html_id='Customers')
+
+
             html5 = '''
             <!DOCTYPE html>
             <html>
@@ -290,14 +299,17 @@ class WebApp:
             <div class="view-div">
             <h2 class="color-1">Main Menu</h2>
             <label><u>{}</u> is logged in.<label><hr>
-            <a href='/log'>View Access Log</a><br>
             <a href='/update'>Reset Password for {}</a><br>
             <a href='/logoff'>Log off as {}</a><br>
             <br>{}
             </div>
+            <div class="view-div">
+            {}
+            </div>
             </body>
             </html> 
-            '''.format(self.css, user_name, user_name, user_name, msg)
+            '''.format(self.css, user_name, user_name, user_name, msg,
+                       div2)
             return html5
 
         @self.app.route('/logoff/')
@@ -356,6 +368,10 @@ class WebApp:
             passwordResult = isPasswordValid(password, userData['hPword'])
             myReply = ' {} \n{} \n'.format(user, passwordResult)
             return myReply
+
+
+
+
 
 
 
