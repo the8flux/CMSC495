@@ -1,0 +1,22 @@
+{
+    "gphillips1": {
+        "hPword": "$2b$12$9nWMX4YiTUC/qsh8OWPe5uUImX09A7aHYJS8GsPSMySApCtJXKtuy",
+        "timeout": "false",
+        "timeoutCount": "0"
+    },
+    "gphillips2": {
+        "hPword": "$2b$12$W5d0S5DI5PuuUqIP0bnv2eRiW3Q6KuyCAvR1.ATL3jfq85WeW1Uki",
+        "timeout": "false",
+        "timeoutCount": "0"
+    },
+    "gphillips3": {
+        "hPword": "$2b$12$tHN0thao1RF3DBLK8Vd/zeaUkpq8Oe9WC45RSvfL2uyyLSFfb4upO",
+        "timeout": "false",
+        "timeoutCount": "0"
+    },
+    "gphillips4": {
+        "hPword": "$2b$12$RAsHbU/73maJhIeIAKkzJ.SDWRL4JD3Iu.a9rTp4wTJnKD9ftloRO",
+        "timeout": "false",
+        "timeoutCount": "0"
+    }
+}
