@@ -1,0 +1,2402 @@
+2023-04-18 17:57:41.280617,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 17:57:41.281115,  DBExecute, Connecting to Database...
+2023-04-18 17:57:41.281615,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000022A1F053CC0>
+2023-04-18 17:57:41.282616,  DBExecute, Disconnecting Database...
+2023-04-18 17:57:41.283112,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 17:57:41.283612,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 17:57:41.284112,  DBExecute, Connecting to Database...
+2023-04-18 17:57:41.284112,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000022A1F053F40>
+2023-04-18 17:57:41.284613,  DBExecute, Disconnecting Database...
+2023-04-18 17:57:41.285112,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 17:58:56.828110,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 17:58:56.828611,  DBExecute, Connecting to Database...
+2023-04-18 17:58:56.829111,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001C833893EC0>
+2023-04-18 17:58:56.829611,  DBExecute, Disconnecting Database...
+2023-04-18 17:58:56.830110,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 17:58:56.830610,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 17:58:56.830610,  DBExecute, Connecting to Database...
+2023-04-18 17:58:56.831110,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001C833893D40>
+2023-04-18 17:58:56.831611,  DBExecute, Disconnecting Database...
+2023-04-18 17:58:56.832110,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:00:18.984275,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:00:18.984275,  DBExecute, Connecting to Database...
+2023-04-18 18:00:18.984776,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000283A8583CC0>
+2023-04-18 18:00:18.985774,  DBExecute, Disconnecting Database...
+2023-04-18 18:00:18.986274,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:00:18.986274,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:00:18.986773,  DBExecute, Connecting to Database...
+2023-04-18 18:00:18.987274,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000283A8583F40>
+2023-04-18 18:00:18.987774,  DBExecute, Disconnecting Database...
+2023-04-18 18:00:18.988274,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:01:05.196978,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:01:05.196978,  DBExecute, Connecting to Database...
+2023-04-18 18:01:05.197477,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000017ED5743CC0>
+2023-04-18 18:01:05.197977,  DBExecute, Disconnecting Database...
+2023-04-18 18:01:05.198477,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:01:05.199979,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:01:05.199979,  DBExecute, Connecting to Database...
+2023-04-18 18:01:05.200478,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000017ED5743EC0>
+2023-04-18 18:01:05.200981,  DBExecute, Disconnecting Database...
+2023-04-18 18:01:05.201479,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:01:50.798062,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:01:50.798561,  DBExecute, Connecting to Database...
+2023-04-18 18:01:50.798561,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000128D8AA3CC0>
+2023-04-18 18:01:50.799562,  DBExecute, Disconnecting Database...
+2023-04-18 18:01:50.800061,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:01:50.806060,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:01:50.806561,  DBExecute, Connecting to Database...
+2023-04-18 18:01:50.807061,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000128D8AA3F40>
+2023-04-18 18:01:50.807561,  DBExecute, Disconnecting Database...
+2023-04-18 18:01:50.808062,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:16:59.944631,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:16:59.944631,  DBExecute, Connecting to Database...
+2023-04-18 18:16:59.945631,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000023905E13CC0>
+2023-04-18 18:16:59.946131,  DBExecute, Disconnecting Database...
+2023-04-18 18:16:59.946631,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:16:59.951632,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:16:59.952132,  DBExecute, Connecting to Database...
+2023-04-18 18:16:59.952633,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000023905E13EC0>
+2023-04-18 18:16:59.953133,  DBExecute, Disconnecting Database...
+2023-04-18 18:16:59.953632,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:23:24.229365,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:23:24.229365,  DBExecute, Connecting to Database...
+2023-04-18 18:23:24.229867,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001383C773C40>
+2023-04-18 18:23:24.230865,  DBExecute, Disconnecting Database...
+2023-04-18 18:23:24.231366,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:23:24.233365,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:23:24.233865,  DBExecute, Connecting to Database...
+2023-04-18 18:23:24.234365,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001383C773C40>
+2023-04-18 18:23:24.234865,  DBExecute, Disconnecting Database...
+2023-04-18 18:23:24.235366,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:26:32.278457,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:26:32.278957,  DBExecute, Connecting to Database...
+2023-04-18 18:26:32.279457,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001588E81BBC0>
+2023-04-18 18:26:32.280457,  DBExecute, Disconnecting Database...
+2023-04-18 18:26:32.280957,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:26:32.283958,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:26:32.284457,  DBExecute, Connecting to Database...
+2023-04-18 18:26:32.284960,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001588E81BBC0>
+2023-04-18 18:26:32.285459,  DBExecute, Disconnecting Database...
+2023-04-18 18:26:32.286040,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:30:52.308224,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:30:52.308722,  DBExecute, Connecting to Database...
+2023-04-18 18:30:52.309223,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000020B06B63EC0>
+2023-04-18 18:30:52.309722,  DBExecute, Disconnecting Database...
+2023-04-18 18:30:52.310222,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:30:52.310722,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:30:52.310722,  DBExecute, Connecting to Database...
+2023-04-18 18:30:52.311222,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000020B06B63D40>
+2023-04-18 18:30:52.311722,  DBExecute, Disconnecting Database...
+2023-04-18 18:30:52.312223,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:33:22.293410,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:33:22.293410,  DBExecute, Connecting to Database...
+2023-04-18 18:33:22.293910,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000002031E4F3CC0>
+2023-04-18 18:33:22.294906,  DBExecute, Disconnecting Database...
+2023-04-18 18:33:22.295406,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:33:22.295906,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:33:22.295906,  DBExecute, Connecting to Database...
+2023-04-18 18:33:22.296406,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000002031E4F3F40>
+2023-04-18 18:33:22.296906,  DBExecute, Disconnecting Database...
+2023-04-18 18:33:22.297406,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:34:39.551826,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:34:39.552327,  DBExecute, Connecting to Database...
+2023-04-18 18:34:39.552826,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000019CB45C3EC0>
+2023-04-18 18:34:39.553327,  DBExecute, Disconnecting Database...
+2023-04-18 18:34:39.553826,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:34:39.554325,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:34:39.554325,  DBExecute, Connecting to Database...
+2023-04-18 18:34:39.554828,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000019CB45C3D40>
+2023-04-18 18:34:39.555326,  DBExecute, Disconnecting Database...
+2023-04-18 18:34:39.555825,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:36:00.252386,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:36:00.252886,  DBExecute, Connecting to Database...
+2023-04-18 18:36:00.253387,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000199BABF3EC0>
+2023-04-18 18:36:00.254386,  DBExecute, Disconnecting Database...
+2023-04-18 18:36:00.254888,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:36:00.254888,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:36:00.255385,  DBExecute, Connecting to Database...
+2023-04-18 18:36:00.255385,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000199BABF3D40>
+2023-04-18 18:36:00.255886,  DBExecute, Disconnecting Database...
+2023-04-18 18:36:00.256389,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:36:30.367431,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:36:30.368011,  DBExecute, Connecting to Database...
+2023-04-18 18:36:30.368430,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000017471433EC0>
+2023-04-18 18:36:30.369430,  DBExecute, Disconnecting Database...
+2023-04-18 18:36:30.369931,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:36:30.369931,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:36:30.369931,  DBExecute, Connecting to Database...
+2023-04-18 18:36:30.370430,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000017471433D40>
+2023-04-18 18:36:30.370930,  DBExecute, Disconnecting Database...
+2023-04-18 18:36:30.371430,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:39:20.103860,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:39:20.104359,  DBExecute, Connecting to Database...
+2023-04-18 18:39:20.104863,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000024F94783CC0>
+2023-04-18 18:39:20.105363,  DBExecute, Disconnecting Database...
+2023-04-18 18:39:20.105863,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:39:20.106362,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:39:20.106362,  DBExecute, Connecting to Database...
+2023-04-18 18:39:20.106863,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000024F94783EC0>
+2023-04-18 18:39:20.107488,  DBExecute, Disconnecting Database...
+2023-04-18 18:39:20.107863,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:41:24.101796,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:41:24.101796,  DBExecute, Connecting to Database...
+2023-04-18 18:41:24.102296,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000015507313EC0>
+2023-04-18 18:41:24.103296,  DBExecute, Disconnecting Database...
+2023-04-18 18:41:24.103796,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:47:37.842894,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:47:37.843394,  DBExecute, Connecting to Database...
+2023-04-18 18:47:37.843895,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000014A229D3D40>
+2023-04-18 18:47:37.844394,  DBExecute, Disconnecting Database...
+2023-04-18 18:47:37.844895,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-18 18:48:27.905643,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-18 18:48:27.906144,  DBExecute, Connecting to Database...
+2023-04-18 18:48:27.906644,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000002465D423EC0>
+2023-04-18 18:48:27.907143,  DBExecute, Disconnecting Database...
+2023-04-18 18:48:27.907643,  DBSelect, Result Set Found...
+	("[(1, 'Employees'), (2, 'Global Energy Solutions'), (3, 'Dynamic "
+ "Manufacturing Inc'), (4, 'Integrated Systems & Automation'), (5, 'Smart Home "
+ "Innovations'), (6, 'Quantum Technologies LLC'), (7, 'Precision Engineering "
+ "Group'), (8, 'Global Automation Services'), (9, 'High Performance Systems "
+ "Inc'), (10, 'Secure Data Solutions'), (11, 'Innovative Industrial "
+ "Solutions'), (12, 'Next Generation Innovations'), (13, 'Advanced Automation "
+ "& Control'), (14, 'Global Robotics Corp'), (15, 'Premier Manufacturing & "
+ "Engineering'), (16, 'Innovative Materials LLC'), (17, 'Dynamic Robotics & "
+ "Automation'), (18, 'Quantum Computing Technologies'), (19, 'Global Solutions "
+ "Group'), (20, 'Intelligent Manufacturing Systems'), (21, 'Precision "
+ "Components Inc'), (22, 'Smart Tech Innovations'), (23, 'Innovative Power & "
+ "Energy'), (24, 'Next Generation Automation Corp'), (25, 'Advanced Industrial "
+ "Systems'), (26, 'Global Innovation Partners'), (27, 'Dynamic Manufacturing & "
+ "Robotics'), (28, 'Quantum Information Technologies'), (29, 'Global "
+ "Engineering Solutions'), (30, 'Intelligent Automation Inc'), (31, 'Precision "
+ "Automation Group')]")
+2023-04-20 14:38:28.494179,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-20 14:38:28.494179,  DBExecute, Connecting to Database...
+2023-04-20 14:38:28.494679,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000224C795B940>
+2023-04-20 14:38:28.495680,  DBExecute, Disconnecting Database...
+2023-04-20 14:38:28.496179,  DBSelect, Result Set Found...
+	("[(13, 'Advanced Automation & Control'), (25, 'Advanced Industrial Systems'), "
+ "(27, 'Dynamic Manufacturing & Robotics'), (3, 'Dynamic Manufacturing Inc'), "
+ "(17, 'Dynamic Robotics & Automation'), (1, 'Employees'), (8, 'Global "
+ "Automation Services'), (2, 'Global Energy Solutions'), (29, 'Global "
+ "Engineering Solutions'), (26, 'Global Innovation Partners'), (14, 'Global "
+ "Robotics Corp'), (19, 'Global Solutions Group'), (9, 'High Performance "
+ "Systems Inc'), (11, 'Innovative Industrial Solutions'), (16, 'Innovative "
+ "Materials LLC'), (23, 'Innovative Power & Energy'), (4, 'Integrated Systems "
+ "& Automation'), (30, 'Intelligent Automation Inc'), (20, 'Intelligent "
+ "Manufacturing Systems'), (24, 'Next Generation Automation Corp'), (12, 'Next "
+ "Generation Innovations'), (31, 'Precision Automation Group'), (21, "
+ "'Precision Components Inc'), (7, 'Precision Engineering Group'), (15, "
+ "'Premier Manufacturing & Engineering'), (18, 'Quantum Computing "
+ "Technologies'), (28, 'Quantum Information Technologies'), (6, 'Quantum "
+ "Technologies LLC'), (10, 'Secure Data Solutions'), (5, 'Smart Home "
+ "Innovations'), (22, 'Smart Tech Innovations')]")
+2023-04-20 14:49:49.274797,  DBExecute, Attempting to execute query:
+	select * from VIEW_GUICustomers 
+	params:((),) ...
+2023-04-20 14:49:49.274797,  DBExecute, Connecting to Database...
+2023-04-20 14:49:49.275295,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001EC2CCD3C40>
+2023-04-20 14:49:49.275797,  DBExecute, Disconnecting Database...
+2023-04-20 14:51:18.673379,  DBExecute, Attempting to execute query:
+	select * from ? 
+	params:((('V', 'I', 'E', 'W', '_', 'G', 'U', 'I', 'C', 'u', 's', 't', 'o', 'm', 'e', 'r', 's'),),) ...
+2023-04-20 14:51:18.673379,  DBExecute, Connecting to Database...
+2023-04-20 14:51:18.673881,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001D9318D3CC0>
+2023-04-20 14:51:18.674381,  DBExecute, Disconnecting Database...
+2023-04-20 14:52:38.453512,  DBExecute, Attempting to execute query:
+	select * from ? 
+	params:(('VIEW_GUICustomers',),) ...
+2023-04-20 14:52:38.453512,  DBExecute, Connecting to Database...
+2023-04-20 14:52:38.454013,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000156BAF03CC0>
+2023-04-20 14:52:38.454513,  DBExecute, Disconnecting Database...
+2023-04-20 14:55:24.001627,  DBExecute, Attempting to execute query:
+	SELECT * FROM ?; 
+	params:(('VIEW_GUICustomers',),) ...
+2023-04-20 14:55:24.002124,  DBExecute, Connecting to Database...
+2023-04-20 14:55:24.002624,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000246C7E43C40>
+2023-04-20 14:55:24.002624,  DBExecute, Disconnecting Database...
+2023-04-20 14:56:06.285585,  DBExecute, Attempting to execute query:
+	SELECT * FROM ?; 
+	params:('VIEW_GUICustomers',) ...
+2023-04-20 14:56:06.286085,  DBExecute, Connecting to Database...
+2023-04-20 14:56:06.286586,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000016ED3DF3CC0>
+2023-04-20 14:56:06.286586,  DBExecute, Disconnecting Database...
+2023-04-20 15:01:54.052346,  DBExecute, Attempting to execute query:
+	SELECT * FROM ?; 
+	params:('VIEW_GUICustomers',) ...
+2023-04-20 15:01:54.052346,  DBExecute, Connecting to Database...
+2023-04-20 15:01:54.052845,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000019993483CC0>
+2023-04-20 15:01:54.053344,  DBExecute, Disconnecting Database...
+2023-04-20 15:02:39.408049,  DBExecute, Attempting to execute query:
+	SELECT * FROM %s; 
+	params:('VIEW_GUICustomers',) ...
+2023-04-20 15:02:39.408549,  DBExecute, Connecting to Database...
+2023-04-20 15:02:39.408549,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000250A8F13CC0>
+2023-04-20 15:02:39.409050,  DBExecute, Disconnecting Database...
+2023-04-20 15:07:23.530164,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-20 15:07:23.530664,  DBExecute, Connecting to Database...
+2023-04-20 15:07:23.531164,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000258E3C53C40>
+2023-04-20 15:07:23.531663,  DBExecute, Disconnecting Database...
+2023-04-20 15:12:20.527310,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-20 15:12:20.527809,  DBExecute, Connecting to Database...
+2023-04-20 15:12:20.527809,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001DA9BCF3CC0>
+2023-04-20 15:12:20.528809,  DBExecute, Disconnecting Database...
+2023-04-20 15:17:38.656341,  DBExecute, Attempting to execute query:
+	 SELECT * FROM VIEW_GUICustomers; 
+	params:() ...
+2023-04-20 15:17:38.656840,  DBExecute, Connecting to Database...
+2023-04-20 15:17:38.657341,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000002ACEC84BBC0>
+2023-04-20 15:17:38.657843,  DBExecute, Disconnecting Database...
+2023-04-20 15:17:38.658343,  DBSelect, Result Set Found...
+	("[(13, 'Advanced Automation & Control'), (25, 'Advanced Industrial Systems'), "
+ "(27, 'Dynamic Manufacturing & Robotics'), (3, 'Dynamic Manufacturing Inc'), "
+ "(17, 'Dynamic Robotics & Automation'), (1, 'Employees'), (8, 'Global "
+ "Automation Services'), (2, 'Global Energy Solutions'), (29, 'Global "
+ "Engineering Solutions'), (26, 'Global Innovation Partners'), (14, 'Global "
+ "Robotics Corp'), (19, 'Global Solutions Group'), (9, 'High Performance "
+ "Systems Inc'), (11, 'Innovative Industrial Solutions'), (16, 'Innovative "
+ "Materials LLC'), (23, 'Innovative Power & Energy'), (4, 'Integrated Systems "
+ "& Automation'), (30, 'Intelligent Automation Inc'), (20, 'Intelligent "
+ "Manufacturing Systems'), (24, 'Next Generation Automation Corp'), (12, 'Next "
+ "Generation Innovations'), (31, 'Precision Automation Group'), (21, "
+ "'Precision Components Inc'), (7, 'Precision Engineering Group'), (15, "
+ "'Premier Manufacturing & Engineering'), (18, 'Quantum Computing "
+ "Technologies'), (28, 'Quantum Information Technologies'), (6, 'Quantum "
+ "Technologies LLC'), (10, 'Secure Data Solutions'), (5, 'Smart Home "
+ "Innovations'), (22, 'Smart Tech Innovations')]")
+2023-04-20 15:20:13.824304,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUICustomers 
+	params:() ...
+2023-04-20 15:20:13.824304,  DBExecute, Connecting to Database...
+2023-04-20 15:20:13.825307,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001D32BF73C40>
+2023-04-20 15:20:13.825807,  DBExecute, Disconnecting Database...
+2023-04-20 15:20:13.826307,  DBSelect, Result Set Found...
+	("[(13, 'Advanced Automation & Control'), (25, 'Advanced Industrial Systems'), "
+ "(27, 'Dynamic Manufacturing & Robotics'), (3, 'Dynamic Manufacturing Inc'), "
+ "(17, 'Dynamic Robotics & Automation'), (1, 'Employees'), (8, 'Global "
+ "Automation Services'), (2, 'Global Energy Solutions'), (29, 'Global "
+ "Engineering Solutions'), (26, 'Global Innovation Partners'), (14, 'Global "
+ "Robotics Corp'), (19, 'Global Solutions Group'), (9, 'High Performance "
+ "Systems Inc'), (11, 'Innovative Industrial Solutions'), (16, 'Innovative "
+ "Materials LLC'), (23, 'Innovative Power & Energy'), (4, 'Integrated Systems "
+ "& Automation'), (30, 'Intelligent Automation Inc'), (20, 'Intelligent "
+ "Manufacturing Systems'), (24, 'Next Generation Automation Corp'), (12, 'Next "
+ "Generation Innovations'), (31, 'Precision Automation Group'), (21, "
+ "'Precision Components Inc'), (7, 'Precision Engineering Group'), (15, "
+ "'Premier Manufacturing & Engineering'), (18, 'Quantum Computing "
+ "Technologies'), (28, 'Quantum Information Technologies'), (6, 'Quantum "
+ "Technologies LLC'), (10, 'Secure Data Solutions'), (5, 'Smart Home "
+ "Innovations'), (22, 'Smart Tech Innovations')]")
+2023-04-20 15:23:38.016436,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 15:23:38.016934,  DBExecute, Connecting to Database...
+2023-04-20 15:23:38.017435,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000021CBE0D3CC0>
+2023-04-20 15:23:38.017935,  DBExecute, Disconnecting Database...
+2023-04-20 15:23:38.018435,  DBSelect, Result Set Found...
+	("[(1, 'General Electric'), (2, 'Siemens'), (3, 'ABB'), (4, 'Schneider "
+ "Electric'), (5, 'Emerson Electric'), (6, 'Honeywell'), (7, 'Eaton'), (8, "
+ "'Rockwell Automation'), (9, 'Mitsubishi Electric'), (10, 'Yaskawa "
+ "Electric'), (11, 'FANUC'), (12, 'Keyence'), (13, 'Phoenix Contact'), (14, "
+ "'TE Connectivity'), (15, 'Murata Manufacturing'), (16, 'Texas Instruments'), "
+ "(17, 'Intel'), (18, 'Advanced Micro Devices (AMD)'), (19, 'Nvidia'), (20, "
+ "'Micron Technology')]")
+2023-04-20 15:25:37.121116,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 15:25:37.121616,  DBExecute, Connecting to Database...
+2023-04-20 15:25:37.122118,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000021CBE0D3F40>
+2023-04-20 15:25:37.122618,  DBExecute, Disconnecting Database...
+2023-04-20 15:25:37.123117,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 15:25:40.226737,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 15:25:40.226737,  DBExecute, Connecting to Database...
+2023-04-20 15:25:40.227238,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000021CBE0D3E40>
+2023-04-20 15:25:40.227737,  DBExecute, Disconnecting Database...
+2023-04-20 15:25:40.228238,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 15:25:42.522081,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 15:25:42.522581,  DBExecute, Connecting to Database...
+2023-04-20 15:25:42.523081,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000021CBE0D3EC0>
+2023-04-20 15:25:42.523582,  DBExecute, Disconnecting Database...
+2023-04-20 15:25:42.524081,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 15:54:32.521668,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 15:54:32.521668,  DBExecute, Connecting to Database...
+2023-04-20 15:54:32.522169,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001A11BBF3F40>
+2023-04-20 15:54:32.523168,  DBExecute, Disconnecting Database...
+2023-04-20 15:54:32.523168,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 15:55:31.186760,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 15:55:31.186760,  DBExecute, Connecting to Database...
+2023-04-20 15:55:31.187260,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000227C8D43F40>
+2023-04-20 15:55:31.188260,  DBExecute, Disconnecting Database...
+2023-04-20 15:55:31.188344,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 15:56:43.055961,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 15:56:43.056462,  DBExecute, Connecting to Database...
+2023-04-20 15:56:43.056962,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000168A2F33D40>
+2023-04-20 15:56:43.057962,  DBExecute, Disconnecting Database...
+2023-04-20 15:56:43.058462,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 17:18:44.276021,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 17:18:44.276520,  DBExecute, Connecting to Database...
+2023-04-20 17:18:44.277020,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001A8E4353DC0>
+2023-04-20 17:18:44.278020,  DBExecute, Disconnecting Database...
+2023-04-20 17:18:44.278520,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 17:21:02.616301,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 17:21:02.616801,  DBExecute, Connecting to Database...
+2023-04-20 17:21:02.617301,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001D8DB873EC0>
+2023-04-20 17:21:02.617801,  DBExecute, Disconnecting Database...
+2023-04-20 17:21:02.618301,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 17:21:02.618803,  DBExecute, Attempting to execute query:
+SELECT * FROM Customers 
+params:() ...
+2023-04-20 17:21:02.618803,  DBExecute, Connecting to Database...
+2023-04-20 17:21:02.619302,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001D8D926AFC0>
+2023-04-20 17:21:02.619801,  DBExecute, Disconnecting...
+2023-04-20 17:21:02.620301,  DBExecute, Disconnecting Database...
+2023-04-20 17:25:39.107493,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 17:25:39.107993,  DBExecute, Connecting to Database...
+2023-04-20 17:25:39.107993,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000002376C663EC0>
+2023-04-20 17:25:39.108993,  DBExecute, Disconnecting Database...
+2023-04-20 17:25:39.109493,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 17:25:39.109493,  DBExecute, Attempting to execute query:
+SELECT * FROM Customers 
+params:() ...
+2023-04-20 17:25:39.109993,  DBExecute, Connecting to Database...
+2023-04-20 17:25:39.109993,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000002376A05AFC0>
+2023-04-20 17:25:39.110493,  DBExecute, Disconnecting...
+2023-04-20 17:25:39.110993,  DBExecute, Disconnecting Database...
+2023-04-20 17:29:06.547564,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 17:29:06.547564,  DBExecute, Connecting to Database...
+2023-04-20 17:29:06.548063,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000214FD314240>
+2023-04-20 17:29:06.548564,  DBExecute, Disconnecting Database...
+2023-04-20 17:29:06.549063,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 17:29:06.549564,  DBExecute, Attempting to execute query:
+SELECT * FROM Customers 
+params:() ...
+2023-04-20 17:29:06.549564,  DBExecute, Connecting to Database...
+2023-04-20 17:29:06.550064,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000214FD314540>
+2023-04-20 17:29:06.550564,  DBExecute, Disconnecting...
+2023-04-20 17:29:06.550564,  DBExecute, Disconnecting Database...
+2023-04-20 17:30:45.189205,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 17:30:45.189704,  DBExecute, Connecting to Database...
+2023-04-20 17:30:45.190204,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000213B755BEC0>
+2023-04-20 17:30:45.190705,  DBExecute, Disconnecting Database...
+2023-04-20 17:30:45.191204,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 17:30:45.191706,  DBExecute, Attempting to execute query:
+SELECT * FROM Customers 
+params:() ...
+2023-04-20 17:30:45.191706,  DBExecute, Connecting to Database...
+2023-04-20 17:30:45.192207,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000213B4F4AFC0>
+2023-04-20 17:30:45.192706,  DBExecute, Disconnecting...
+2023-04-20 17:30:45.192706,  DBExecute, Disconnecting Database...
+2023-04-20 17:34:55.236267,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 17:34:55.236267,  DBExecute, Connecting to Database...
+2023-04-20 17:34:55.236767,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000020902DE3E40>
+2023-04-20 17:34:55.237267,  DBExecute, Disconnecting Database...
+2023-04-20 17:34:55.237767,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 17:34:55.238267,  DBExecute, Attempting to execute query:
+SELECT * FROM Customers 
+params:() ...
+2023-04-20 17:34:55.238267,  DBExecute, Connecting to Database...
+2023-04-20 17:34:55.238767,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000002090088AF40>
+2023-04-20 17:34:55.239267,  DBExecute, Disconnecting...
+2023-04-20 17:34:55.239267,  DBExecute, Disconnecting Database...
+2023-04-20 17:38:22.641862,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 17:38:22.642363,  DBExecute, Connecting to Database...
+2023-04-20 17:38:22.642863,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000019B040B3EC0>
+2023-04-20 17:38:22.643363,  DBExecute, Disconnecting Database...
+2023-04-20 17:38:22.643863,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 17:41:25.269253,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 17:41:25.269754,  DBExecute, Connecting to Database...
+2023-04-20 17:41:25.270254,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000016E0F4F3EC0>
+2023-04-20 17:41:25.270754,  DBExecute, Disconnecting Database...
+2023-04-20 17:41:25.271254,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 17:41:25.271254,  DBExecute, Attempting to execute query:
+	SELECT * FROM {table_name} 
+	params:() ...
+2023-04-20 17:41:25.271754,  DBExecute, Connecting to Database...
+2023-04-20 17:41:25.271754,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000016E0CF3AFC0>
+2023-04-20 17:41:25.272254,  DBExecute, Disconnecting Database...
+2023-04-20 18:30:51.087000,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 18:30:51.087501,  DBExecute, Connecting to Database...
+2023-04-20 18:30:51.088003,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001E072033EC0>
+2023-04-20 18:30:51.088503,  DBExecute, Disconnecting Database...
+2023-04-20 18:30:51.089002,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 18:30:51.089002,  DBExecute, Attempting to execute query:
+	SELECT * FROM Customers 
+	params:() ...
+2023-04-20 18:30:51.089503,  DBExecute, Connecting to Database...
+2023-04-20 18:30:51.089503,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001E06FA8AFC0>
+2023-04-20 18:30:51.090502,  DBExecute, Disconnecting Database...
+2023-04-20 18:31:53.688435,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 18:31:53.688435,  DBExecute, Connecting to Database...
+2023-04-20 18:31:53.688935,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000283E7733EC0>
+2023-04-20 18:31:53.689935,  DBExecute, Disconnecting Database...
+2023-04-20 18:31:53.690435,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 18:31:53.690435,  DBExecute, Attempting to execute query:
+SELECT * FROM Customers 
+params:() ...
+2023-04-20 18:31:53.690935,  DBExecute, Connecting to Database...
+2023-04-20 18:31:53.691435,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000283E515AFC0>
+2023-04-20 18:31:53.691935,  DBExecute, Disconnecting...
+2023-04-20 18:31:53.691935,  DBExecute, Disconnecting Database...
+2023-04-20 18:59:22.234246,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 18:59:22.234746,  DBExecute, Connecting to Database...
+2023-04-20 18:59:22.235246,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000020A5D1F3EC0>
+2023-04-20 18:59:22.235747,  DBExecute, Disconnecting Database...
+2023-04-20 18:59:22.236248,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 18:59:22.237536,  DBExecute, Attempting to execute query:
+SELECT CustomerID, AddressID, CustomerNameFROM Customers WHERE CustomerID = 12; 
+params:() ...
+2023-04-20 18:59:22.237746,  DBExecute, Connecting to Database...
+2023-04-20 18:59:22.238246,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000020A5D2DC240>
+2023-04-20 18:59:22.238246,  DBExecute, Error executing query:
+SELECT CustomerID, AddressID, CustomerNameFROM Customers WHERE CustomerID = 12; 
+params:() ...
+2023-04-20 18:59:22.238746,  DBExecute, Disconnecting...
+2023-04-20 18:59:22.238746,  DBExecute, Disconnecting Database...
+2023-04-20 19:00:43.475399,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:00:43.475399,  DBExecute, Connecting to Database...
+2023-04-20 19:00:43.475900,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000023126931740>
+2023-04-20 19:00:43.476902,  DBExecute, Disconnecting Database...
+2023-04-20 19:00:43.477400,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:00:43.478900,  DBExecute, Attempting to execute query:
+SELECT CustomerID, AddressID, CustomerNameFROM Customers WHERE CustomerID = 12; 
+params:() ...
+2023-04-20 19:00:43.478900,  DBExecute, Connecting to Database...
+2023-04-20 19:00:43.479401,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000023126931640>
+2023-04-20 19:00:43.479900,  DBExecute, Error executing query:
+SELECT CustomerID, AddressID, CustomerNameFROM Customers WHERE CustomerID = 12; 
+params:() ...
+2023-04-20 19:00:43.479900,  DBExecute, Disconnecting...
+2023-04-20 19:00:43.480399,  DBExecute, Disconnecting Database...
+2023-04-20 19:02:12.929236,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:02:12.929236,  DBExecute, Connecting to Database...
+2023-04-20 19:02:12.929737,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000020A78631640>
+2023-04-20 19:02:12.930735,  DBExecute, Disconnecting Database...
+2023-04-20 19:02:12.931235,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:02:12.932735,  DBExecute, Attempting to execute query:
+SELECT CustomerID, AddressID, CustomerNameFROM Customers WHERE CustomerID = 12; 
+params:() ...
+2023-04-20 19:02:12.933238,  DBExecute, Connecting to Database...
+2023-04-20 19:02:12.933238,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000020A786316C0>
+2023-04-20 19:02:12.933735,  DBExecute, Error executing query:
+SELECT CustomerID, AddressID, CustomerNameFROM Customers WHERE CustomerID = 12; 
+params:() ...
+2023-04-20 19:02:12.933735,  DBExecute, Disconnecting...
+2023-04-20 19:02:12.934235,  DBExecute, Disconnecting Database...
+2023-04-20 19:03:22.932218,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:03:22.932719,  DBExecute, Connecting to Database...
+2023-04-20 19:03:22.933217,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000023F269D55C0>
+2023-04-20 19:03:22.933719,  DBExecute, Disconnecting Database...
+2023-04-20 19:03:22.934718,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:03:22.935719,  DBExecute, Attempting to execute query:
+SELECT CustomerID, AddressID, CustomerNameFROM Customers WHERE CustomerID = 12; 
+params:() ...
+2023-04-20 19:03:22.935719,  DBExecute, Connecting to Database...
+2023-04-20 19:03:22.936217,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000023F269D53C0>
+2023-04-20 19:03:22.936717,  DBExecute, Error executing query:
+SELECT CustomerID, AddressID, CustomerNameFROM Customers WHERE CustomerID = 12; 
+params:() ...
+2023-04-20 19:03:22.936717,  DBExecute, Disconnecting...
+2023-04-20 19:03:22.936717,  DBExecute, Disconnecting Database...
+2023-04-20 19:04:39.114360,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:04:39.114360,  DBExecute, Connecting to Database...
+2023-04-20 19:04:39.114860,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001C6608E5640>
+2023-04-20 19:04:39.115860,  DBExecute, Disconnecting Database...
+2023-04-20 19:04:39.116360,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:04:39.117360,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerNameFROM Customers WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 19:04:39.117360,  DBExecute, Connecting to Database...
+2023-04-20 19:04:39.117860,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001C6608E5540>
+2023-04-20 19:04:39.118360,  DBExecute, Disconnecting Database...
+2023-04-20 19:05:58.148728,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:05:58.149227,  DBExecute, Connecting to Database...
+2023-04-20 19:05:58.149727,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000002CD251F9840>
+2023-04-20 19:05:58.150228,  DBExecute, Disconnecting Database...
+2023-04-20 19:05:58.151228,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:08:41.220864,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:08:41.220864,  DBExecute, Connecting to Database...
+2023-04-20 19:08:41.221367,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000026096145740>
+2023-04-20 19:08:41.222369,  DBExecute, Disconnecting Database...
+2023-04-20 19:08:41.223369,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:08:55.063960,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 19:08:55.064462,  DBExecute, Connecting to Database...
+2023-04-20 19:08:55.064961,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000026096145D40>
+2023-04-20 19:08:55.065461,  DBExecute, Disconnecting Database...
+2023-04-20 19:24:01.831471,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:24:01.831471,  DBExecute, Connecting to Database...
+2023-04-20 19:24:01.831971,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001A7C8323F40>
+2023-04-20 19:24:01.832473,  DBExecute, Disconnecting Database...
+2023-04-20 19:24:01.832971,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:24:01.833971,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 19:24:01.833971,  DBExecute, Connecting to Database...
+2023-04-20 19:24:01.834471,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001A7C5D670C0>
+2023-04-20 19:24:01.834972,  DBExecute, Disconnecting Database...
+2023-04-20 19:24:01.835971,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 19:24:01.836473,  DBExecute, Connecting to Database...
+2023-04-20 19:24:01.836972,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001A7C5D670C0>
+2023-04-20 19:24:01.837971,  DBExecute, Disconnecting Database...
+2023-04-20 19:24:01.838471,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 19:25:39.325381,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:25:39.325381,  DBExecute, Connecting to Database...
+2023-04-20 19:25:39.325880,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001D5CE55D840>
+2023-04-20 19:25:39.326880,  DBExecute, Disconnecting Database...
+2023-04-20 19:25:39.327880,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:27:23.937245,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 19:27:23.937744,  DBExecute, Connecting to Database...
+2023-04-20 19:27:23.938245,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001D5CE55DDC0>
+2023-04-20 19:27:23.938744,  DBExecute, Disconnecting Database...
+2023-04-20 19:29:01.273184,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 19:29:01.273681,  DBExecute, Connecting to Database...
+2023-04-20 19:29:01.274182,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001D5CE55E340>
+2023-04-20 19:29:01.274682,  DBExecute, Disconnecting Database...
+2023-04-20 19:29:01.276181,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 19:30:21.182978,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:30:21.183479,  DBExecute, Connecting to Database...
+2023-04-20 19:30:21.183979,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000237CE7598C0>
+2023-04-20 19:30:21.184479,  DBExecute, Disconnecting Database...
+2023-04-20 19:30:21.185480,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:32:15.240843,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 19:32:15.241343,  DBExecute, Connecting to Database...
+2023-04-20 19:32:15.241343,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000237CE75A1C0>
+2023-04-20 19:32:15.242348,  DBExecute, Disconnecting Database...
+2023-04-20 19:36:16.879393,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 19:36:16.879895,  DBExecute, Connecting to Database...
+2023-04-20 19:36:16.880394,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000237CE759DC0>
+2023-04-20 19:36:16.881232,  DBExecute, Disconnecting Database...
+2023-04-20 19:36:16.881894,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 19:36:43.359355,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:36:43.359355,  DBExecute, Connecting to Database...
+2023-04-20 19:36:43.359855,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000019F7EBD1940>
+2023-04-20 19:36:43.360355,  DBExecute, Disconnecting Database...
+2023-04-20 19:36:43.361356,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:44:30.162101,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 19:44:30.162604,  DBExecute, Connecting to Database...
+2023-04-20 19:44:30.162604,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000019F7EBD1940>
+2023-04-20 19:44:30.163104,  DBExecute, Disconnecting Database...
+2023-04-20 19:44:49.210110,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 19:44:49.210110,  DBExecute, Connecting to Database...
+2023-04-20 19:44:49.210610,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000019F7EBD2440>
+2023-04-20 19:44:49.211112,  DBExecute, Disconnecting Database...
+2023-04-20 19:44:49.212110,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 19:45:37.249704,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:45:37.250200,  DBExecute, Connecting to Database...
+2023-04-20 19:45:37.250701,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000015DE6E7D8C0>
+2023-04-20 19:45:37.251701,  DBExecute, Disconnecting Database...
+2023-04-20 19:45:37.252201,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:46:57.637800,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 19:46:57.637800,  DBExecute, Connecting to Database...
+2023-04-20 19:46:57.638301,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000015DE6E7E040>
+2023-04-20 19:46:57.638800,  DBExecute, Disconnecting Database...
+2023-04-20 19:50:49.776883,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 19:50:49.777385,  DBExecute, Connecting to Database...
+2023-04-20 19:50:49.777385,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000015DE6E7DC40>
+2023-04-20 19:50:49.778383,  DBExecute, Disconnecting Database...
+2023-04-20 19:50:49.779383,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 19:53:34.826237,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:53:34.826736,  DBExecute, Connecting to Database...
+2023-04-20 19:53:34.827236,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCB3D8C0>
+2023-04-20 19:53:34.827736,  DBExecute, Disconnecting Database...
+2023-04-20 19:53:34.828737,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:53:34.829737,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 19:53:34.829737,  DBExecute, Connecting to Database...
+2023-04-20 19:53:34.830237,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCB3D8C0>
+2023-04-20 19:53:34.830736,  DBExecute, Disconnecting Database...
+2023-04-20 19:53:34.832236,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 19:53:34.832736,  DBExecute, Connecting to Database...
+2023-04-20 19:53:34.832736,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCB3D7C0>
+2023-04-20 19:53:34.833736,  DBExecute, Disconnecting Database...
+2023-04-20 19:53:34.834236,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 19:56:01.306934,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 19:56:01.307433,  DBExecute, Connecting to Database...
+2023-04-20 19:56:01.307932,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCB3D8C0>
+2023-04-20 19:56:01.308432,  DBExecute, Disconnecting Database...
+2023-04-20 19:56:01.308932,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 19:56:01.310432,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 19:56:01.310432,  DBExecute, Connecting to Database...
+2023-04-20 19:56:01.310932,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCC72440>
+2023-04-20 19:56:01.311432,  DBExecute, Disconnecting Database...
+2023-04-20 20:00:57.619952,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 20:00:57.620456,  DBExecute, Connecting to Database...
+2023-04-20 20:00:57.620956,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCC72740>
+2023-04-20 20:00:57.621957,  DBExecute, Disconnecting Database...
+2023-04-20 20:00:57.622954,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 20:01:30.888341,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 20:01:30.888341,  DBExecute, Connecting to Database...
+2023-04-20 20:01:30.888841,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCC72A40>
+2023-04-20 20:01:30.889842,  DBExecute, Disconnecting Database...
+2023-04-20 20:01:30.890342,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 20:01:30.890841,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:01:30.891341,  DBExecute, Connecting to Database...
+2023-04-20 20:01:30.891341,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCC72740>
+2023-04-20 20:01:30.891841,  DBExecute, Disconnecting Database...
+2023-04-20 20:03:35.223479,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 20:03:35.223981,  DBExecute, Connecting to Database...
+2023-04-20 20:03:35.224480,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCC723C0>
+2023-04-20 20:03:35.224980,  DBExecute, Disconnecting Database...
+2023-04-20 20:03:35.225980,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 20:04:06.011452,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 20:04:06.011952,  DBExecute, Connecting to Database...
+2023-04-20 20:04:06.012453,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCC723C0>
+2023-04-20 20:04:06.012953,  DBExecute, Disconnecting Database...
+2023-04-20 20:04:06.013453,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 20:04:06.014452,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:04:06.014952,  DBExecute, Connecting to Database...
+2023-04-20 20:04:06.015456,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCCB1840>
+2023-04-20 20:04:06.015954,  DBExecute, Disconnecting Database...
+2023-04-20 20:04:10.596511,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 20:04:10.597011,  DBExecute, Connecting to Database...
+2023-04-20 20:04:10.597511,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCCB21C0>
+2023-04-20 20:04:10.598012,  DBExecute, Disconnecting Database...
+2023-04-20 20:04:10.598511,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 20:04:10.599011,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:04:10.599511,  DBExecute, Connecting to Database...
+2023-04-20 20:04:10.599511,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCCB21C0>
+2023-04-20 20:04:10.600011,  DBExecute, Disconnecting Database...
+2023-04-20 20:07:55.714687,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 20:07:55.714687,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 20:07:55.715186,  DBExecute, Connecting to Database...
+2023-04-20 20:07:55.715186,  DBExecute, Connecting to Database...
+2023-04-20 20:07:55.715685,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCCB1F40>
+2023-04-20 20:07:55.715685,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCCB1A40>
+2023-04-20 20:07:55.716686,  DBExecute, Disconnecting Database...
+2023-04-20 20:07:55.716686,  DBExecute, Disconnecting Database...
+2023-04-20 20:07:55.717685,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 20:07:55.718683,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 20:08:02.512980,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 20:08:02.512980,  DBExecute, Connecting to Database...
+2023-04-20 20:08:02.513478,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCCB1F40>
+2023-04-20 20:08:02.513978,  DBExecute, Disconnecting Database...
+2023-04-20 20:08:02.514478,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 20:08:02.515980,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:08:02.515980,  DBExecute, Connecting to Database...
+2023-04-20 20:08:02.516478,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCCB1D40>
+2023-04-20 20:08:02.516978,  DBExecute, Disconnecting Database...
+2023-04-20 20:08:38.895962,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 20:08:38.896461,  DBExecute, Connecting to Database...
+2023-04-20 20:08:38.896461,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCCB1F40>
+2023-04-20 20:08:38.897463,  DBExecute, Disconnecting Database...
+2023-04-20 20:08:38.898462,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 20:08:42.406727,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 20:08:42.406727,  DBExecute, Connecting to Database...
+2023-04-20 20:08:42.407228,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCCB1DC0>
+2023-04-20 20:08:42.408227,  DBExecute, Disconnecting Database...
+2023-04-20 20:08:42.408227,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 20:08:42.409727,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:08:42.410227,  DBExecute, Connecting to Database...
+2023-04-20 20:08:42.410727,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000235BCCB2140>
+2023-04-20 20:08:42.411227,  DBExecute, Disconnecting Database...
+2023-04-20 20:10:55.307815,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 20:10:55.308314,  DBExecute, Connecting to Database...
+2023-04-20 20:10:55.308814,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000248ACD699C0>
+2023-04-20 20:10:55.309314,  DBExecute, Disconnecting Database...
+2023-04-20 20:10:55.310314,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 20:10:55.311816,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:10:55.311816,  DBExecute, Connecting to Database...
+2023-04-20 20:10:55.312313,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000248ACD699C0>
+2023-04-20 20:10:55.312814,  DBExecute, Disconnecting Database...
+2023-04-20 20:13:00.599434,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 20:13:00.599934,  DBExecute, Connecting to Database...
+2023-04-20 20:13:00.599934,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000248ACD6A2C0>
+2023-04-20 20:13:00.600933,  DBExecute, Disconnecting Database...
+2023-04-20 20:13:00.601934,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 20:15:34.645172,  DBExecute, Attempting to execute query:
+	SELECT * FROM VIEW_GUIManufacturers 
+	params:() ...
+2023-04-20 20:15:34.645672,  DBExecute, Connecting to Database...
+2023-04-20 20:15:34.646173,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000248ACECEE40>
+2023-04-20 20:15:34.646672,  DBExecute, Disconnecting Database...
+2023-04-20 20:15:34.647172,  DBSelect, Result Set Found...
+	("[(3, 'ABB'), (18, 'Advanced Micro Devices (AMD)'), (7, 'Eaton'), (5, "
+ "'Emerson Electric'), (11, 'FANUC'), (1, 'General Electric'), (6, "
+ "'Honeywell'), (17, 'Intel'), (12, 'Keyence'), (20, 'Micron Technology'), (9, "
+ "'Mitsubishi Electric'), (15, 'Murata Manufacturing'), (19, 'Nvidia'), (13, "
+ "'Phoenix Contact'), (8, 'Rockwell Automation'), (4, 'Schneider Electric'), "
+ "(2, 'Siemens'), (14, 'TE Connectivity'), (16, 'Texas Instruments'), (10, "
+ "'Yaskawa Electric')]")
+2023-04-20 20:16:41.827600,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:16:41.827600,  DBExecute, Connecting to Database...
+2023-04-20 20:16:41.828100,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000018876799940>
+2023-04-20 20:16:41.828600,  DBExecute, Disconnecting Database...
+2023-04-20 20:17:10.302952,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:17:10.303298,  DBExecute, Connecting to Database...
+2023-04-20 20:17:10.303801,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000201C93742C0>
+2023-04-20 20:17:10.304298,  DBExecute, Disconnecting Database...
+2023-04-20 20:17:10.305798,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 20:17:10.305798,  DBExecute, Connecting to Database...
+2023-04-20 20:17:10.306298,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000201C9374540>
+2023-04-20 20:17:10.306798,  DBExecute, Disconnecting Database...
+2023-04-20 20:17:10.307798,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 20:17:33.938584,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:17:33.938584,  DBExecute, Connecting to Database...
+2023-04-20 20:17:33.939086,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000014DD65299C0>
+2023-04-20 20:17:33.939586,  DBExecute, Disconnecting Database...
+2023-04-20 20:18:05.000677,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:18:05.000677,  DBExecute, Connecting to Database...
+2023-04-20 20:18:05.001177,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001F1041D9940>
+2023-04-20 20:18:05.001677,  DBExecute, Disconnecting Database...
+2023-04-20 20:19:32.548397,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:19:32.548896,  DBExecute, Connecting to Database...
+2023-04-20 20:19:32.548896,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001A178C69840>
+2023-04-20 20:19:32.549398,  DBExecute, Disconnecting Database...
+2023-04-20 20:22:07.310456,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:22:07.310456,  DBExecute, Connecting to Database...
+2023-04-20 20:22:07.310958,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001BCA5E79940>
+2023-04-20 20:22:07.311457,  DBExecute, Disconnecting Database...
+2023-04-20 20:23:45.771018,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:23:45.771518,  DBExecute, Connecting to Database...
+2023-04-20 20:23:45.772020,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001F2E64D9840>
+2023-04-20 20:23:45.772518,  DBExecute, Disconnecting Database...
+2023-04-20 20:26:57.675423,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:26:57.675923,  DBExecute, Connecting to Database...
+2023-04-20 20:26:57.676423,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000017F7D789940>
+2023-04-20 20:26:57.676923,  DBExecute, Disconnecting Database...
+2023-04-20 20:27:56.863201,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:27:56.863702,  DBExecute, Connecting to Database...
+2023-04-20 20:27:56.864202,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000162F06E9940>
+2023-04-20 20:27:56.864702,  DBExecute, Disconnecting Database...
+2023-04-20 20:30:06.179430,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:30:06.179430,  DBExecute, Connecting to Database...
+2023-04-20 20:30:06.179930,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000248B29C99C0>
+2023-04-20 20:30:06.180430,  DBExecute, Disconnecting Database...
+2023-04-20 20:31:09.975703,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:31:09.976203,  DBExecute, Connecting to Database...
+2023-04-20 20:31:09.976704,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000210C6E29A40>
+2023-04-20 20:31:09.977203,  DBExecute, Disconnecting Database...
+2023-04-20 20:31:31.376847,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:31:31.377347,  DBExecute, Connecting to Database...
+2023-04-20 20:31:31.377848,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001F40AC99A40>
+2023-04-20 20:31:31.378347,  DBExecute, Disconnecting Database...
+2023-04-20 20:31:48.203050,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:31:48.203550,  DBExecute, Connecting to Database...
+2023-04-20 20:31:48.203550,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x00000253E45E9A40>
+2023-04-20 20:31:48.204551,  DBExecute, Disconnecting Database...
+2023-04-20 20:32:58.726577,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:32:58.727077,  DBExecute, Connecting to Database...
+2023-04-20 20:32:58.727577,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001B9E1361E40>
+2023-04-20 20:32:58.728077,  DBExecute, Disconnecting Database...
+2023-04-20 20:33:37.374547,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:33:37.374547,  DBExecute, Connecting to Database...
+2023-04-20 20:33:37.375047,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000002A908441E40>
+2023-04-20 20:33:37.375551,  DBExecute, Disconnecting Database...
+2023-04-20 20:34:40.774333,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:34:40.774833,  DBExecute, Connecting to Database...
+2023-04-20 20:34:40.774833,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000014B7A0E1E40>
+2023-04-20 20:34:40.775333,  DBExecute, Disconnecting Database...
+2023-04-20 20:35:56.425185,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 20:35:56.425684,  DBExecute, Connecting to Database...
+2023-04-20 20:35:56.425684,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000012766171E40>
+2023-04-20 20:35:56.426685,  DBExecute, Disconnecting Database...
+2023-04-20 20:38:08.247596,  DBExecute, Attempting to execute query:
+	SELECT * FROM Address 
+	params:() ...
+2023-04-20 20:38:08.248096,  DBExecute, Connecting to Database...
+2023-04-20 20:38:08.248596,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x0000012766172640>
+2023-04-20 20:38:08.249097,  DBExecute, Disconnecting Database...
+2023-04-20 20:38:08.250597,  DBSelect, Result Set Found...
+	("[(0, 'Default', 'Default', 'Default', 'None', 'Default'), (1, '41 Farnsworth "
+ "Street', 'Boston', 'MA', 'None', '02210'), (2, 'Siemensstraße 6', 'Munich', "
+ "'Bavaria', 'None', '80333'), (3, 'Affolternstrasse 44', 'Zurich', 'None', "
+ "'None', '8050'), (4, '35 rue Joseph Monier', 'Rueil-Malmaison', "
+ "'Ile-de-France', 'None', '92500'), (5, '8000 West Florissant Avenue', 'St. "
+ "Louis', 'MO', 'None', '63136'), (6, '115 Tabor Road', 'Morris Plains', 'NJ', "
+ "'None', '07950'), (7, '1000 Eaton Boulevard', 'Cleveland', 'OH', 'None', "
+ "'44122'), (8, '1201 South Second Street', 'Milwaukee', 'WI', 'None', "
+ "'53204'), (9, '2-3, Marunouchi 3-chome', 'Chiyoda-ku', 'Tokyo', 'None', "
+ "'100-8310'), (10, '2-1 Kurosaki-Shiroishi', 'Yahatanishi-ku', 'Kitakyushu', "
+ "'None', '806-0004'), (11, '1-3-1, Mabuchi, Tsuzuki-ku', 'Yokohama', "
+ "'Kanagawa', 'None', '224-8523'), (12, '12-13, Nishi-Gotanda 7-chome', "
+ "'Shinagawa-ku', 'Tokyo', 'None', '141-0031'), (13, '586 Fulling Mill Road', "
+ "'Middletown', 'PA', 'None', '17057'), (14, '1050 Westlakes Drive, Suite "
+ "120', 'Berwyn', 'PA', 'None', '19312'), (15, '10-1, Higashikotari 1-chome', "
+ "'Nagaokakyo', 'Kyoto', 'None', '617-8555'), (16, '12500 TI Boulevard', "
+ "'Dallas', 'TX', 'None', '75243'), (17, '2200 Mission College Boulevard', "
+ "'Santa Clara', 'CA', 'None', '95054'), (18, '2485 Augustine Drive', 'Santa "
+ "Clara', 'CA', 'None', '95054'), (19, '2788 San Tomas Expressway', 'Santa "
+ "Clara', 'CA', 'None', '95051'), (20, '8000 S Federal Way', 'Boise', 'ID', "
+ "'None', '83707'), (50, '345 Rosewood Lane', 'Los Angeles', 'CA', 'USA', "
+ "'90017'), (51, '932 Elmwood Avenue', 'New York', 'NY', 'USA', '10010'), (52, "
+ "'75 Main Street', 'Chicago', 'IL', 'USA', '60605'), (53, '208 Cedar Lane', "
+ "'Houston', 'TX', 'USA', '77002'), (54, '789 Oak Street', 'Philadelphia', "
+ "'PA', 'USA', '19103'), (55, '456 Maple Drive', 'Phoenix', 'AZ', 'USA', "
+ "'85004'), (56, '1010 Pine Street', 'San Francisco', 'CA', 'USA', '94108'), "
+ "(57, '222 Magnolia Road', 'Atlanta', 'GA', 'USA', '30303'), (58, '567 Walnut "
+ "Street', 'Boston', 'MA', 'USA', '02108'), (59, '777 Pinecrest Road', "
+ "'Dallas', 'TX', 'USA', '75201'), (60, '909 Cedar Road', 'Miami', 'FL', "
+ "'USA', '33130'), (61, '123 Oakwood Drive', 'Seattle', 'WA', 'USA', '98101'), "
+ "(62, '456 Cedar Street', 'Washington', 'DC', 'USA', '20001'), (63, '789 "
+ "Magnolia Drive', 'Denver', 'CO', 'USA', '80202'), (64, '1010 Maple Avenue', "
+ "'Las Vegas', 'NV', 'USA', '89101'), (65, '222 Pine Lane', 'New Orleans', "
+ "'LA', 'USA', '70112'), (66, '567 Cedar Avenue', 'San Diego', 'CA', 'USA', "
+ "'92101'), (67, '777 Elm Street', 'Minneapolis', 'MN', 'USA', '55402'), (68, "
+ "'909 Oak Lane', 'Portland', 'OR', 'USA', '97205'), (69, '123 Magnolia "
+ "Avenue', 'Kansas City', 'MO', 'USA', '64105'), (70, '456 Pinecrest Drive', "
+ "'Salt Lake City', 'UT', 'USA', '84101'), (71, '789 Walnut Lane', 'Detroit', "
+ "'MI', 'USA', '48226'), (72, '1010 Elmwood Road', 'Charlotte', 'NC', 'USA', "
+ "'28202'), (73, '222 Oakwood Avenue', 'Tampa', 'FL', 'USA', '33602'), (74, "
+ "'567 Cedar Drive', 'Cleveland', 'OH', 'USA', '44113'), (75, '777 Magnolia "
+ "Lane', 'St. Louis', 'MO', 'USA', '63101'), (76, '909 Pine Road', 'Orlando', "
+ "'FL', 'USA', '32801'), (77, '123 Walnut Street', 'Pittsburgh', 'PA', 'USA', "
+ "'15222'), (78, '456 Elm Lane', 'San Antonio', 'TX', 'USA', '78205'), (79, "
+ "'789 Cedar Avenue', 'Nashville', 'TN', 'USA', '37219'), (80, '1010 Pinecrest "
+ "Road', 'Indianapolis', 'IN', 'USA', '46204')]")
+2023-04-20 21:14:42.531914,  DBExecute, Attempting to execute query:
+	SELECT CustomerID, AddressID, CustomerName FROM Customers  WHERE CustomerID = 12; 
+	params:() ...
+2023-04-20 21:14:42.531914,  DBExecute, Connecting to Database...
+2023-04-20 21:14:42.532414,  DBExecute, Connected... Connected=<sqlite3.Cursor object at 0x000001D1D21C1E40>
+2023-04-20 21:14:42.532915,  DBExecute, Disconnecting Database...
