@@ -52,6 +52,10 @@ class DBSelect:
         self._log_it(str(result_set))
         return result_set
 
+
+    def get_table(self, query):
+        return self._fetch(query)
+
     def VIEW_CustomersAddress(self):
         """
 

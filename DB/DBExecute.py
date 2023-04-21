@@ -144,3 +144,121 @@ class DBExecute:
 
             self.disconnect()
         return result
+
+    def get_field_names(self, table_name):
+        conn = sqlite3.connect(self.db_name)
+        cursor = conn.cursor()
+        cursor.execute(f"SELECT * FROM {table_name}")
+        field_names = [description[0] for description in cursor.description]
+        return field_names
+
+    def get_table_name_by_field(self, field_name):
+        # Get list of table names in the database
+        self.execute("SELECT name FROM sqlite_master WHERE type='table'")
+        table_names = [row[0] for row in self.cursor.fetchall()]
+        # Iterate over table names
+        for table_name in table_names:
+            # Check if table has an ID field
+            self.execute(f"PRAGMA table_info({table_name})")
+            columns = [row[1] for row in self.cursor.fetchall()]
+            if 'ID' in columns:
+                # Check if ID value exists in the table
+                self.cursor.execute(f"SELECT ID FROM {table_name} WHERE ID=?", (field_name,))
+                result = self.cursor.fetchone()
+                if result:
+                    # Return table name if ID value exists
+                    return table_name
+        # Return None if no matching table is found
+        return None
+
+    def get_tables_with_column(self, column_name):
+
+        # Get list of table names in the database
+        self.cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
+        table_names = [row[0] for row in self.cursor.fetchall()]
+        # Iterate over table names
+        tables_with_column = []
+        for table_name in table_names:
+            # Check if table has the specified column
+            self.cursor.execute(f"PRAGMA table_info({table_name})")
+            columns = [row[1] for row in self.cursor.fetchall()]
+            if column_name in columns:
+                # Add table name to list if it has the column
+                tables_with_column.append(table_name)
+        return tables_with_column
+
+    def get_foreign_table(self, table_name, column_name):
+        conn = sqlite3.connect(self.db_name)
+        cursor = conn.cursor()
+        cursor.execute(f"PRAGMA foreign_key_list({table_name})")
+        foreign_keys = cursor.fetchall()
+        # Iterate over foreign key information
+        for foreign_key in foreign_keys:
+            if foreign_key[3] == column_name:
+                # Return name of referenced table
+                return_value = foreign_key[2]
+                return return_value
+        # Return None if no foreign key is found
+        return None
+
+
+
+
+    def get_field_names(self, table_name):
+        conn = sqlite3.connect(self.db_name)
+        cursor = conn.cursor()
+        cursor.execute(f"SELECT * FROM {table_name}")
+        field_names = [description[0] for description in cursor.description]
+        return field_names
+
+    def get_table_name_by_field(self, field_name):
+        # Get list of table names in the database
+        self.execute("SELECT name FROM sqlite_master WHERE type='table'")
+        table_names = [row[0] for row in self.cursor.fetchall()]
+        # Iterate over table names
+        for table_name in table_names:
+            # Check if table has an ID field
+            self.execute(f"PRAGMA table_info({table_name})")
+            columns = [row[1] for row in self.cursor.fetchall()]
+            if 'ID' in columns:
+                # Check if ID value exists in the table
+                self.cursor.execute(f"SELECT ID FROM {table_name} WHERE ID=?", (field_name,))
+                result = self.cursor.fetchone()
+                if result:
+                    # Return table name if ID value exists
+                    return table_name
+        # Return None if no matching table is found
+        return None
+
+    def get_tables_with_column(self, column_name):
+
+        # Get list of table names in the database
+        self.cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
+        table_names = [row[0] for row in self.cursor.fetchall()]
+        # Iterate over table names
+        tables_with_column = []
+        for table_name in table_names:
+            # Check if table has the specified column
+            self.cursor.execute(f"PRAGMA table_info({table_name})")
+            columns = [row[1] for row in self.cursor.fetchall()]
+            if column_name in columns:
+                # Add table name to list if it has the column
+                tables_with_column.append(table_name)
+        return tables_with_column
+
+    def get_foreign_table(self, table_name, column_name):
+        conn = sqlite3.connect(self.db_name)
+        cursor = conn.cursor()
+        cursor.execute(f"PRAGMA foreign_key_list({table_name})")
+        foreign_keys = cursor.fetchall()
+        # Iterate over foreign key information
+        for foreign_key in foreign_keys:
+            if foreign_key[3] == column_name:
+                # Return name of referenced table
+                return_value = foreign_key[2]
+                return return_value
+        # Return None if no foreign key is found
+        return None
+
+
+
