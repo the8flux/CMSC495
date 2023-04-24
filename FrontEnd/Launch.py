@@ -5,4 +5,4 @@ class Launch:
         self.running_app = WebApp.WebApp()
 
     def launch(self):
-        self.running_app.app.run(host='0.0.0.0', port=80)
+        self.running_app.app.run(host='0.0.0.0', port=8080)

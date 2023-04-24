@@ -57,7 +57,7 @@ class DBExecute:
             self.connection = None
             self.cursor = None
 
-    def execute(self, query, *params):
+    def execute(self, query):
         """
         Executes a SQL query on the database.
 
@@ -72,7 +72,7 @@ class DBExecute:
                                     "Attempting to execute query:\n{} \nparams:{} ...".format(query, params))
         try:
             self.connect()
-            self.cursor.execute(query, params)
+            self.cursor.execute(query)
             self.connection.commit()
         except Exception as e:
             print("Error executing query:", e)
@@ -83,7 +83,39 @@ class DBExecute:
                                         "{}".format("Disconnecting..."))
             self.disconnect()
 
-    def fetch(self, query, *params):
+    def fetch(self, query):
+        """
+        Fetches data from the database.
+
+        Args:
+            query (str): The SQL query to execute.
+            params (tuple): The parameters to substitute in the query.
+
+        Returns:
+            list: A list of tuples representing the data fetched from the database.
+
+        Raises:
+            Exception: If there was an error fetching the data.
+        """
+
+        result = None
+        try:
+            EventViewer.EventViewer.log(self._EventViewerSource,
+                                        "Attempting to execute query:\n\t{} \n\tparams:{} ...".format(query))
+            self.connect()
+            print(query)
+            self.cursor.fetch(query)
+            result = self.cursor.fetchall()
+        except Exception as e:
+            print("Error fetching data:", e)
+            EventViewer.EventViewer.log(self._EventViewerSource,
+                                        "{}\n\t".format("Fetching Error..."), e)
+        finally:
+
+            self.disconnect()
+        return result
+
+    def fetch_all(self, query, *params):
         """
         Fetches data from the database.
 
@@ -103,7 +135,8 @@ class DBExecute:
             EventViewer.EventViewer.log(self._EventViewerSource,
                                         "Attempting to execute query:\n\t{} \n\tparams:{} ...".format(query, params))
             self.connect()
-            self.cursor.execute(query, params)
+            #print(query)
+            self.cursor.execute(query)
             result = self.cursor.fetchall()
         except Exception as e:
             print("Error fetching data:", e)
@@ -114,33 +147,8 @@ class DBExecute:
             self.disconnect()
         return result
 
-    def fetch_all(self):
-        """
-        Fetches data from the database.
 
-        Args:
-            query (str): The SQL query to execute.
-            params (tuple): The parameters to substitute in the query.
 
-        Returns:
-            list: A list of tuples representing the data fetched from the database.
 
-        Raises:
-            Exception: If there was an error fetching the data.
-        """
 
-        result = None
-        try:
-            EventViewer.EventViewer.log(self._EventViewerSource,
-                                        "Attempting to execute query:\n\t{} \n\tparams:{} ...".format(query, params))
-            self.connect()
-            self.cursor.execute(query, params)
-            result = self.cursor.fetchall()
-        except Exception as e:
-            print("Error fetching data:", e)
-            EventViewer.EventViewer.log(self._EventViewerSource,
-                                        "{}\n\t".format("Fetching Error..."), e)
-        finally:
 
-            self.disconnect()
-        return result

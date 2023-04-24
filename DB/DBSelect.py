@@ -48,9 +48,16 @@ class DBSelect:
         EventViewer.EventViewer.log(self._EventViewerSource, "{}".format(formatted_result_set))
 
     def _fetch(self, query):
-        result_set = self.db.fetch(query)
+        print(query)
+        result_set = self.db.fetch_all(query)
         self._log_it(str(result_set))
         return result_set
+
+
+
+
+    def get_table(self, query):
+        return self._fetch(query)
 
     def VIEW_CustomersAddress(self):
         """

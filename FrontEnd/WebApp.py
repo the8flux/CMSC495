@@ -281,11 +281,14 @@ class WebApp:
         def presentSucessLogonPage(msg=''):
             global user_name
             tElement = DB.GUIControls.GUIControlData()
-            div2 = tElement.get_select_element(table='VIEW_GUICustomers',
-                                        has_label='True',
-                                        label_prompt='Customer List',
-                                        html_name='Customers',
-                                        html_id='Customers')
+            div2 = ''
+            # div2 += tElement.get_select_element(table='VIEW_GUIManufacturers',
+            #                             has_label='True',
+            #                             label_prompt='Customer List',
+            #                             html_name='Customers',
+            #                             html_id='Customers',
+            #                             selected=11)
+            div2 += tElement.create_form_update('Customers', 'CustomerID', 12)
 
 
             html5 = '''
