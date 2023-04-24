@@ -211,3 +211,11 @@ class DBSelect:
         pprint.pprint(self.VIEW_UserCustomers())
         pprint.pprint(self.VIEW_UserEmployees())
         pprint.pprint(self.VIEW_UserManufacturers())
+
+
+
+if __name__ == '__main__':
+    app = DBSelect('../DB/databases/test_db3.db')
+    app.pprint_all_views()
+
+

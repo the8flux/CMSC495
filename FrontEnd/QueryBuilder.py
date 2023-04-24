@@ -21,6 +21,7 @@ class QueryBuilder:
 
 
 class TableInfo(QueryBuilder):
+    depth = 0
     def __init__(self, db_name: str, table_name: str):
         super().__init__(db_name)
         self._extract = self.extract
@@ -81,7 +82,22 @@ class TableInfo(QueryBuilder):
         return_result = self.extract.execute_query(self._get_query_select_pk__headers_as_name())
         return return_result
 
-    #def get_items(self, header_list:list, ):
+    def get_items_data_headers(self) -> list:
+        return_value = list()
+        row_item = dict()
+        query = f'''SELECT {",".join(self.data_headers)} FROM {self.table_name}'''
+        result_set = self.extract.execute_query(query)
+
+        for row in result_set:
+            col = 0
+            for header in self.data_headers:
+                row_item[header] = row[col]
+                col += 1
+            return_value.append(row_item)
+
+        print(return_value)
+        return return_value
+
 
 
 
@@ -89,7 +105,7 @@ class TableInfo(QueryBuilder):
 
 
 if __name__ == '__main__':
-    app = TableInfo('../DB/databases/test_db3.db', 'Customers')
+    app = TableInfo('../DB/databases/test_db3.db', 'Manufacturers')
     print(app.pk_headers)
     print(app.fk_headers)
     print(app.data_headers)
