@@ -59,10 +59,11 @@ class TableInfo(QueryBuilder):
     def get_table_id_all_cols_as_name(self, table_name):
         query_part_headers = ''
         table_headers = self.all_headers
+        table_headers = self.data_headers
         for header in table_headers:
-            query_part_headers += f'''{header} || '''
+            query_part_headers += f'''{header} || '|' || '''
 
-        query_part_headers = query_part_headers[:-3]
+        query_part_headers = query_part_headers[:-10]
 
         query_part = f''' {query_part_headers} as name '''
         #self._log_it(query_part)
@@ -72,13 +73,18 @@ class TableInfo(QueryBuilder):
         table_name = self.table_name
         table_id = self.pk_headers[0]
         headers = self.get_table_id_all_cols_as_name(table_name)
-        query = '''SELECT {}, {} FROM {}'''.format(table_id, headers, table_name)
+        query = f'''SELECT {table_id}, {headers} FROM {table_name} ORDER BY name'''
         print(query)
         return query
 
     def get_items_pk_headers(self) -> tuple:
         return_result = self.extract.execute_query(self._get_query_select_pk__headers_as_name())
         return return_result
+
+    #def get_items(self, header_list:list, ):
+
+
+
 
 
 
