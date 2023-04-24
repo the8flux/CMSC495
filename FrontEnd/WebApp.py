@@ -288,7 +288,7 @@ class WebApp:
             #                             html_name='Customers',
             #                             html_id='Customers',
             #                             selected=11)
-            div2 += tElement.create_form_update('Customers','CustomerID', 12)
+            div2 += tElement.create_form_update('Customers', 'CustomerID', 12)
 
 
             html5 = '''
