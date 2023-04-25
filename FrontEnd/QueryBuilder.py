@@ -78,7 +78,7 @@ class TableInfo(QueryBuilder):
         print(query)
         return query
 
-    def get_items_pk_headers(self) -> tuple:
+    def get_items_pk_headers(self) -> list:
         return_result = self.extract.execute_query(self._get_query_select_pk__headers_as_name())
         return return_result
 
@@ -97,6 +97,13 @@ class TableInfo(QueryBuilder):
 
         print(return_value)
         return return_value
+
+    def __str___(self):
+        return self.__dir__()
+
+
+
+
 
 
 
