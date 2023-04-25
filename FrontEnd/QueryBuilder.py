@@ -142,8 +142,8 @@ class TableInfo(QueryBuilder):
     def __str___(self):
         return self.__dir__()
 
-#################### TESTING Module #######################################################################
-if __name__ == '__main__':
-    app = TableInfo('../DB/databases/test_db3.db', 'Users', target_row_id=10)
-    print(app.record)
+# #################### TESTING Module #######################################################################
+# if __name__ == '__main__':
+#     app = TableInfo('../DB/databases/test_db3.db', 'Users', target_row_id=10)
+#     print(app.record)
 

@@ -56,7 +56,7 @@ class DBInfo(DBSelect.DBSelect):
         output= ''
         for table in table_names:
             output += "Table: {}\n\t Headers: ".format(table[0])
-            output += " ".join(self.get_table_headers(table))
+            output += " ".join(self.get_table_headers(table[0]))
             output += "\n"
             self._log_it(output)
         return output

@@ -90,14 +90,14 @@ class UpdateForm(Form):
         data_headers = self.table_object.data_headers
 
         for data_header in data_headers:
-            label_tag = HTMLElementFactory.LabelTag(self.table_object.record[data_header], self.table_object.record[data_header])
-            input_tag = HTMLElementFactory.InputTag(data_header,data_header, self.table_object.record[data_header])
-            self._form_input_tags.append(label_tag)
-            self._form_input_tags.append(input_tag)
+            label_tag = HTMLElementFactory.LabelTag(data_header, data_header)
+            input_tag = HTMLElementFactory.InputTag("text", data_header, data_header, self.table_object.record[data_header])
+            self._form_input_tags.append(str(label_tag))
+            self._form_input_tags.append(str(input_tag))
 
     def get_html(self):
         # Create Form
-        html = f'''<form action='/submit/update_table/' method='POST'>'''
+        html = f'''<form action='/update_table' method='POST'>'''
         html += f'''<h3>{self.table_object.record[self.table_object.pk_headers[0]]}<h3>'''
         html += f'''{' '.join(self._form_input_tags)}'''
         html += f'''{' '.join(self._form_select_tags)}'''

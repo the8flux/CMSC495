@@ -7,6 +7,8 @@
 '''
 
 '''
+import pprint
+
 import DB.GUIControls
 import sys
 import json
@@ -22,6 +24,7 @@ from datetime import timedelta
 from FrontEnd import CSSLoader
 from FrontEnd import HTMLFormFactory
 from DB import DBUpdate
+from DB import DBInfo
 
 user_info = {}
 user_name = ''
@@ -282,7 +285,7 @@ class WebApp:
         @self.app.route('/usr/')
         def presentSucessLogonPage(msg=''):
             global user_name
-            form = HTMLFormFactory.UpdateForm('../DB/databases/test_db3.db', 'Users', target_row_id=1)
+            form = HTMLFormFactory.UpdateForm('../DB/databases/test_db3.db', 'Manufacturers', target_row_id=15)
             print(vars(form))
             div2 = ''
             div2 += str(form)
@@ -371,19 +374,33 @@ class WebApp:
 #######################################################################################################################
 
         #
-        @self.app.route('/update_table/', methods=['POST'])
-        def projectTestIndex():
-            updater = DBUpdate.DBUpdate('../DB/databases/test_db3.db')
+        @self.app.route('/update_table', methods=['POST'])
+        def update_table():
+            db_name = '../DB/databases/test_db3.db'
+
+            table_info_object: DBInfo.DBInfo
+            table_info_object = DBInfo.DBInfo(db_name)
+
+            table_names: list
+            table_names = table_info_object.get_table_names()
+
+
+            action_updater = DBUpdate.DBUpdate(db_name)
+
+            post_data = request.form.to_dict(flat=False)
+            pprint.pprint(post_data)
 
             # Get post information from what ever page then proceess the post data the hidden field will indicate which table to update
-
-            updater_result = updater.update_manufacturer()
-
-
-            pass
+            table_name = post_data['table_name'][0]
 
 
+            print(table_info_object.print_all_table_headers(table_info_object.get_table_names()))
 
 
+            if table_name == 'Manufacturer':
+                # updater_result = action_updater.update_manufacturer()
+                pass
+            elif table_name == '':
+                pass
 
-
+            return ""

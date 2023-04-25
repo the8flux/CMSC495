@@ -58,7 +58,7 @@ class InputTag:
         :param input_text:
         :return:
         '''
-        return f'''<input type={input_type} id="{input_id}" name="{input_name}">{input_text}:</input><br>''' + "\n"
+        return f'''<input type={input_type} id="{input_id}" name="{input_name}" value="{input_text}"></input><br>''' + "\n"
 
     def __str__(self):
         '''
