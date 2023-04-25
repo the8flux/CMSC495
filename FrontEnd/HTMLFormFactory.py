@@ -41,88 +41,80 @@ class Form:
 
 
 class UpdateForm(Form):
-    def __init__(self, db_name: str, table_name: str):
+    def __init__(self, db_name: str, table_name: str, **kwargs):
         super().__init__(db_name)
+        self.target_row_id = kwargs.get('target_row_id', 0)
+
         self._tables = self.load_tables()
 
-        self._table_object = QueryBuilder.TableInfo(db_name, table_name)
-        self._form_select_elements = []
-        self._form_text_box_elements = []
+        self._table_object = QueryBuilder.TableInfo(db_name, table_name, target_row_id=self.target_row_id)
+        self._form_select_tags = []
+        self._form_input_tags = []
 
-        self.create_select_elements()
+        self.build_input_tag()
+        self.build_select_tags()
 
     @property
     def table_object(self):
         return self._table_object
 
-    def create_select_elements(self):
+    def get_row_data_from_table(self):
+        pass
+
+    def build_select_tags(self, **kwargs):
+
         fk_table_headers = self.table_object.fk_headers
         fk_table_object_list = []
-        for fk_table_header in self.table_object.fk_headers:
+        for fk_table_header in fk_table_headers:
             for table in self._tables:
-                if fk_table_header in table.fk_headers:
+                if fk_table_header in table.pk_headers:
+                    print(table)
                     fk_table_object_list.append(table)
 
-        table: TableInfo
+            table: TableInfo
         for table in fk_table_object_list:
+            selected_value = -1
             select_element_data: list
             select_element_data = table.get_items_pk_headers()
-            select_element = HTMLElementFactory.SelectTag(select_element_data, selected=-1)
-            print(select_element)
-            self._form_select_elements.append(select_element)
+            label = HTMLElementFactory.LabelTag(f"{table.table_name}", f"{table.table_name}")
+            self._form_select_tags.append(str(label))
+            selected_value = self.table_object.record[table.pk_headers[0]]
+            select_element = HTMLElementFactory.SelectTag(select_element_data,
+                                                          selected=f"{selected_value}",
+                                                          html_id=f"{table.table_name}",
+                                                          html_name=f"{table.table_name}",
+                                                          css_class=f"")
+            self._form_select_tags.append(str(select_element))
 
-    def create_
+    def build_input_tag(self):
+        data_headers = self.table_object.data_headers
 
+        for data_header in data_headers:
+            label_tag = HTMLElementFactory.LabelTag(self.table_object.record[data_header], self.table_object.record[data_header])
+            input_tag = HTMLElementFactory.InputTag(data_header,data_header, self.table_object.record[data_header])
+            self._form_input_tags.append(label_tag)
+            self._form_input_tags.append(input_tag)
 
-
-    def create_form_update(self, table_name: str):
-        # Getting Table Information
-
-        # # Get Updated Item
-        #
-        # query = f'''SELECT {",".join(field_pk)}, {",".join(field_fk)}, {",".join(field_data)}
-        #              FROM {table_name}
-        #              WHERE {",".join(field_pk)} = {table_field_id}
-        #          '''.replace("\n", "")
-        # print(query)
-        # result = self._extract.execute_query(query)
-        # print(result)
-        #
-        # headers = list()
-        # headers += field_pk
-        # headers += field_fk
-        # headers += field_data
-        #
-        # fields = dict()
-        # index = 0
-        # print(headers)
-        # for column in headers:
-        #     fields[column] = result[0][index]
-        #     index += 1
-        # print(fields)
-        #
-        # fk_html_select_elements = list()
-        # for fk_item in field_fk_result:
-        #     fk_table = self._extract.get_fk_table_name(table_name, fk_item)
-        #
-        #     print(fk_table + "<<<")
-        #     fk_table_pk_header = self._extract.get_table_pk_headers_from_table(fk_table)
-        #     tstruct = self._extract.get_table_id_name_header(fk_table)
-        #
-        #     selected = 1
-        #     select_element = self.get_select_element(table=tstruct, selected=selected)
-        #     fk_html_select_elements.append(select_element)
-
+    def get_html(self):
         # Create Form
-
-        html = f"<form action='submit_{table_name}.py' method='POST'>"
-        # html += f"{' '.join(fk_html_select_elements)}"
+        html = f'''<form action='/submit/update_table/' method='POST'>'''
+        html += f'''<h3>{self.table_object.record[self.table_object.pk_headers[0]]}<h3>'''
+        html += f'''{' '.join(self._form_input_tags)}'''
+        html += f'''{' '.join(self._form_select_tags)}'''
+        html += f'''<input type="hidden" name="table_name" value="{self.table_object.table_name}">{self.table_object.table_name}</input>'''
         html += "<input type='submit' value='Submit'>"
         html += "</form>"
-        # with open(f"out-{table_name}.html", "w") as f:
-        #     f.write(html)
+        return html
+
+
+    def __str__(self):
+        # Create Form
+        html = self.get_html()
+        with open(f"update_page_for_{self.table_object.table_name}.html", "w") as f:
+            f.write(html)
         return html
 
 
 if __name__ == '__main__':
-    app = UpdateForm('../DB/databases/test_db3.db', 'Customers')
+    app = UpdateForm('../DB/databases/test_db3.db', 'Users', target_row_id=10)
+    print(app)

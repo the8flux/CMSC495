@@ -296,6 +296,14 @@ class DBUpdate:
         self.connection.commit()
 #########
     def update_manufacturer(self, manufacturer_id, manufacturer_name=None, manufacturer_description=None, address_id=None):
+        """
+
+        :param manufacturer_id:
+        :param manufacturer_name:
+        :param manufacturer_description:
+        :param address_id:
+        :return:
+        """
         query = "UPDATE Manufacturers SET"
         params = []
         if manufacturer_name:

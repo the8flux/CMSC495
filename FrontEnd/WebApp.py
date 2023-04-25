@@ -20,6 +20,8 @@ from flask import render_template
 from datetime import datetime
 from datetime import timedelta
 from FrontEnd import CSSLoader
+from FrontEnd import HTMLFormFactory
+from DB import DBUpdate
 
 user_info = {}
 user_name = ''
@@ -280,16 +282,10 @@ class WebApp:
         @self.app.route('/usr/')
         def presentSucessLogonPage(msg=''):
             global user_name
-            tElement = DB.GUIControls.GUIControlData()
+            form = HTMLFormFactory.UpdateForm('../DB/databases/test_db3.db', 'Users', target_row_id=1)
+            print(vars(form))
             div2 = ''
-            # div2 += tElement.get_select_element(table='VIEW_GUIManufacturers',
-            #                             has_label='True',
-            #                             label_prompt='Customer List',
-            #                             html_name='Customers',
-            #                             html_id='Customers',
-            #                             selected=11)
-            div2 += tElement.create_form_update('Customers', 'CustomerID', 12)
-
+            div2 += str(form)
 
             html5 = '''
             <!DOCTYPE html>
@@ -374,6 +370,17 @@ class WebApp:
 
 #######################################################################################################################
 
+        #
+        @self.app.route('/update_table/', methods=['POST'])
+        def projectTestIndex():
+            updater = DBUpdate.DBUpdate('../DB/databases/test_db3.db')
+
+            # Get post information from what ever page then proceess the post data the hidden field will indicate which table to update
+
+            updater_result = updater.update_manufacturer()
+
+
+            pass
 
 
 

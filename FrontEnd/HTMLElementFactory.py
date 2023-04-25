@@ -74,8 +74,8 @@ class SelectTag:
     '''
         Creates a HTML Select Element Object
     '''
-    select_start_tag = '''!-- Select Element -- \n<select class="{}" name="{}" id="{}">\n'''
-    select_stop_tag = '''</select>\n'''
+    select_start_tag = '''<select class="{}" name="{}" id="{}">\n'''
+    select_stop_tag = '''</select><br><br>'''
 
     def __init__(self, key_value_tuple_list: list, **kwargs):
         '''
@@ -90,7 +90,7 @@ class SelectTag:
             self.selected = int(self.selected)
         self.css_class = kwargs.get('css_class', "")
         self.html_name = kwargs.get('html_name', "")
-        self.html_id = kwargs.get('id', "")
+        self.html_id = kwargs.get('html_id', "")
         self.object_result_string = self._build_select_element()
 
     def _build_select_element(self):
