@@ -1,4 +1,4 @@
-from FrontEnd_old import Launch
+from FrontEnd import Launch
 
 if __name__ == '__main__':
     app = Launch.Launch()

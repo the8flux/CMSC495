@@ -1,12 +1,12 @@
 from DB import DBSelect
 from DB import DBExtract
 from DB import DBInfo
-from FrontEnd_old import HTMLElementFactory
-from FrontEnd_old import QueryBuilder
-from FrontEnd_old import CSSLoader
+from FrontEnd import HTMLElementFactory
+from FrontEnd import QueryBuilder
+from FrontEnd import CSSLoader
 import pprint
 
-from FrontEnd_old.QueryBuilder import TableInfo
+from FrontEnd.QueryBuilder import TableInfo
 
 """
         CMSC 495 7385: CURRENT TRENDS AND PROJECTS IN COMPUTER SCIENCE
