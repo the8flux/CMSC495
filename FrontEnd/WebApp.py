@@ -1,466 +1,136 @@
-# CMSC 495 Project
-#
-# author: Glenn Phillips
-# Date:   Apr 18, 2023
-#
-# Scope:
-'''
+import configparser
 
-'''
-import pprint
-
-import DB.GUIControls
-import sys
-import json
-import csv
-import bcrypt
-from flask import Flask
-from flask import redirect
-from flask import request
-from flask import session
-from flask import render_template
-from datetime import datetime
-from datetime import timedelta
-from FrontEnd import CSSLoader
-from FrontEnd import HTMLFormFactory
-from DB import DBUpdate
-from DB import DBInfo
-
-user_info = {}
-user_name = ''
-user_data = {}
-
+from flask import Flask, render_template, request
 
 class WebApp:
     def __init__(self):
+        ################
+        version = "0.1"
+        ################
+
         self.app = Flask(__name__)
-        self.css = CSSLoader.CSSLoader().get_css()
 
-        def loadUserDB():
-            ''' Loads user DB from json file '''
-            userDB = {}
-            try:
-                with open('./static/user.dat', 'r') as fh:
-                    # fileData = fh.read().split()
-                    userDB = json.load(fh)
-            except:
-                print('No user db present, Generating Test Users...')
-                with open('static/user.dat', 'w') as fh:
-                    testUsers = [['gphillips1', hashValue('test1111'), 'false', '0'],
-                                 ['gphillips2', hashValue('test2222'), 'false', '0'],
-                                 ['gphillips3', hashValue('test3333'), 'false', '0'],
-                                 ['gphillips4', hashValue('test4444'), 'false', '0']]
-                    for line in testUsers:
-                        (user, hPword, timeout, timeoutCount) = line
-                        userDB[user] = {'hPword': hPword,
-                                        'timeout': timeout,
-                                        'timeoutCount': timeoutCount}
-                    json.dump(userDB, fh, sort_keys=True, indent=4)
-                userDB = loadUserDB()
-            return userDB
+        self.config = configparser.ConfigParser()
+        self.config.read('config.ini')
+        self.config.set('systemSettings', 'version', version)
 
-        def saveUserDB(userDB):
-            ''' save userDB to file '''
-            status = False;
-            try:
-                with open('static/user.dat', 'w') as fh:
-                    json.dump(userDB, fh, sort_keys=True, indent=4)
-                status = True;
-            except:
-                print('Db Save error.')
+        #################
+        # Testing lists #
+        #################
+        self.inventoryItems = [{"InventoryItemID":1,"CatalogItemID":1,"StockQuantity":10,"ItemSerialNumber":"123ABC","SellPrice":10000}, 
+                               {"InventoryItemID":2,"CatalogItemID":2,"StockQuantity":100,"ItemSerialNumber":"456DEF","SellPrice":1000},
+                               {"InventoryItemID":3,"CatalogItemID":3,"StockQuantity":1000,"ItemSerialNumber":"789GHI","SellPrice":100},
+                               {"InventoryItemID":4,"CatalogItemID":4,"StockQuantity":10000,"ItemSerialNumber":"999ZYX","SellPrice":10}]
+        self.catagories = [{"ItemCatagoryID":1,"ItemCatagoryTitle":"Electronics","ItemCatagoryDescription":"Electronic gadgets"},
+                           {"ItemCatagoryID":2,"ItemCatagoryTitle":"Home","ItemCatagoryDescription":"Goes in the home"},
+                           {"ItemCatagoryID":3,"ItemCatagoryTitle":"Food","ItemCatagoryDescription":"Nom nom"},
+                           {"ItemCatagoryID":4,"ItemCatagoryTitle":"Clothing","ItemCatagoryDescription":"You wear it!"}]
+        self.manufacturers = [{"ManufacturerID":1,"ManufacturerName":"Intel","ManufacturerDescription":"Team Blue"},
+                              {"ManufacturerID":2,"ManufacturerName":"AMD","ManufacturerDescription":"Team Red"},
+                              {"ManufacturerID":3,"ManufacturerName":"Nvidia","ManufacturerDescription":"Team Green"},
+                              {"ManufacturerID":4,"ManufacturerName":"Microsoft","ManufacturerDescription":"Windows"}]
+        self.catalogItems = [{"CatalogItemID":1,"ManufacturerID":1,"CatalogItemName":"i9 9990XE","ItemCatagoryID":1,"BuyCost":1000},
+                             {"CatalogItemID":2,"ManufacturerID":2,"CatalogItemName":"R9 7950X3D","ItemCatagoryID":1,"BuyCost":750},
+                             {"CatalogItemID":3,"ManufacturerID":3,"CatalogItemName":"RTX 4090","ItemCatagoryID":1,"BuyCost":1500},
+                             {"CatalogItemID":4,"ManufacturerID":4,"CatalogItemName":"Surface Pro","ItemCatagoryID":1,"BuyCost":2000}]
 
-            return status
+        @self.app.route('/')
+        def index():
+            return render_template('index.html', config=self.config)
 
-        def addUser(userInfo):
-            ''' Add New User [Future]'''
-            pass
-
-        def isAccountLocked(user):
-            userDB = loadUserDB()
-            timeoutCount = userDB[user]['timeoutCount']
-            timeout = userDB[user]['timeout']
-
-            if (int(timeoutCount) > 15) and isAccountTimeLocked(user, timeout):
-                print('Account Locked:#{}'.format(timeoutCount))
-                return True
+        @self.app.route('/add_inventoryitem', methods = ['GET','POST'])
+        def add_inventoryitem():
+            if request.method == "POST":
+                ## BEGIN add to local list (change this to call something to add to db)
+                self.inventoryItems.append({"InventoryItemID":len(self.inventoryItems)+1,
+                                            "CatalogItemID":request.form.get("CatalogItem"),
+                                            "StockQuantity":request.form.get("StockQuantity"),
+                                            "ItemSerialNumber":request.form.get("ItemSerialNumber"),
+                                            "SellPrice":request.form.get("SellPrice")})
+                ## END add to local list
+                return render_template('update_inventoryitem.html', config=self.config, inventoryItems=self.inventoryItems, catalogItems=self.catalogItems)
             else:
-                return False
-
-        def isAccountTimeLocked(user, timeout, timeLockSec=300):
-            nowDateTime = datetime.now()
-            timeoutDateTime = datetime.strptime(timeout, '%Y-%m-%dT%H:%M:%S.%f')
-            timeDelta = (nowDateTime - timeoutDateTime)
-            timeLock = timedelta(seconds=300)
-            print(timeDelta, timeLock)
-            if timeDelta < timeLock:
-                print('Account Locked:T{}'.format(timeDelta))
-                return True
+                return render_template('add_inventoryitem.html', config=self.config, catalogItems=self.catalogItems)
+            
+        @self.app.route('/add_catalogitem', methods = ['GET','POST'])
+        def add_catalogitem():
+            if request.method == "POST":
+                ## BEGIN add to local list (change this to call something to add to db)
+                self.catalogItems.append({"CatalogItemID":len(self.catalogItems)+1,
+                                            "ManufacturerID":request.form.get("Manufacturer"),
+                                            "CatalogItemName":request.form.get("CatalogItemName"),
+                                            "ItemCatagoryID":request.form.get("ItemCatagory"),
+                                            "BuyCost":request.form.get("BuyCost")})
+                ## END add to local list
+                return render_template('update_catalogitem.html', config=self.config, manufacturers=self.manufacturers, catalogItems=self.catalogItems, catagories=self.catagories)
             else:
-                return False
+                return render_template('add_catalogitem.html', config=self.config, manufacturers=self.manufacturers, catagories=self.catagories)
 
-        def unlockAccount(user):
-            ''' unlock user account '''
-            userDB = loadUserDB()
-            userDB[user]['timeout'] = 'false'
-            userDB[user]['timeoutCount'] = '0'
-            saveUserDB(userDB)
+        @self.app.route('/add_itemcatagory', methods = ['GET','POST'])
+        def add_itemcatagory():
+            if request.method == "POST":
+                ## BEGIN add to local list (change this to call something to add to db)
+                self.catagories.append({"ItemCatagoryID":len(self.catagories)+1,
+                                            "ItemCatagoryTitle":request.form.get("ItemCatagoryTitle"),
+                                            "ItemCatagoryDescription":request.form.get("ItemCatagoryDescription")})
+                ## END add to local list
+                return render_template('update_itemcatagory.html', config=self.config, catagories=self.catagories)
+            else:
+                return render_template('add_itemcatagory.html', config=self.config)
 
-        def updateUserNewPassword(user, password):
-            ''' Update new password '''
-            userDB = loadUserDB()
-            userDB[user]['hPword'] = hashValue(password)
-            saveUserDB(userDB)
+        # /\ /\ /\ ADD pages
+        # \/ \/ \/ UPDATE pages
 
-        def updateUserInvalidPassword(user):
-            ''' Invalid password signal in user account '''
-            userDB = loadUserDB()
-            userDB[user]['timeout'] = datetime.now().isoformat()
-            userDB[user]['timeoutCount'] = str(int(userDB[user]['timeoutCount']) + 1)
-            saveUserDB(userDB)
-
-        def isValidUser(user):
-            ''' Finds if User is in User DB File '''
-            userDB = loadUserDB()
-            return (user in userDB.keys())
-
-        def getValidUser(user):
-            ''' Gets Dict of user '''
-            userDB = loadUserDB()
-            return userDB[user]
-
-        def hashValue(value):
-            ''' salt my hash '''
-            return (bcrypt.hashpw(value.encode(), bcrypt.gensalt())).decode('utf8')
-
-        def isPasswordValid(password, hPword):
-            ''' Are you who you say you are? '''
-            return bcrypt.checkpw(password.encode(), hPword.encode())
-
-        def isValidPasswordLength(password, MINCHAR=8, MAXCHAR=64):
-            ''' Pass word lenth checker '''
-            status = False
-            if (len(password) >= MINCHAR) and (len(password) <= MAXCHAR):
-                status = True
-            return status
-
-        # def isCommonPassword(value):
-        #     ''' Find if value a common password '''
-        #     passwords = ''
-        #     with open('static/commonpassword.txt', 'r') as fh:
-        #         passwords = fh.read().splitlines()
-        #     return (value in passwords)
-
-        def send2Logger(datetimeVar, IPVar, msgVar):
-            ''' Log Some event '''
-            with open('static/logger.out.txt', 'a', newline='') as fh:
-                writer = csv.writer(fh)
-                writer.writerow([datetimeVar, IPVar, msgVar])
-
-        def presentLogonPage(html5CodeBody=''):
-            ''' User Login page '''
-            pattern = r'^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$'
-            html5 = '''
-            <!DOCTYPE html>
-            <html>
-              <head>
-                <title>Omega Inventory System</title>
-                <style>{}</style>
-              </head>
-              <body>
-                <div class="view-div">
-                  <h2 class="color-1">Omega Inventory System</h2>
-                  <form action='/' method="POST">
-                    <table>
-                      <tr>
-                        <th class="color-2" colspan="2">Login</th>
-                      </tr>
-                      <tr>
-                        <td>Username:</td>
-                        <td><input type=text name='usrName'></td>
-                      </tr>
-                      <tr>
-                        <td>Password:</td>
-                        <td>    <input type=password placeholder="********" 
-                                pattern="{}" title="8-64 character password" name='usrPwd'>
-                                </td>
-                      </tr>
-                      <tr>
-                        <td colspan="2"><input type='submit' class='submit' name='exeLogon' value='Submit'></td>
-                      </tr>
-                    </table>
-                  </form>
-                  {}
-                </div>
-              </body>
-            </html> 
-             '''.format(self.css, pattern, html5CodeBody)
-            return html5
-
-        def presentPasswordUpdatePage(html5CodeBody=''):
-            global user_name, user_info, user_data
-            pattern = r'^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$'
-            html5 = '''
-            <!DOCTYPE html>
-            <html>
-            <head>
-            <title>Update Password</title>
-            <style>{}</style>
-            </head>
-            <body>
-            <div class="view-div">
-            <h2 class="color-1">{} Update Password</h2>
-            <form action='/update/' method='POST'>
-        
-            <label>New Password<label><br>
-            <input type=password placeholder="********" pattern="{}" 
-                title="8-64 character password" name='usrPwd1'>
-            <br>
-            <label>Retype New Password</label><br>
-            <input type=password placeholder="********" pattern="{}" 
-                title="8-64 character password" name='usrPwd2'>
-        
-            <input type=hidden name='usrName' value='{}'>
-        
-            <input type='submit' class='submit' name='updatePwd' value='Update'>
-            </form><br>
-            {}
-            </div>
-            <div class="view-div">{}
-            </div>
-            </body>
-            </html>
-            '''.format(self.css ,user_name, pattern, pattern, user_name, html5CodeBody, self.div)
-            return html5
-
-        @self.app.route('/', methods=['POST', 'GET'])
-        def projectIndex():
-            global user_name, user_info, user_data
-            msg = ''
-            passwordResult = False
-            try:
-                if request.method == 'POST':
-                    postData = request.form
-                    for key in postData:
-                        print(f'form {key} {postData[key]}')
-
-                    userIP = request.environ['REMOTE_ADDR']
-                    usrName = request.form.get('usrName')
-                    now = datetime.now().isoformat()
-                    # Start Page Routing
-                    # User not found
-                    if not isValidUser(usrName):
-                        msg = '<br> User Not found, {}.'.format(usrName)
-                        now = datetime.now().isoformat()
-                        send2Logger(now, userIP, 'Invalid User,{}'.format(usrName))
-                        return presentLogonPage(msg)
-                    else:
-                        userData = getValidUser(usrName)
-                        user_info = userData
-                        user_name = usrName
-                    # User Locked out
-                    if isAccountLocked(usrName):
-                        print('{} Account is locked.'.format(usrName))
-                        msg = '<br>{} User Account Locked.'.format(usrName)
-                        return presentLogonPage(msg)
-
-                    usrPass = request.form.get('usrPwd')
-                    passwordResult = isPasswordValid(usrPass, userData['hPword'])
-                    # Invalid Logon
-                    if not passwordResult:
-                        msg = '<br>{} Invalid Password'.format(usrName)
-                        now = datetime.now().isoformat()
-                        send2Logger(now, userIP, 'Invalid Password,{}'.format(usrName))
-                        updateUserInvalidPassword(usrName)
-                        return presentLogonPage(msg)
-
-                    if passwordResult:
-                        unlockAccount(usrName)
-                        return redirect('/usr/')
-            except Exception as e:
-                # ignore exception when in production
-                print(e, sys.exc_info(), '---')
-                # pass
-            return presentLogonPage()
-
-        @self.app.route('/usr/')
-        def presentSucessLogonPage(msg=''):
-            global user_name
-            form = HTMLFormFactory.UpdateForm('../DB/databases/test_db3.db', 'Customers', target_row_id=5)
-            print(vars(form))
-            div2 = ''
-            div2 += str(form)
-
-            html5 = '''
-            <!DOCTYPE html>
-            <html>
-            <head>
-            <title>Logon</title>
-            <style>{}</style>
-            </head>
-            <body>
-            <div class="view-div">
-            <h2 class="color-1">Main Menu</h2>
-            <label><u>{}</u> is logged in.<label><hr>
-            <a href='/update'>Reset Password for {}</a><br>
-            <a href='/logoff'>Log off as {}</a><br>
-            <br>{}
-            </div>
-            <div class="view-div">
-            {}
-            </div>
-            </body>
-            </html> 
-            '''.format(self.css, user_name, user_name, user_name, msg,
-                       div2)
-            return html5
-
-        @self.app.route('/logoff/')
-        def projectLogoff():
-            ''' Log off user '''
-            global user_data, user_info, user_name
-            user_data = None
-            user_info = None
-            user_name = None
-            return redirect('/')
-
-        @self.app.route('/update/', methods=['POST', 'GET'])
-        def projectUpdate():
-            msg = ''
-            try:
-                if request.method == 'GET':
-                    return presentPasswordUpdatePage()
-                if request.method == 'POST':
-                    validPW = True
-                    msg = ''
-                    usrName = request.form.get('usrName')
-                    usrPass1 = request.form.get('usrPwd1')
-                    usrPass2 = request.form.get('usrPwd2')
-
-                    if not (usrPass1 == usrPass2):
-                        msg += "<br>Error: User Entered Password Mismatch"
-                        validPW = False
-
-                    if not isValidPasswordLength(usrPass1):
-                        msg += "<br>Error: Password must be 8 - 64 Characters."
-                        validPW = False
-
-                    # if isCommonPassword(usrPass1):
-                    #     msg += "<br>Error: Password to common to use."
-                    #     validPW = False
-
-                    if validPW:
-                        updateUserNewPassword(usrName, usrPass1)
-                        return presentSucessLogonPage('Password Updated.')
-                    else:
-                        msg += "<br> Please try again."
-                        return presentPasswordUpdatePage(msg)
-            except Exception as e:
-                # ignore exception when in production
-                print(e, sys.exc_info(), '---')
-                # pass
-
-            return presentSucessLogonPage('Error .')
-
-        @self.app.route('/Test/', methods=['POST'])
-        def projectTestIndex():
-            user = 'gphillips3'
-            userData = getValidUser('gphillips3')
-            print(userData)
-            password = 'test3'
-            passwordResult = isPasswordValid(password, userData['hPword'])
-            myReply = ' {} \n{} \n'.format(user, passwordResult)
-            return myReply
-
-#######################################################################################################################
-
-        # #
-        # @self.app.route('/update_table', methods=['POST'])
-        # def update_table():
-        #     db_name = '../DB/databases/test_db3.db'
-        #
-        #     table_info_object: DBInfo.DBInfo
-        #     table_info_object = DBInfo.DBInfo(db_name)
-        #
-        #     table_names: list
-        #     table_names = table_info_object.get_table_names()
-        #
-        #
-        #     action_updater = DBUpdate.DBUpdate(db_name)
-        #
-        #     post_data = request.form.to_dict(flat=False)
-        #     pprint.pprint(post_data)
-        #
-        #     # Get post information from what ever page then proceess the post data the hidden field will indicate which table to update
-        #     table_name = post_data['table_name'][0]
-        #
-        #
-        #     print(table_info_object.print_all_table_headers(table_info_object.get_table_names()))
-        #
-        #
-        #     if table_name == 'Manufacturer':
-        #         # updater_result = action_updater.update_manufacturer()
-        #         pass
-        #     elif table_name == 'Customers':
-        #         updater = DBUpdate.DBUpdate(db_name)
-        #         #updater.update_customers(post_data[])
-        #         pass
-        #
-        #     return ""
-
-        # @app.route('/')
-        # def index():
-        #     return render_template('index.html', config=config)
-
-        @self.app.route('/update_invoice')
-        def update_invoice():
-            return render_template('update_invoice.html', config=config, invoices=invoices,
-                                   priceAdjustments=priceAdjustments, customers=customers)
-
-        @self.app.route('/update_lineitem')
-        def update_lineitem():
-            return render_template('update_lineitem.html', config=config, invoices=invoices,
-                                   priceAdjustments=priceAdjustments, customers=customers,
-                                   inventoryItems=inventoryItems, lineItems=lineItems)
-
-        @self.app.route('/update_priceadjustment')
-        def update_priceadjustment():
-            return render_template('update_priceadjustment.html', config=config, priceAdjustments=priceAdjustments)
-
-        @self.app.route('/update_inventoryitem')
+        @self.app.route('/update_inventoryitem', methods = ['GET','POST'])
         def update_inventoryitem():
-            return render_template('update_inventoryitem.html', config=config, inventoryItems=inventoryItems,
-                                   catalogItems=catalogItems)
-
-        @self.app.route('/update_catalogitem')
+            if request.method == "POST":
+                ## BEGIN add to local list (change this to call something to edit data in db)
+                for i in self.inventoryItems:
+                    if i["InventoryItemID"] == int(request.form.get("inventoryItem")):
+                        self.ind = self.inventoryItems.index(i)
+                self.inventoryItems[self.ind] |= {"CatalogItemID":request.form.get('CatalogItem')}
+                self.inventoryItems[self.ind] |= {"StockQuantity":request.form.get('StockQuantity')}
+                self.inventoryItems[self.ind] |= {"ItemSerialNumber":request.form.get('ItemSerialNumber')}
+                self.inventoryItems[self.ind] |= {"SellPrice":request.form.get('SellPrice')}
+                ## END add to local list
+                return render_template('update_inventoryitem.html', config=self.config, inventoryItems=self.inventoryItems, catalogItems=self.catalogItems)
+            else:
+                return render_template('update_inventoryitem.html', config=self.config, inventoryItems=self.inventoryItems, catalogItems=self.catalogItems)
+            
+        @self.app.route('/update_catalogitem', methods = ['GET','POST'])
         def update_catalogitem():
-            return render_template('update_catalogitem.html', config=config, manufacturers=manufacturers,
-                                   catalogItems=catalogItems, catagories=catagories)
+            if request.method == "POST":
+                ## BEGIN add to local list (change this to call something to edit data in db)
+                for i in self.catalogItems:
+                    if i["CatalogItemID"] == int(request.form.get("CatalogItem")):
+                        self.ind = self.catalogItems.index(i)
+                self.catalogItems[self.ind] |= {"ManufacturerID":request.form.get('Manufacturer')}
+                self.catalogItems[self.ind] |= {"CatalogItemName":request.form.get('CatalogItemName')}
+                self.catalogItems[self.ind] |= {"ItemCatagoryID":request.form.get('ItemCatagory')}
+                self.catalogItems[self.ind] |= {"BuyCost":request.form.get('BuyCost')}
+                ## END add to local list
+                return render_template('update_catalogitem.html', config=self.config, manufacturers=self.manufacturers, catalogItems=self.catalogItems, catagories=self.catagories)
+            else:
+                return render_template('update_catalogitem.html', config=self.config, manufacturers=self.manufacturers, catalogItems=self.catalogItems, catagories=self.catagories)
 
-        @self.app.route('/update_itemcatagory')
+        @self.app.route('/update_itemcatagory', methods = ['GET','POST'])
         def update_itemcatagory():
-            return render_template('update_itemcatagory.html', config=config, catagories=catagories)
-
-        @self.app.route('/update_usertype')
-        def update_usertype():
-            return render_template('update_usertype.html', config=config, userTypes=userTypes)
-
-        @self.app.route('/update_address')
-        def update_address():
-            return render_template('update_address.html', config=config, addresses=addresses)
-
-        @self.app.route('/update_manufacturer')
-        def update_manufacturer():
-            return render_template('update_manufacturer.html', config=config, manufacturers=manufacturers)
-
-        @self.app.route('/update_customer')
-        def update_customer():
-            return render_template('update_customer.html', config=config, customers=customers, addresses=addresses)
-
-        @self.app.route('/update_user')
-        def update_user():
-            return render_template('update_user.html', config=config, users=users, addresses=addresses,
-                                   customers=customers, userTypes=userTypes, manufacturers=manufacturers)
+            if request.method == "POST":
+                ## BEGIN add to local list (change this to call something to edit data in db)
+                for i in self.catagories:
+                    if i["ItemCatagoryID"] == int(request.form.get("ItemCatagory")):
+                        self.ind = self.catagories.index(i)
+                self.catagories[self.ind] |= {"ItemCatagoryTitle":request.form.get('ItemCatagoryTitle')}
+                self.catagories[self.ind] |= {"ItemCatagoryDescription":request.form.get('ItemCatagoryDescription')}
+                ## END add to local list
+                return render_template('update_itemcatagory.html', config=self.config, catagories=self.catagories)
+            else:
+                return render_template('update_itemcatagory.html', config=self.config, catagories=self.catagories)
+        
 
         @self.app.route('/error/<string:e>')
         def error(e):
             return render_template('error.html', error=e)
+
+        if __name__ == "__main__":
+            app.run(host="127.0.0.1", debug=False)

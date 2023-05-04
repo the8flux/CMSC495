@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Enter new information:</h2>
+    <form action="/add_inventoryitem" method="POST">
+        <table>
+            <tr>
+                <td>Catalog Item:</td>
+                <td><select id="CatalogItem" name="CatalogItem" style="color:black">
+                    {% for i in catalogItems %}
+                        <option value="{{i['CatalogItemID']}}">{{i['CatalogItemName']}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Stock:</td>
+                <td><input type="text" id="StockQuantity" name="StockQuantity" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Serial Number:</td>
+                <td><input type="text" id="ItemSerialNumber" name="ItemSerialNumber" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Sell Price:</td>
+                <td><input type="text" id="SellPrice" name="SellPrice" value="" style="color:black"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit" style="color:black">
+    </form>
+</body>
+</html>

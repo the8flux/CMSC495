@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Enter new information:</h2>
+    <form action="/add_catalogitem" method="POST">
+        <table>
+            <tr>
+                <td>Manufacturer:</td>
+                <td><select id="Manufacturer" name="Manufacturer" style="color:black">
+                    {% for i in manufacturers %}
+                        <option value="{{i['ManufacturerID']}}">{{i['ManufacturerName']}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="CatalogItemName" name="CatalogItemName" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Item Catagory:</td>
+                <td><select id="Catagories" name="Catagories" style="color:black">
+                    {% for i in catagories %}
+                        <option value="{{i['ItemCatagoryID']}}">{{i['ItemCatagoryTitle']}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Cost:</td>
+                <td><input type="text" id="BuyCost" name="BuyCost" value="" style="color:black"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit" style="color:black">
+    </form>
+</body>
+</html>
