@@ -56,6 +56,9 @@ class DBExtract(DBInfo.DBInfo):
         return query
 
 
+
+
+
     def execute_query(self,query):
         return self.db.fetch_all(query)
 

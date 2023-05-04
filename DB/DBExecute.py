@@ -1,3 +1,4 @@
+import pprint
 import sqlite3
 from DB import EventViewer
 
@@ -138,6 +139,7 @@ class DBExecute:
             #print(query)
             self.cursor.execute(query)
             result = self.cursor.fetchall()
+            #pprint.pprint(result)
         except Exception as e:
             print("Error fetching data:", e)
             EventViewer.EventViewer.log(self._EventViewerSource,
