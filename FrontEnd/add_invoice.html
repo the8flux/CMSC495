@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Enter new information:</h2>
+    <form action="/create" method="POST">
+        <table>
+            <tr>
+                <td>Customer:</td>
+                <td><select id="customer" name="customer" style="color:black">
+                    {% for i in customers %}
+                        <option value="{{i}}">{{i}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Price Adjustment:</td>
+                <td><select id="priceAdjustment" name="priceAdjustment" style="color:black">
+                    {% for i in priceAdjustments %}
+                        <option value="{{i}}">{{i}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Issued Date:</td>
+                <td><input type="date" id="date" name="date" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Due Date:</td>
+                <td><input type="date" id="dueDate" dueDate="date" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Subtotal:</td>
+                <td><input type="text" id="subtotal" name="subtotal" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Tax (%):</td>
+                <td><input type="text" id="tax" name="tax" value="" style="color:black"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit" style="color:black">
+    </form>
+</body>
+</html>

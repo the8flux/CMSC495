@@ -82,7 +82,7 @@ class TableInfo(QueryBuilder):
         if isinstance(row_id_pk, int):
             row_id_pk = int(row_id_pk)
         else:
-            return "bullshit"
+            return ""
 
         query = f'''SELECT {",".join(self.all_headers)}'''
         query += f''' FROM {self.table_name}'''

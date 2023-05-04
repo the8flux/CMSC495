@@ -8,7 +8,7 @@
                 <td>Catalog Item:</td>
                 <td><select id="catalogItem" name="catalogItem" style="color:black">
                     {% for i in catalogItems %}
-                        <option value="{{i}}">{{i}}</option> <!-- This list should come from the db -->
+                        <option value="{{i['id']}}">{{i['kael']}}</option> <!-- This list should come from the db -->
                     {% endfor %}
                 </select></td>
             </tr>

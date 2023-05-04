@@ -285,7 +285,7 @@ class WebApp:
         @self.app.route('/usr/')
         def presentSucessLogonPage(msg=''):
             global user_name
-            form = HTMLFormFactory.UpdateForm('../DB/databases/test_db3.db', 'Manufacturers', target_row_id=15)
+            form = HTMLFormFactory.UpdateForm('../DB/databases/test_db3.db', 'Customers', target_row_id=5)
             print(vars(form))
             div2 = ''
             div2 += str(form)
@@ -373,34 +373,94 @@ class WebApp:
 
 #######################################################################################################################
 
+        # #
+        # @self.app.route('/update_table', methods=['POST'])
+        # def update_table():
+        #     db_name = '../DB/databases/test_db3.db'
         #
-        @self.app.route('/update_table', methods=['POST'])
-        def update_table():
-            db_name = '../DB/databases/test_db3.db'
+        #     table_info_object: DBInfo.DBInfo
+        #     table_info_object = DBInfo.DBInfo(db_name)
+        #
+        #     table_names: list
+        #     table_names = table_info_object.get_table_names()
+        #
+        #
+        #     action_updater = DBUpdate.DBUpdate(db_name)
+        #
+        #     post_data = request.form.to_dict(flat=False)
+        #     pprint.pprint(post_data)
+        #
+        #     # Get post information from what ever page then proceess the post data the hidden field will indicate which table to update
+        #     table_name = post_data['table_name'][0]
+        #
+        #
+        #     print(table_info_object.print_all_table_headers(table_info_object.get_table_names()))
+        #
+        #
+        #     if table_name == 'Manufacturer':
+        #         # updater_result = action_updater.update_manufacturer()
+        #         pass
+        #     elif table_name == 'Customers':
+        #         updater = DBUpdate.DBUpdate(db_name)
+        #         #updater.update_customers(post_data[])
+        #         pass
+        #
+        #     return ""
 
-            table_info_object: DBInfo.DBInfo
-            table_info_object = DBInfo.DBInfo(db_name)
+        # @app.route('/')
+        # def index():
+        #     return render_template('index.html', config=config)
 
-            table_names: list
-            table_names = table_info_object.get_table_names()
+        @self.app.route('/update_invoice')
+        def update_invoice():
+            return render_template('update_invoice.html', config=config, invoices=invoices,
+                                   priceAdjustments=priceAdjustments, customers=customers)
 
+        @self.app.route('/update_lineitem')
+        def update_lineitem():
+            return render_template('update_lineitem.html', config=config, invoices=invoices,
+                                   priceAdjustments=priceAdjustments, customers=customers,
+                                   inventoryItems=inventoryItems, lineItems=lineItems)
 
-            action_updater = DBUpdate.DBUpdate(db_name)
+        @self.app.route('/update_priceadjustment')
+        def update_priceadjustment():
+            return render_template('update_priceadjustment.html', config=config, priceAdjustments=priceAdjustments)
 
-            post_data = request.form.to_dict(flat=False)
-            pprint.pprint(post_data)
+        @self.app.route('/update_inventoryitem')
+        def update_inventoryitem():
+            return render_template('update_inventoryitem.html', config=config, inventoryItems=inventoryItems,
+                                   catalogItems=catalogItems)
 
-            # Get post information from what ever page then proceess the post data the hidden field will indicate which table to update
-            table_name = post_data['table_name'][0]
+        @self.app.route('/update_catalogitem')
+        def update_catalogitem():
+            return render_template('update_catalogitem.html', config=config, manufacturers=manufacturers,
+                                   catalogItems=catalogItems, catagories=catagories)
 
+        @self.app.route('/update_itemcatagory')
+        def update_itemcatagory():
+            return render_template('update_itemcatagory.html', config=config, catagories=catagories)
 
-            print(table_info_object.print_all_table_headers(table_info_object.get_table_names()))
+        @self.app.route('/update_usertype')
+        def update_usertype():
+            return render_template('update_usertype.html', config=config, userTypes=userTypes)
 
+        @self.app.route('/update_address')
+        def update_address():
+            return render_template('update_address.html', config=config, addresses=addresses)
 
-            if table_name == 'Manufacturer':
-                # updater_result = action_updater.update_manufacturer()
-                pass
-            elif table_name == '':
-                pass
+        @self.app.route('/update_manufacturer')
+        def update_manufacturer():
+            return render_template('update_manufacturer.html', config=config, manufacturers=manufacturers)
 
-            return ""
+        @self.app.route('/update_customer')
+        def update_customer():
+            return render_template('update_customer.html', config=config, customers=customers, addresses=addresses)
+
+        @self.app.route('/update_user')
+        def update_user():
+            return render_template('update_user.html', config=config, users=users, addresses=addresses,
+                                   customers=customers, userTypes=userTypes, manufacturers=manufacturers)
+
+        @self.app.route('/error/<string:e>')
+        def error(e):
+            return render_template('error.html', error=e)

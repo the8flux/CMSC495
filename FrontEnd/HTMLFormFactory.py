@@ -102,6 +102,8 @@ class UpdateForm(Form):
         html += f'''{' '.join(self._form_input_tags)}'''
         html += f'''{' '.join(self._form_select_tags)}'''
         html += f'''<input type="hidden" name="table_name" value="{self.table_object.table_name}">{self.table_object.table_name}</input>'''
+        html += f'''<input type="hidden" name="ID" value="{self.table_object.pk_headers[0]}">{self.table_object.pk_headers[0]}</input>'''
+
         html += "<input type='submit' value='Submit'>"
         html += "</form>"
         return html
