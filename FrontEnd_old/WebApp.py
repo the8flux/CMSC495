@@ -21,8 +21,8 @@ from flask import session
 from flask import render_template
 from datetime import datetime
 from datetime import timedelta
-from FrontEnd import CSSLoader
-from FrontEnd import HTMLFormFactory
+from FrontEnd_old import CSSLoader
+from FrontEnd_old import HTMLFormFactory
 from DB import DBUpdate
 from DB import DBInfo
 
