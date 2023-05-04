@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Enter new information:</h2>
+    <form action="/create" method="POST">
+        <table>
+            <tr>
+                <td>Title:</td>
+                <td><input type="text" id="quantity" name="quantity" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Reason:</td>
+                <td><input type="text" id="serial" name="serial" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Type:</td>
+                <td>
+                    <input type="radio" id="percent" name="adjType" value="percent">
+                    <label for="percent">Percentage</label>
+                    <input type="radio" id="fixed" name="adjType" value="fixed">
+                    <label for="fixed">Fixed Amount</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Amount:</td>
+                <td><input type="text" id="amount" name="amount" value="" style="color:black"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit" style="color:black">
+    </form>
+</body>
+</html>

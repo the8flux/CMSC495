@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Enter updated information:</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Inventory Item:</td>
+                <td><select id="inventoryItem" name="inventoryItem" style="color:black">
+                    {% for i in inventoryItems %}
+                        <option value="{{i}}">{{i}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Catalog Item:</td>
+                <td><select id="catalogItem" name="catalogItem" style="color:black">
+                    {% for i in catalogItems %}
+                        <option value="{{i}}">{{i}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Stock Quantity:</td>
+                <td><input type="text" id="stock" name="stock" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Serial Number:</td>
+                <td><input type="text" id="serial" name="serial" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Sell Price:</td>
+                <td><input type="text" id="sellprice" name="sellprice" value="" style="color:black"></td>
+            </tr>
+        </table>
+        <label for="delete">Delete Value:</label>
+        <input type="checkbox" value="delete">
+        <input type="submit" value="Submit" style="color:black">
+    </form>
+</body>
+</html>

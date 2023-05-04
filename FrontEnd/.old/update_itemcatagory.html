@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Enter updated information:</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Catagory:</td>
+                <td><select id="catagory" name="catagory" style="color:black">
+                    {% for i in catagories %}
+                        <option value="{{i}}">{{i}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Title:</td>
+                <td><input type="text" id="title" name="title" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td><input type="text" id="desc" name="desc" value="" style="color:black"></td>
+            </tr>
+        </table>
+        <!-- Stripping of %/$ & conversion to percent/fixed value in db should be handled -->
+        <label for="delete">Delete Value:</label>
+        <input type="checkbox" value="delete">
+        <input type="submit" value="Submit" style="color:black">
+    </form>
+</body>
+</html>

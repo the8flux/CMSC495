@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Enter updated information:</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Catalog Item:</td>
+                <td><select id="catalogItem" name="catalogItem" style="color:black">
+                    {% for i in catalogItems %}
+                        <option value="{{i['id']}}">{{i['kael']}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Manufacturer:</td>
+                <td><select id="manufacturer" name="manufacturer" style="color:black">
+                    {% for i in manufacturers %}
+                        <option value="{{i}}">{{i}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Catagory:</td>
+                <td><select id="catagory" name="catagory" style="color:black">
+                    {% for i in catagories %}
+                        <option value="{{i}}">{{i}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name" name="name" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Buy Cost:</td>
+                <td><input type="text" id="cost" name="cost" value="" style="color:black"></td>
+            </tr>
+        </table>
+        <label for="delete">Delete Value:</label>
+        <input type="checkbox" value="delete">
+        <input type="submit" value="Submit" style="color:black">
+    </form>
+</body>
+</html>

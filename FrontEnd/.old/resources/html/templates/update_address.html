@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Enter updated information:</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Current Address:</td>
+                <td><select id="addressid" name="addressid" style="color:black">
+                    {% for i in addresses %}
+                        <option value="{{i}}">{{i}}</option> <!-- This list should come from the db -->
+                    {% endfor %}
+                </select></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" id="address" name="address" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><input type="text" id="city" name="city" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" id="state" name="state" value="" style="color:black"></td>
+            </tr>
+            <tr>
+                <td>Postal Code:</td>
+                <td><input type="text" id="postCode" name="postCode" value="" style="color:black"></td>
+            </tr>
+            <!-- Telephone number is also under User table, not sure why it's here as well -->
+        </table>
+        <label for="delete">Delete Value:</label>
+        <input type="checkbox" value="delete">
+        <input type="submit" value="Submit" style="color:black">
+    </form>
+</body>
+</html>
