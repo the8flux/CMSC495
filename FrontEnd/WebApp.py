@@ -2,6 +2,7 @@ import pprint
 
 import DB.DBExtract
 import DB.DBSelect
+import DB.DBUpdate
 import configparser
 
 from flask import Flask, render_template, request
@@ -12,6 +13,7 @@ import FrontEnd.HTMLFormFactory
 import FrontEnd.CSSLoader
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
+
 
 class WebApp:
     def __init__(self):
@@ -30,9 +32,6 @@ class WebApp:
         self.tables = list()
         self.table = dict()
         self.current_record = dict()
-
-
-
 
         #################
         # Testing lists #
@@ -67,7 +66,6 @@ class WebApp:
             {"CatalogItemID": 4, "ManufacturerID": 4, "CatalogItemName": "Surface Pro", "ItemCatagoryID": 1,
              "BuyCost": 2000}]
 
-
         def update_frontend_table_info():
             db_info = DB.DBExtract.DBExtract(self.db_name)
             tables_names = db_info.get_table_names()
@@ -78,212 +76,363 @@ class WebApp:
                 self.table['table_data'] = self.table['table_info'].get_rows()
             self.tables.append(self.table)
 
-
-
             pprint.pprint(self.tables)
 
         def set_current_record(table_name, record_id):
-            db_info = FrontEnd.QueryBuilder.TableInfo(self.db_name,table_name)
+            db_info = FrontEnd.QueryBuilder.TableInfo(self.db_name, table_name)
             self.current_record = db_info.get_row(record_id)
 
+        def get_post_keys():
+            return request.form.keys()
 
-        def get_post_keys(**kwargs):
-            return_value =  request.form.keys()
+        def get_post_key(**kwargs):
             key = kwargs.get('key', None)
+            default = kwargs.get('default', None)
             if key:
-                return key
-            return return_value
-
+                return request.form.get(key)
+            else:
+                return default
 
         def get_get_key(**kwargs):
             key = kwargs.get('key', None)
+            print(f"key={key}")
+            default = kwargs.get('default', None)
             url = request.url
             parsed_url = urlparse(url)
             try:
                 if key:
-                    return parse_qs(parsed_url.query)[key][0]
+                    return_value = parse_qs(parsed_url.query)[key][0]
+                    print(return_value)
+                    return return_value
                 return parse_qs(parsed_url.query)
             except:
-                return None
+                return default
+
+        def switch_update(table_name):
+
+            updater = DB.DBUpdate.DBUpdate(self.db_name)
+            if table_name == 'ItemCategories':
+                updater.update_item_category(get_post_key(key='id'),
+                                            get_post_key(key='ItemCategoryTitle'),
+                                            get_post_key(key='ItemCategoryDescription'))
+
+
+            elif table_name == 'PriceAdjustment':
+                # updater.update_price_adjustment()
+                pass
+
+            elif table_name == 'UserType':
+                updater.update_user_type(get_post_key(key='id'),get_post_key(key='Description'))
+
+
+
+            elif table_name == 'CatalogItems':
+                updater.update_catalog_item(get_post_key(key='id'),
+                                            get_post_key(key='Manufacturers'),
+                                            get_post_key(key='CatalogItemName'),
+                                            get_post_key(key='ItemCategories'),
+                                            get_post_key(key='BuyCost'))
+
+
+            elif table_name == 'InventoryItems':
+                # updater.update_inventory_item()
+                pass
+
+            elif table_name == 'Address':
+                updater.update_address(get_post_key(key='id'),
+                                                get_post_key(key='StreetAddress'),
+                                                get_post_key(key='City'),
+                                                get_post_key(key='State'),
+                                                get_post_key(key='Country'),
+                                                get_post_key(key='PostalCode'))
+
+
+            elif table_name == 'Manufacturers':
+                updater.update_manufacturer(get_post_key(key='id'),
+                                            get_post_key(key='ManufacturerName'),
+                                            get_post_key(key='ManufacturerDescription'),
+                                            get_post_key(key='Address'))
+
+
+
+            elif table_name == 'Customers':
+                updater.update_customers(get_post_key(key='id'),
+                                       get_post_key(key='Address'),
+                                       get_post_key(key='CustomerName'))
+
+
+
+            elif table_name == 'Users':
+                #updater.update_users(get_post_key(key='id'),
+                #                        get_post_key(key='StreetAddress'),
+                #                        get_post_key(key='City'),
+                #                        get_post_key(key='State'),
+                #                        get_post_key(key='Country'),
+                #                        get_post_key(key='PostalCode')))
+                pass
+
+        def switch_add(table_name):
+            if table_name == 'ItemCategories':
+                # updater.update_item_category()
+                pass
+
+            elif table_name == 'PriceAdjustment':
+                # updater.update_price_adjustment()
+                pass
+
+            elif table_name == 'UserType':
+
+                pass
+
+
+            elif table_name == 'CatalogItems':
+                # updater.update_catalog_item()
+                pass
+
+            elif table_name == 'InventoryItems':
+                # updater.update_inventory_item()
+                pass
+
+            elif table_name == 'Address':
+                # updater.update_address()
+                pass
+
+            elif table_name == 'Manufacturers':
+                # updater.update_manufacturer()
+                pass
+
+            elif table_name == 'Customers':
+                # updater.update_customers()
+                pass
+
+            elif table_name == 'Users':
+                # updater.update_user_type()
+                pass
+
+        def switch_delete(table_name):
+            if table_name == 'ItemCategories':
+                # updater.update_item_category()
+                pass
+
+            elif table_name == 'PriceAdjustment':
+                # updater.update_price_adjustment()
+                pass
+
+            elif table_name == 'UserType':
+                # updater.update_user_type()
+                pass
+
+            elif table_name == 'CatalogItems':
+                # updater.update_catalog_item()
+                pass
+
+            elif table_name == 'InventoryItems':
+                # updater.update_inventory_item()
+                pass
+
+            elif table_name == 'Address':
+                # updater.update_address()
+                pass
+
+            elif table_name == 'Manufacturers':
+                # updater.update_manufacturer()
+                pass
+
+            elif table_name == 'Customers':
+                # updater.update_customers()
+                pass
+
+            elif table_name == 'Users':
+                # updater.update_user_type()
+                pass
 
         @self.app.route('/')
         def index():
             update_frontend_table_info()
             return render_template('index.html', config=self.config, inventoryItems=self.inventoryItems)
 
-
         @self.app.route('/general_update', methods=['GET', 'POST'])
         def add_general_update():
-            table_name = get_get_key(key='table_name')
-            print(f"Get Key: {table_name}")
+            table_name = get_get_key(key='table_name', default=None)
+            target_row_id = int(get_get_key(key='target_row_id', default=-1))
+
             if request.method == "POST":
                 table_name = request.form.get("table_name")
-                if table_name is None:
-                    table_name = 'Customers'
-                print(f"Post Key: {table_name}")
-                form_element = FrontEnd.HTMLFormFactory.UpdateForm(db_name=self.db_name, table_name='Customers', target_row_id=10)
+                target_row_id = int(request.form.get("id"))
+                table_post_keys = get_post_keys()
+                print(f"Table: {table_name} \n Post Keys {table_post_keys} ")
+                switch_update(table_name)
 
-                ## BEGIN add to local list (change this to call something to add to db)
-                self.inventoryItems.append({"InventoryItemID": len(self.inventoryItems) + 1,
-                                            "CatalogItemID": request.form.get("CatalogItem"),
-                                            "StockQuantity": request.form.get("StockQuantity"),
-                                            "ItemSerialNumber": request.form.get("ItemSerialNumber"),
-                                            "SellPrice": request.form.get("SellPrice")})
-                ## END add to local list
+
+                form_element = FrontEnd.HTMLFormFactory.UpdateForm(db_name=self.db_name,
+                                                                   table_name=table_name,
+                                                                   target_row_id=target_row_id)
+
                 return render_template('general_update.html', config=self.config,
                                        table_name=table_name,
                                        css_class=self.css_class,
                                        form_element=form_element)
+
+
+            elif request.method == "GET" and table_name is not None and target_row_id is not None:
+
+                form_element = FrontEnd.HTMLFormFactory.UpdateForm(db_name=self.db_name,
+                                                                   table_name=table_name,
+                                                                   target_row_id=target_row_id)
+
+                return render_template('general_update.html', config=self.config,
+                                       table_name=table_name,
+                                       css_class=self.css_class,
+                                       form_element=form_element)
+
             else:
-                form_element = FrontEnd.HTMLFormFactory.UpdateForm(db_name=self.db_name, table_name='Customers', target_row_id=10)
+
+                form_element = FrontEnd.HTMLFormFactory.AddForm(db_name=self.db_name,
+                                                                table_name=table_name,
+                                                                target_row_id=target_row_id)
+
                 return render_template('general_add.html', config=self.config,
                                        table_name=table_name,
                                        css_class=self.css_class,
                                        form_element=form_element)
+
         @self.app.route('/general_add', methods=['GET', 'POST'])
         def general_add():
-            table_name = get_get_key(key='table_name')
+            table_name = get_get_key(key='table_name', default='Customers')
+            target_row_id = get_get_key(key='target_row_id', default=10)
+
             print(f"Get Key: {table_name}")
             if request.method == "POST":
-                if table_name is None:
-                    table_name = 'Customers'
-                table_name = request.form.get("table_name",'Customers')
+                table_name = request.form.get("table_name")
                 print(f"Post Key: {table_name}")
-                form_element = FrontEnd.HTMLFormFactory.UpdateForm(db_name=self.db_name, table_name='Customers', target_row_id=10)
-                ## BEGIN add to local list (change this to call something to add to db)
-                self.inventoryItems.append({"InventoryItemID": len(self.inventoryItems) + 1,
-                                            "CatalogItemID": request.form.get("CatalogItem"),
-                                            "StockQuantity": request.form.get("StockQuantity"),
-                                            "ItemSerialNumber": request.form.get("ItemSerialNumber"),
-                                            "SellPrice": request.form.get("SellPrice")})
-                ## END add to local list
+                form_element = FrontEnd.HTMLFormFactory.UpdateForm(db_name=self.db_name, table_name=table_name,
+                                                                   target_row_id=target_row_id)
+
                 return render_template('/general_update.html', config=self.config,
                                        table_name=table_name,
                                        css_class=self.css_class,
                                        form_element=form_element)
             else:
-                form_element = FrontEnd.HTMLFormFactory.UpdateForm(db_name=self.db_name, table_name='Customers', target_row_id=10)
+                form_element = FrontEnd.HTMLFormFactory.AddForm(db_name=self.db_name, table_name=table_name,
+                                                                target_row_id=target_row_id)
                 return render_template('/general_add.html', config=self.config,
                                        table_name=table_name,
                                        css_class=self.css_class,
                                        form_element=form_element)
 
-
-
-
-###################################################################################
-
-
-        @self.app.route('/add_inventoryitem', methods=['GET', 'POST'])
-        def add_inventoryitem():
-            update_frontend_table_info()
-
-            if request.method == "POST":
-
-                #form_html_element = FrontEnd.
-
-                ## BEGIN add to local list (change this to call something to add to db)
-                self.inventoryItems.append({"InventoryItemID": len(self.inventoryItems) + 1,
-                                            "CatalogItemID": request.form.get("CatalogItem"),
-                                            "StockQuantity": request.form.get("StockQuantity"),
-                                            "ItemSerialNumber": request.form.get("ItemSerialNumber"),
-                                            "SellPrice": request.form.get("SellPrice")})
-                ## END add to local list
-                return render_template('update_inventoryitem.html', config=self.config,manufacturer_select_tag=self.manufacturer_select_tag,
-                                       inventoryItems=self.inventoryItems, catalogItems=self.catalog_items)
-            else:
-                return render_template('add_inventoryitem.html', config=self.config, manufacturer_select_tag=self.manufacturer_select_tag, catalogItems=self.catalog_items)
-
-        @self.app.route('/add_catalogitem', methods=['GET', 'POST'])
-        def add_catalogitem():
-            update_frontend_table_info()
-            if request.method == "POST":
-                ## BEGIN add to local list (change this to call something to add to db)
-                self.catalog_items.append({"CatalogItemID": len(self.catalog_items) + 1,
-                                          "ManufacturerID": request.form.get("Manufacturer"),
-                                          "CatalogItemName": request.form.get("CatalogItemName"),
-                                          "ItemCatagoryID": request.form.get("ItemCatagory"),
-                                          "BuyCost": request.form.get("BuyCost")})
-                ## END add to local list
-                return render_template('update_catalogitem.html', config=self.config, manufacturers=self.manufacturers,
-                                       catalogItems=self.catalog_items, catagories=self.catalog_items)
-            else:
-                return render_template('add_catalogitem.html', config=self.config, manufacturers=self.manufacturers,
-                                       catagories=self.catalog_items)
-
-        @self.app.route('/add_itemcatagory', methods=['GET', 'POST'])
-        def add_itemcatagory():
-            update_frontend_table_info()
-
-            if request.method == "POST":
-                ## BEGIN add to local list (change this to call something to add to db)
-                self.catalog_items.append({"ItemCatagoryID": len(self.catalog_items) + 1,
-                                        "ItemCatagoryTitle": request.form.get("ItemCatagoryTitle"),
-                                        "ItemCatagoryDescription": request.form.get("ItemCatagoryDescription")})
-                ## END add to local list
-                return render_template('update_itemcatagory.html', config=self.config, catagories=self.catalog_items)
-            else:
-                return render_template('add_itemcatagory.html', config=self.config)
-
-        # /\ /\ /\ ADD pages
-        # \/ \/ \/ UPDATE pages
-
-        @self.app.route('/update_inventoryitem', methods=['GET', 'POST'])
-        def update_inventoryitem():
-
-            update_frontend_table_info()
-            if request.method == "POST":
-                ## BEGIN add to local list (change this to call something to edit data in db)
-                for i in self.inventoryItems:
-                    if i["InventoryItemID"] == int(request.form.get("inventoryItem")):
-                        self.ind = self.inventoryItems.index(i)
-                self.inventoryItems[self.ind] |= {"CatalogItemID": request.form.get('CatalogItem')}
-                self.inventoryItems[self.ind] |= {"StockQuantity": request.form.get('StockQuantity')}
-                self.inventoryItems[self.ind] |= {"ItemSerialNumber": request.form.get('ItemSerialNumber')}
-                self.inventoryItems[self.ind] |= {"SellPrice": request.form.get('SellPrice')}
-                ## END add to local list
-                return render_template('update_inventoryitem.html', config=self.config,
-                                       inventoryItems=self.inventoryItems, catalogItems=self.catalog_items)
-            else:
-                return render_template('update_inventoryitem.html', config=self.config,
-                                       inventoryItems=self.inventoryItems, catalogItems=self.catalog_items)
-
-        @self.app.route('/update_catalogitem', methods=['GET', 'POST'])
-        def update_catalogitem():
-            update_frontend_table_info()
-
-
-
-            if request.method == "POST":
-                ## BEGIN add to local list (change this to call something to edit data in db)
-                for i in self.catalog_items:
-                    if i["CatalogItemID"] == int(request.form.get("CatalogItem")):
-                        self.ind = self.catalog_items.index(i)
-                self.catalog_items[self.ind] |= {"ManufacturerID": request.form.get('Manufacturer')}
-                self.catalog_items[self.ind] |= {"CatalogItemName": request.form.get('CatalogItemName')}
-                self.catalog_items[self.ind] |= {"ItemCatagoryID": request.form.get('ItemCatagory')}
-                self.catalog_items[self.ind] |= {"BuyCost": request.form.get('BuyCost')}
-                ## END add to local list
-                return render_template('update_catalogitem.html', config=self.config, manufacturers=self.manufacturers,
-                                       catalogItems=self.catalog_items, catagories=self.catalog_items)
-            else:
-                return render_template('update_catalogitem.html', config=self.config, manufacturers=self.manufacturers,
-                                       catalogItems=self.catalog_items, catagories=self.catalog_items)
-
-        @self.app.route('/update_itemcatagory', methods=['GET', 'POST'])
-        def update_itemcatagory():
-            update_frontend_table_info()
-            if request.method == "POST":
-                ## BEGIN add to local list (change this to call something to edit data in db)
-                for i in self.catalog_items:
-                    if i["ItemCatagoryID"] == int(request.form.get("ItemCatagory")):
-                        self.ind = self.catalog_items.index(i)
-                self.catalog_items[self.ind] |= {"ItemCatagoryTitle": request.form.get('ItemCatagoryTitle')}
-                self.catalog_items[self.ind] |= {"ItemCatagoryDescription": request.form.get('ItemCatagoryDescription')}
-                ## END add to local list
-                return render_template('update_itemcatagory.html', config=self.config, catagories=self.catalog_items)
-            else:
-                return render_template('update_itemcatagory.html', config=self.config, catagories=self.catalog_items)
+        ###################################################################################
+        #
+        # @self.app.route('/add_inventoryitem', methods=['GET', 'POST'])
+        # def add_inventoryitem():
+        #     update_frontend_table_info()
+        #
+        #     if request.method == "POST":
+        #
+        #         # form_html_element = FrontEnd.
+        #
+        #         ## BEGIN add to local list (change this to call something to add to db)
+        #         self.inventoryItems.append({"InventoryItemID": len(self.inventoryItems) + 1,
+        #                                     "CatalogItemID": request.form.get("CatalogItem"),
+        #                                     "StockQuantity": request.form.get("StockQuantity"),
+        #                                     "ItemSerialNumber": request.form.get("ItemSerialNumber"),
+        #                                     "SellPrice": request.form.get("SellPrice")})
+        #         ## END add to local list
+        #         return render_template('update_inventoryitem.html', config=self.config,
+        #                                manufacturer_select_tag=self.manufacturer_select_tag,
+        #                                inventoryItems=self.inventoryItems, catalogItems=self.catalog_items)
+        #     else:
+        #         return render_template('add_inventoryitem.html', config=self.config,
+        #                                manufacturer_select_tag=self.manufacturer_select_tag,
+        #                                catalogItems=self.catalog_items)
+        #
+        # @self.app.route('/add_catalogitem', methods=['GET', 'POST'])
+        # def add_catalogitem():
+        #     update_frontend_table_info()
+        #     if request.method == "POST":
+        #         ## BEGIN add to local list (change this to call something to add to db)
+        #         self.catalog_items.append({"CatalogItemID": len(self.catalog_items) + 1,
+        #                                    "ManufacturerID": request.form.get("Manufacturer"),
+        #                                    "CatalogItemName": request.form.get("CatalogItemName"),
+        #                                    "ItemCatagoryID": request.form.get("ItemCatagory"),
+        #                                    "BuyCost": request.form.get("BuyCost")})
+        #         ## END add to local list
+        #         return render_template('update_catalogitem.html', config=self.config, manufacturers=self.manufacturers,
+        #                                catalogItems=self.catalog_items, catagories=self.catalog_items)
+        #     else:
+        #         return render_template('add_catalogitem.html', config=self.config, manufacturers=self.manufacturers,
+        #                                catagories=self.catalog_items)
+        #
+        # @self.app.route('/add_itemcatagory', methods=['GET', 'POST'])
+        # def add_itemcatagory():
+        #     update_frontend_table_info()
+        #
+        #     if request.method == "POST":
+        #         ## BEGIN add to local list (change this to call something to add to db)
+        #         self.catalog_items.append({"ItemCatagoryID": len(self.catalog_items) + 1,
+        #                                    "ItemCatagoryTitle": request.form.get("ItemCatagoryTitle"),
+        #                                    "ItemCatagoryDescription": request.form.get("ItemCatagoryDescription")})
+        #         ## END add to local list
+        #         return render_template('update_itemcatagory.html', config=self.config, catagories=self.catalog_items)
+        #     else:
+        #         return render_template('add_itemcatagory.html', config=self.config)
+        #
+        # # /\ /\ /\ ADD pages
+        # # \/ \/ \/ UPDATE pages
+        #
+        # @self.app.route('/update_inventoryitem', methods=['GET', 'POST'])
+        # def update_inventoryitem():
+        #
+        #     update_frontend_table_info()
+        #     if request.method == "POST":
+        #         ## BEGIN add to local list (change this to call something to edit data in db)
+        #         for i in self.inventoryItems:
+        #             if i["InventoryItemID"] == int(request.form.get("inventoryItem")):
+        #                 self.ind = self.inventoryItems.index(i)
+        #         self.inventoryItems[self.ind] |= {"CatalogItemID": request.form.get('CatalogItem')}
+        #         self.inventoryItems[self.ind] |= {"StockQuantity": request.form.get('StockQuantity')}
+        #         self.inventoryItems[self.ind] |= {"ItemSerialNumber": request.form.get('ItemSerialNumber')}
+        #         self.inventoryItems[self.ind] |= {"SellPrice": request.form.get('SellPrice')}
+        #         ## END add to local list
+        #         return render_template('update_inventoryitem.html', config=self.config,
+        #                                inventoryItems=self.inventoryItems, catalogItems=self.catalog_items)
+        #     else:
+        #         return render_template('update_inventoryitem.html', config=self.config,
+        #                                inventoryItems=self.inventoryItems, catalogItems=self.catalog_items)
+        #
+        # @self.app.route('/update_catalogitem', methods=['GET', 'POST'])
+        # def update_catalogitem():
+        #     update_frontend_table_info()
+        #
+        #     if request.method == "POST":
+        #         ## BEGIN add to local list (change this to call something to edit data in db)
+        #         for i in self.catalog_items:
+        #             if i["CatalogItemID"] == int(request.form.get("CatalogItem")):
+        #                 self.ind = self.catalog_items.index(i)
+        #         self.catalog_items[self.ind] |= {"ManufacturerID": request.form.get('Manufacturer')}
+        #         self.catalog_items[self.ind] |= {"CatalogItemName": request.form.get('CatalogItemName')}
+        #         self.catalog_items[self.ind] |= {"ItemCatagoryID": request.form.get('ItemCatagory')}
+        #         self.catalog_items[self.ind] |= {"BuyCost": request.form.get('BuyCost')}
+        #         ## END add to local list
+        #         return render_template('update_catalogitem.html', config=self.config, manufacturers=self.manufacturers,
+        #                                catalogItems=self.catalog_items, catagories=self.catalog_items)
+        #     else:
+        #         return render_template('update_catalogitem.html', config=self.config, manufacturers=self.manufacturers,
+        #                                catalogItems=self.catalog_items, catagories=self.catalog_items)
+        #
+        # @self.app.route('/update_itemcatagory', methods=['GET', 'POST'])
+        # def update_itemcatagory():
+        #     update_frontend_table_info()
+        #     if request.method == "POST":
+        #         ## BEGIN add to local list (change this to call something to edit data in db)
+        #         for i in self.catalog_items:
+        #             if i["ItemCatagoryID"] == int(request.form.get("ItemCatagory")):
+        #                 self.ind = self.catalog_items.index(i)
+        #         self.catalog_items[self.ind] |= {"ItemCatagoryTitle": request.form.get('ItemCatagoryTitle')}
+        #         self.catalog_items[self.ind] |= {"ItemCatagoryDescription": request.form.get('ItemCatagoryDescription')}
+        #         ## END add to local list
+        #         return render_template('update_itemcatagory.html', config=self.config, catagories=self.catalog_items)
+        #     else:
+        #         return render_template('update_itemcatagory.html', config=self.config, catagories=self.catalog_items)
 
         @self.app.route('/error/<string:e>')
         def error(e):

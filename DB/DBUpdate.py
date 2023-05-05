@@ -318,7 +318,7 @@ class DBUpdate:
         query = query.rstrip(",") + " WHERE ManufacturerID = ?;"
         params.append(manufacturer_id)
         self.cursor.execute(query, params)
-        self.conn.commit()
+        self.connection.commit()
 
     def update_customers(self, customer_id, address_id=None, customer_name=None):
         query = "UPDATE Customers SET "
@@ -339,10 +339,6 @@ class DBUpdate:
         query += " WHERE CustomerID = ?"
         params.append(customer_id)
 
-        self.cur.execute(query, params)
-        self.conn.commit()
-
-
-
-
+        self.cursor.execute(query, params)
+        self.connection.commit()
 

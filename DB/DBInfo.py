@@ -135,7 +135,7 @@ if __name__ == '__main__':
     app = DBInfo('./databases/test_db3.db')
     print(app.get_table_names())
     # print(app.get_all_table_headers(table_names=app.get_table_names()))
-    print(app.get_table_fk_headers_from_table('Invoices'))
+    # print(app.get_table_fk_headers_from_table('Invoices'))
     # print(app.get_table_pk_headers_from_table('Invoices'))
     # print(app.get_table_data_headers('Invoices'))
 

@@ -19,7 +19,6 @@ from FrontEnd.QueryBuilder import TableInfo
         Glenn Phillips 	443-915-0172
 """
 
-
 class Form:
     def __init__(self, db_name):
         self._db_name = db_name
@@ -44,14 +43,10 @@ class UpdateForm(Form):
     def __init__(self, db_name: str, table_name: str, **kwargs):
         super().__init__(db_name)
         self.target_row_id = kwargs.get('target_row_id', 0)
-
-
         self._tables = self.load_tables()
-
         self._table_object = QueryBuilder.TableInfo(db_name, table_name, target_row_id=self.target_row_id)
         self._form_select_tags = []
         self._form_input_tags = []
-
         self.build_input_tag()
         self.build_select_tags()
 
@@ -98,16 +93,96 @@ class UpdateForm(Form):
 
     def get_html(self):
         # Create Form
-        html = f'''<form action='/general_update.html' method='POST'>'''
+        html = f'''<form action='/general_update' method='POST'>'''
         html += f'''<h3>ID # {self.table_object.record[self.table_object.pk_headers[0]]}<h3>'''
         html += f'''{' '.join(self._form_input_tags)}'''
         html += f'''{' '.join(self._form_select_tags)}'''
         html += f'''<input type="hidden" name="table_name" value="{self.table_object.table_name}"></input>'''
         html += f'''<input type="hidden" name="id_column" value="{self.table_object.pk_headers[0]}"></input>'''
+        html += f'''<input type="hidden" name="id" value="{self.table_object.record[self.table_object.pk_headers[0]]}"></input>'''
         html += f'''<br><label for="delete">Delete Value:</label>'''
         html += f'''<input type="checkbox" value="delete">'''
         html += "<br><input type='submit' value='Submit'>"
         html += "</form>"
+        html += f'''<p><a href="/">[ Back ]</a></p>'''
+        return html
+
+
+    def __str__(self):
+        # Create Form
+        html = self.get_html()
+        with open(f"update_page_for_{self.table_object.table_name}.html", "w") as f:
+            f.write(html)
+        return html
+
+
+if __name__ == '__main__':
+    app = UpdateForm('../DB/databases/test_db3.db', 'Users', target_row_id=10)
+    print(app)
+
+
+class AddForm(Form):
+    def __init__(self, db_name: str, table_name: str, **kwargs):
+        super().__init__(db_name)
+        self.target_row_id = kwargs.get('target_row_id', 0)
+        self._tables = self.load_tables()
+        self._table_object = QueryBuilder.TableInfo(db_name, table_name, target_row_id=self.target_row_id)
+        self._form_select_tags = []
+        self._form_input_tags = []
+        self.build_input_tag()
+        self.build_select_tags()
+
+    @property
+    def table_object(self):
+        return self._table_object
+
+    def get_row_data_from_table(self):
+        pass
+
+    def build_select_tags(self, **kwargs):
+
+        fk_table_headers = self.table_object.fk_headers
+        fk_table_object_list = []
+        for fk_table_header in fk_table_headers:
+            for table in self._tables:
+                if fk_table_header in table.pk_headers:
+                    print(table)
+                    fk_table_object_list.append(table)
+
+            table: TableInfo
+        for table in fk_table_object_list:
+            selected_value = -1
+            select_element_data: list
+            select_element_data = table.get_items_pk_headers()
+            label = HTMLElementFactory.LabelTag(f"{table.table_name}", f"{table.table_name}")
+            self._form_select_tags.append(str(label))
+            selected_value = self.table_object.record[table.pk_headers[0]]
+            select_element = HTMLElementFactory.SelectTag(select_element_data,
+                                                          html_id=f"{table.table_name}",
+                                                          html_name=f"{table.table_name}",
+                                                          css_class=f"")
+            self._form_select_tags.append(str(select_element))
+
+    def build_input_tag(self):
+        data_headers = self.table_object.data_headers
+
+        for data_header in data_headers:
+            label_tag = HTMLElementFactory.LabelTag(data_header, data_header)
+            input_tag = HTMLElementFactory.InputTag("text", data_header, data_header, "---")
+            self._form_input_tags.append(str(label_tag))
+            self._form_input_tags.append(str(input_tag))
+
+    def get_html(self):
+        # Create Form
+        html = f'''<form action='/general_update' method='POST'>'''
+        html += f'''<h3>New Item for {self.table_object.table_name}<h3>'''
+        html += f'''{' '.join(self._form_input_tags)}'''
+        html += f'''{' '.join(self._form_select_tags)}'''
+        html += f'''<input type="hidden" name="table_name" value="{self.table_object.table_name}"></input>'''
+        html += f'''<input type="hidden" name="id_column" value="{self.table_object.pk_headers[0]}"></input>'''
+        html += "<br><input type='submit' value='Submit'>"
+        html += "</form>"
+        html += f'''<p><a href="/">[ Back ]</a></p>'''
         return html
 
 
