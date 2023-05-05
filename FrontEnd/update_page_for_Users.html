@@ -1,17 +1,17 @@
-<form action='/general_update' method='POST'><h3>New Item for Users<h3><label for=FirstName>FirstName:</label><br>
- <input type=text id="FirstName" name="FirstName" value="---"></input><br>
+<form action='/general_update' method='POST'><h3>ID # 2<h3><label for=FirstName>FirstName:</label><br>
+ <input type=text id="FirstName" name="FirstName" value="William"></input><br>
  <label for=LastName>LastName:</label><br>
- <input type=text id="LastName" name="LastName" value="---"></input><br>
+ <input type=text id="LastName" name="LastName" value="Admin"></input><br>
  <label for=Telephone>Telephone:</label><br>
- <input type=text id="Telephone" name="Telephone" value="---"></input><br>
+ <input type=text id="Telephone" name="Telephone" value="2222-2222"></input><br>
  <label for=Email>Email:</label><br>
- <input type=text id="Email" name="Email" value="---"></input><br>
+ <input type=text id="Email" name="Email" value="William@email.com"></input><br>
  <label for=UserLogon>UserLogon:</label><br>
- <input type=text id="UserLogon" name="UserLogon" value="---"></input><br>
+ <input type=text id="UserLogon" name="UserLogon" value="william"></input><br>
 <label for=UserType>UserType:</label><br>
  <select class="" name="UserType" id="UserType">
 
-<option value="1" >1|System Admin</option>
+<option value="1" selected>1|System Admin</option>
 <option value="2" >2|Employee</option>
 <option value="3" >3|Customer</option>
 <option value="4" >4|Manufacturer</option></select><br><br> <label for=Manufacturers>Manufacturers:</label><br>
@@ -49,7 +49,7 @@
 <option value="17" >17|66|Dynamic Robotics & Automation</option>
 <option value="18" >18|67|Quantum Computing Technologies</option>
 <option value="19" >19|68|Global Solutions Group</option>
-<option value="1" >1|0|Employees</option>
+<option value="1" selected>1|0|Employees</option>
 <option value="20" >20|69|Intelligent Manufacturing Systems</option>
 <option value="21" >21|70|Precision Components Inc</option>
 <option value="22" >22|71|Smart Tech Innovations</option>
@@ -72,7 +72,7 @@
 <option value="9" >9|58|High Performance Systems Inc</option></select><br><br> <label for=Address>Address:</label><br>
  <select class="" name="Address" id="Address">
 
-<option value="0" >0|Default|Default|Default|None|Default</option>
+<option value="0" selected>0|Default|Default|Default|None|Default</option>
 <option value="10" >10|2-1 Kurosaki-Shiroishi|Yahatanishi-ku|Kitakyushu|None|806-0004</option>
 <option value="11" >11|1-3-1, Mabuchi, Tsuzuki-ku|Yokohama|Kanagawa|None|224-8523</option>
 <option value="12" >12|12-13, Nishi-Gotanda 7-chome|Shinagawa-ku|Tokyo|None|141-0031</option>
@@ -123,4 +123,4 @@
 <option value="7" >7|1000 Eaton Boulevard|Cleveland|OH|None|44122</option>
 <option value="80" >80|1010 Pinecrest Road|Indianapolis|IN|USA|46204</option>
 <option value="8" >8|1201 South Second Street|Milwaukee|WI|None|53204</option>
-<option value="9" >9|2-3, Marunouchi 3-chome|Chiyoda-ku|Tokyo|None|100-8310</option></select><br><br><input type="hidden" name="table_name" value="Users"></input><input type="hidden" name="id_column" value="UserID"></input><br><input type='submit' value='Submit'></form><p><a href="/">[ Back ]</a></p>
+<option value="9" >9|2-3, Marunouchi 3-chome|Chiyoda-ku|Tokyo|None|100-8310</option></select><br><br><input type="hidden" name="table_name" value="USers"></input><input type="hidden" name="id_column" value="UserID"></input><input type="hidden" name="id" value="2"></input><br><label for="delete">Delete Value:</label><input type="checkbox" value="delete"><br><input type='submit' value='Submit'></form><p><a href="/">[ Home ]</a><a href="/general_update?table_name=USers&target_row_id=1">[ Previous ]</a><a href="/general_update?table_name=USers&target_row_id=3">[ Next ]</a></p>
