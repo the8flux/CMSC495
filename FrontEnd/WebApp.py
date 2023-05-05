@@ -3,6 +3,7 @@ import pprint
 import DB.DBExtract
 import DB.DBSelect
 import DB.DBUpdate
+import DB.DBInsert
 import configparser
 
 from flask import Flask, render_template, request
@@ -172,79 +173,69 @@ class WebApp:
                 pass
 
         def switch_add(table_name):
+            adder = DB.DBInsert.DBInsert(self.db_name)
             if table_name == 'ItemCategories':
-                # updater.update_item_category()
-                pass
+                adder.add_item_category(get_post_key(key='id'),
+                                             get_post_key(key='ItemCategoryTitle'),
+                                             get_post_key(key='ItemCategoryDescription'))
+
 
             elif table_name == 'PriceAdjustment':
                 # updater.update_price_adjustment()
                 pass
 
             elif table_name == 'UserType':
+                adder.add_user_type(get_post_key(key='id'), get_post_key(key='Description'))
 
-                pass
 
 
             elif table_name == 'CatalogItems':
-                # updater.update_catalog_item()
-                pass
+                adder.add_catalog_item(get_post_key(key='id'),
+                                            get_post_key(key='Manufacturers'),
+                                            get_post_key(key='CatalogItemName'),
+                                            get_post_key(key='ItemCategories'),
+                                            get_post_key(key='BuyCost'))
+
 
             elif table_name == 'InventoryItems':
                 # updater.update_inventory_item()
                 pass
 
             elif table_name == 'Address':
-                # updater.update_address()
-                pass
+                adder.add_address(get_post_key(key='id'),
+                                       get_post_key(key='StreetAddress'),
+                                       get_post_key(key='City'),
+                                       get_post_key(key='State'),
+                                       get_post_key(key='Country'),
+                                       get_post_key(key='PostalCode'))
+
 
             elif table_name == 'Manufacturers':
-                # updater.update_manufacturer()
-                pass
+                adder.add_manufacturer(get_post_key(key='id'),
+                                            get_post_key(key='ManufacturerName'),
+                                            get_post_key(key='ManufacturerDescription'),
+                                            get_post_key(key='Address'))
+
+
 
             elif table_name == 'Customers':
-                # updater.update_customers()
-                pass
+                adder.add_customers(get_post_key(key='id'),
+                                         get_post_key(key='Address'),
+                                         get_post_key(key='CustomerName'))
+
+
 
             elif table_name == 'Users':
-                # updater.update_user_type()
+                # adder.add_users(get_post_key(key='id'),
+                #                        get_post_key(key='StreetAddress'),
+                #                        get_post_key(key='City'),
+                #                        get_post_key(key='State'),
+                #                        get_post_key(key='Country'),
+                #                        get_post_key(key='PostalCode')))
                 pass
 
-        def switch_delete(table_name):
-            if table_name == 'ItemCategories':
-                # updater.update_item_category()
-                pass
 
-            elif table_name == 'PriceAdjustment':
-                # updater.update_price_adjustment()
-                pass
 
-            elif table_name == 'UserType':
-                # updater.update_user_type()
-                pass
-
-            elif table_name == 'CatalogItems':
-                # updater.update_catalog_item()
-                pass
-
-            elif table_name == 'InventoryItems':
-                # updater.update_inventory_item()
-                pass
-
-            elif table_name == 'Address':
-                # updater.update_address()
-                pass
-
-            elif table_name == 'Manufacturers':
-                # updater.update_manufacturer()
-                pass
-
-            elif table_name == 'Customers':
-                # updater.update_customers()
-                pass
-
-            elif table_name == 'Users':
-                # updater.update_user_type()
-                pass
 
         @self.app.route('/')
         def index():

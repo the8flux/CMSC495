@@ -104,7 +104,10 @@ class UpdateForm(Form):
         html += f'''<input type="checkbox" value="delete">'''
         html += "<br><input type='submit' value='Submit'>"
         html += "</form>"
-        html += f'''<p><a href="/">[ Back ]</a></p>'''
+        html += f'''<p><a href="/">[ Home ]</a>'''
+        html += f'''<a href="/general_update?table_name={self.table_object.table_name}&target_row_id={int(self.table_object.record[self.table_object.pk_headers[0]]) - 1}">[ Previous ]</a>'''
+        html += f'''<a href="/general_update?table_name={self.table_object.table_name}&target_row_id={int(self.table_object.record[self.table_object.pk_headers[0]]) + 1}">[ Next ]</a></p>'''
+
         return html
 
 
@@ -180,6 +183,7 @@ class AddForm(Form):
         html += f'''{' '.join(self._form_select_tags)}'''
         html += f'''<input type="hidden" name="table_name" value="{self.table_object.table_name}"></input>'''
         html += f'''<input type="hidden" name="id_column" value="{self.table_object.pk_headers[0]}"></input>'''
+        html += f'''<input type="hidden" name="id" value="-1"></input>'''
         html += "<br><input type='submit' value='Submit'>"
         html += "</form>"
         html += f'''<p><a href="/">[ Back ]</a></p>'''
