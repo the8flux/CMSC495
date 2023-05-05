@@ -175,26 +175,27 @@ class WebApp:
         def switch_add(table_name):
             adder = DB.DBInsert.DBInsert(self.db_name)
             if table_name == 'ItemCategories':
-                adder.add_item_category(get_post_key(key='id'),
-                                             get_post_key(key='ItemCategoryTitle'),
-                                             get_post_key(key='ItemCategoryDescription'))
+                last_row_id = adder.add_item_category(get_post_key(key='id'), get_post_key(key='ItemCategoryTitle'),
+                                        get_post_key(key='ItemCategoryDescription'))
+                return last_row_id
 
 
             elif table_name == 'PriceAdjustment':
-                # updater.update_price_adjustment()
-                pass
+                last_row_id = 0 # updater.update_price_adjustment()
+                return last_row_id
+
 
             elif table_name == 'UserType':
-                adder.add_user_type(get_post_key(key='id'), get_post_key(key='Description'))
+                last_row_id = adder.add_user_type(get_post_key(key='id'), get_post_key(key='Description'))
+                return last_row_id
 
 
 
             elif table_name == 'CatalogItems':
-                adder.add_catalog_item(get_post_key(key='id'),
-                                            get_post_key(key='Manufacturers'),
-                                            get_post_key(key='CatalogItemName'),
-                                            get_post_key(key='ItemCategories'),
-                                            get_post_key(key='BuyCost'))
+                last_row_id = adder.add_catalog_item(get_post_key(key='id'), get_post_key(key='Manufacturers'),
+                                       get_post_key(key='CatalogItemName'), get_post_key(key='ItemCategories'),
+                                       get_post_key(key='BuyCost'))
+                return last_row_id
 
 
             elif table_name == 'InventoryItems':
@@ -202,36 +203,34 @@ class WebApp:
                 pass
 
             elif table_name == 'Address':
-                adder.add_address(get_post_key(key='id'),
-                                       get_post_key(key='StreetAddress'),
-                                       get_post_key(key='City'),
-                                       get_post_key(key='State'),
-                                       get_post_key(key='Country'),
-                                       get_post_key(key='PostalCode'))
+                last_row_id = adder.add_address(get_post_key(key='id'), get_post_key(key='StreetAddress'), get_post_key(key='City'),
+                                  get_post_key(key='State'), get_post_key(key='Country'),
+                                  get_post_key(key='PostalCode'))
+                return last_row_id
 
 
             elif table_name == 'Manufacturers':
-                adder.add_manufacturer(get_post_key(key='id'),
-                                            get_post_key(key='ManufacturerName'),
-                                            get_post_key(key='ManufacturerDescription'),
-                                            get_post_key(key='Address'))
+                last_row_id = adder.add_manufacturer(get_post_key(key='id'), get_post_key(key='ManufacturerName'),
+                                       get_post_key(key='ManufacturerDescription'), get_post_key(key='Address'))
+                return last_row_id
 
 
 
             elif table_name == 'Customers':
-                adder.add_customers(get_post_key(key='id'),
-                                         get_post_key(key='Address'),
-                                         get_post_key(key='CustomerName'))
+                last_row_id = adder.add_customers(get_post_key(key='id'), get_post_key(key='Address'),
+                                    get_post_key(key='CustomerName'))
+                return last_row_id
 
 
 
             elif table_name == 'Users':
-                # adder.add_users(get_post_key(key='id'),
+                #last_row_id = adder.add_users(get_post_key(key='id'),
                 #                        get_post_key(key='StreetAddress'),
                 #                        get_post_key(key='City'),
                 #                        get_post_key(key='State'),
                 #                        get_post_key(key='Country'),
                 #                        get_post_key(key='PostalCode')))
+                #return last_row_id
                 pass
 
 
@@ -252,6 +251,18 @@ class WebApp:
                 target_row_id = int(request.form.get("id"))
                 table_post_keys = get_post_keys()
                 print(f"Table: {table_name} \n Post Keys {table_post_keys} ")
+                print(get_post_key(key='ck_delete'))
+                if get_post_key(key='ck_delete') == 'delete':
+                    updater = DB.DBUpdate.DBUpdate(self.db_name)
+                    id_col = get_post_key(key='id_column')
+                    id_val = get_post_key(key='id')
+                    result = updater.delete_item(table_name, id_col, id_val)
+                    return render_template('general_del.html', config=self.config,
+                                           table_name=table_name,
+                                           css_class=self.css_class,
+                                           result=result)
+
+
                 switch_update(table_name)
 
 
@@ -292,10 +303,15 @@ class WebApp:
             table_name = get_get_key(key='table_name', default='Customers')
             target_row_id = get_get_key(key='target_row_id', default=10)
 
+
+
             print(f"Get Key: {table_name}")
             if request.method == "POST":
                 table_name = request.form.get("table_name")
                 print(f"Post Key: {table_name}")
+
+                target_row_id = switch_add(table_name)
+
                 form_element = FrontEnd.HTMLFormFactory.UpdateForm(db_name=self.db_name, table_name=table_name,
                                                                    target_row_id=target_row_id)
 

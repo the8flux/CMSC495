@@ -342,3 +342,17 @@ class DBUpdate:
         self.cursor.execute(query, params)
         self.connection.commit()
 
+
+    def delete_item(self, table_name, id_col, id_value):
+        params = []
+        params.append(table_name)
+        params.append(id_col)
+        params.append(id_value)
+        query = f'''DELETE FROM {table_name} WHERE {id_col}={id_value}'''
+        self.cursor.execute(query)
+        self.connection.commit()
+        return params
+
+
+            
+

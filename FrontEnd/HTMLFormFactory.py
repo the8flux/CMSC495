@@ -101,7 +101,7 @@ class UpdateForm(Form):
         html += f'''<input type="hidden" name="id_column" value="{self.table_object.pk_headers[0]}"></input>'''
         html += f'''<input type="hidden" name="id" value="{self.table_object.record[self.table_object.pk_headers[0]]}"></input>'''
         html += f'''<br><label for="delete">Delete Value:</label>'''
-        html += f'''<input type="checkbox" value="delete">'''
+        html += f'''<input type="checkbox" name='ck_delete' value="delete">'''
         html += "<br><input type='submit' value='Submit'>"
         html += "</form>"
         html += f'''<p><a href="/">[ Home ]</a>'''
@@ -159,7 +159,9 @@ class AddForm(Form):
             select_element_data = table.get_items_pk_headers()
             label = HTMLElementFactory.LabelTag(f"{table.table_name}", f"{table.table_name}")
             self._form_select_tags.append(str(label))
+
             selected_value = self.table_object.record[table.pk_headers[0]]
+
             select_element = HTMLElementFactory.SelectTag(select_element_data,
                                                           html_id=f"{table.table_name}",
                                                           html_name=f"{table.table_name}",
@@ -177,7 +179,7 @@ class AddForm(Form):
 
     def get_html(self):
         # Create Form
-        html = f'''<form action='/general_update' method='POST'>'''
+        html = f'''<form action='/general_add' method='POST'>'''
         html += f'''<h3>New Item for {self.table_object.table_name}<h3>'''
         html += f'''{' '.join(self._form_input_tags)}'''
         html += f'''{' '.join(self._form_select_tags)}'''

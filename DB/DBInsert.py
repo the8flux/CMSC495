@@ -14,6 +14,8 @@ import sqlite3
         William Adair	619-967-3065
         Glenn Phillips 	443-915-0172
 """
+
+
 class DBInsert:
     """
 
@@ -29,9 +31,9 @@ class DBInsert:
         Args:
             db_name (str): The name of the database file.
         """
-        self.db = DBExecute(db_name)
+        self.db = DBExecute.DBExecute(db_name)
 
-        self._EventViewerSource = "DBUpdate"
+        self._EventViewerSource = "DBInsert"
         self.db = DBExecute.DBExecute(db_name)
         self.connection = sqlite3.connect(db_name)
         self.cursor = self.connection.cursor()
@@ -53,7 +55,7 @@ class DBInsert:
         :param parameters:
         :return:
         """
-        self._log_it("Trying to Update:\n\t{0}\n\t{1}".format(query,parameters))
+        self._log_it("Trying to Update:\n\t{0}\n\t{1}".format(query, parameters))
         try:
             self.cursor.execute(query, parameters)
             self.connection.commit()
@@ -63,13 +65,12 @@ class DBInsert:
         finally:
             pass
 
-
-    def add_price_adjustment(self, price_adjustment_id, title=None, reason_description=None,
-                                is_fixed=None, fixed_amount=None, is_percent=None, percent=None):
+    def add_price_adjustment(self, no_id="NoID", title=None, reason_description=None,
+                             is_fixed=None, fixed_amount=None, is_percent=None, percent=None):
         """
-         PriceAdjustment Record
+        Add PriceAdjustment Record
 
-        :param price_adjustment_id:
+        :param no_id:
         :param title:
         :param reason_description:
         :param is_fixed:
@@ -78,33 +79,40 @@ class DBInsert:
         :param percent:
         :return:
         """
-        query = "UPDATE PriceAdjustment SET "
+        query = "INSERT INTO PriceAdjustment "
         parameters = []
+        values_position = " "
 
         if title is not None:
-            query += "Title = ?, "
+            query += "Title, "
+            values_position += " ?, "
             parameters.append(title)
         if reason_description is not None:
-            query += "ReasonDescription = ?, "
+            query += "ReasonDescription, "
+            values_position += " ?, "
             parameters.append(reason_description)
         if is_fixed is not None:
-            query += "IsFixed = ?, "
+            query += "IsFixed, "
+            values_position += " ?, "
             parameters.append(is_fixed)
         if fixed_amount is not None:
-            query += "FixedAmount = ?, "
+            query += "FixedAmount, "
+            values_position += " ?, "
             parameters.append(fixed_amount)
         if is_percent is not None:
-            query += "IsPercent = ?, "
+            query += "IsPercent, "
+            values_position += " ?, "
             parameters.append(is_percent)
         if percent is not None:
-            query += "Percent = ?, "
+            query += "Percent, "
+            values_position += " ?, "
             parameters.append(percent)
 
         # Remove the trailing comma and space
         query = query[:-2]
+        values_position = values_position[:-2]
 
-        query += " WHERE PriceAdjustmentID = ?;"
-        parameters.append(price_adjustment_id)
+        query += f" ) VALUES ( {values_position} );"
 
         log_it = list()
         log_it.append(query)
@@ -115,31 +123,34 @@ class DBInsert:
         self.connection.commit()
         return self.cursor.lastrowid
 
-    def add_item_category(self, item_category_id, item_category_title=None, item_category_description=None):
+    def add_item_category(self, item_category_id='NoID', item_category_title=None, item_category_description=None):
         """
-         ItemCategory record
-
+         Add Item Category
         :param item_category_id:
         :param item_category_title:
         :param item_category_description:
         :return:
         """
-        query = "UPDATE ItemCategories SET "
+        query = "INSERT INTO ItemCategories ("
         parameters = []
+        values_position = " "
 
         if item_category_title:
-            query += "ItemCategoryTitle=?, "
+            query += "ItemCategoryTitle, "
+            values_position += " ?, "
             parameters.append(item_category_title)
 
         if item_category_description:
-            query += "ItemCategoryDescription=?, "
+            query += "ItemCategoryDescription, "
+            values_position += " ?, "
             parameters.append(item_category_description)
 
-        # Remove the trailing comma and space from the query string
+            # Remove the trailing comma and space
         query = query[:-2]
+        values_position = values_position[:-2]
 
-        query += " WHERE ItemCategoryID=?;"
-        parameters.append(item_category_id)
+        query += f" ) VALUES ( {values_position} );"
+
 
         log_it = list()
         log_it.append(query)
@@ -150,22 +161,24 @@ class DBInsert:
         self.connection.commit()
         return self.cursor.lastrowid
 
-    def add_user_type(self, user_type_id, description=None):
+    def add_user_type(self, user_type_id='NoID', description=None):
         """
           UserType Record
         :param user_type_id:
         :param description:
         :return:
         """
-        query = "UPDATE UserType SET"
+
+        query = "INSERT INTO UserType ( "
         parameters = []
+        values_position = " "
 
         if description:
-            query += " Description = ?,"
+            query += " Description "
             parameters.append(description)
+            values_position += " ? "
 
-        query = query.rstrip(",") + " WHERE UserTypeID = ?;"
-        parameters.append(user_type_id)
+        query += f" ) VALUES ( {values_position} );"
 
         log_it = list()
         log_it.append(query)
@@ -176,8 +189,8 @@ class DBInsert:
         self.connection.commit()
         return self.cursor.lastrowid
 
-    def add_catalog_item(self, catalog_item_id, manufacturer_id=None, catalog_item_name=None,
-                            item_category_id=None, buy_cost=None):
+    def add_catalog_item(self, catalog_item_id='NoId', manufacturer_id=None, catalog_item_name=None,
+                         item_category_id=None, buy_cost=None):
         """
 
         :param catalog_item_id:
@@ -187,61 +200,33 @@ class DBInsert:
         :param buy_cost:
         :return:
         """
-        query = "UPDATE CatalogItems SET"
+
+        query = "INSERT INTO CatalogItems ("
         parameters = []
-        if manufacturer_id:
-            parameters.append(f"ManufacturerID = {manufacturer_id}")
-        if catalog_item_name:
-            parameters.append(f"CatalogItemName = '{catalog_item_name}'")
-        if item_category_id:
-            parameters.append(f"ItemCategoryID = {item_category_id}")
-        if buy_cost:
-            parameters.append(f"BuyCost = {buy_cost}")
+        values_position = "  "
 
-        if not parameters:
-            print("No values to update.")
-            return
+        if manufacturer_id is not None:
+            query += "ManufacturerID, "
+            values_position += " ?, "
+            parameters.append(manufacturer_id)
+        if catalog_item_name is not None:
+            query += "CatalogItemName, "
+            values_position += " ?, "
+            parameters.append(catalog_item_name)
+        if item_category_id is not None:
+            query += "ItemCategoryID, "
+            values_position += " ?, "
+            parameters.append(item_category_id)
+        if buy_cost is not None:
+            query += "BuyCost, "
+            values_position += " ?, "
+            parameters.append(buy_cost)
 
-        query += " " + ", ".join(parameters)
-        query += f" WHERE CatalogItemID = {catalog_item_id}"
+        # Remove the trailing comma and space
+        query = query[:-2]
+        values_position = values_position[:-2]
+        query += f" ) VALUES ( {values_position} );"
 
-        log_it = list()
-        log_it.append(query)
-        log_it.append(parameters)
-        self._log_it(log_it)
-
-        # self._update(query, parameters)
-        self.cursor.execute(query)
-        self.connection.commit()
-        return self.cursor.lastrowid
-
-    def add_inventory_item(self, item_id, catalog_item_id=None, stock_quantity=None, item_serial_number=None,
-                              sell_price=None):
-        """
-
-        :param item_id:
-        :param catalog_item_id:
-        :param stock_quantity:
-        :param item_serial_number:
-        :param sell_price:
-        :return:
-        """
-        query = "UPDATE InventoryItems SET "
-        parameters = []
-        if catalog_item_id is not None:
-            query += "CatalogItemID = ?, "
-            parameters.append(catalog_item_id)
-        if stock_quantity is not None:
-            query += "StockQuantity = ?, "
-            parameters.append(stock_quantity)
-        if item_serial_number is not None:
-            query += "ItemSerialNumber = ?, "
-            parameters.append(item_serial_number)
-        if sell_price is not None:
-            query += "SellPrice = ?, "
-            parameters.append(sell_price)
-        query = query.rstrip(", ") + " WHERE InventoryItemID = ?"
-        parameters.append(item_id)
 
         log_it = list()
         log_it.append(query)
@@ -253,7 +238,57 @@ class DBInsert:
         self.connection.commit()
         return self.cursor.lastrowid
 
-    def add_address(self, address_id, street_address=None, city=None, state=None, country=None, postal_code=None):
+    def add_inventory_item(self, item_id='NOID', catalog_item_id=None, stock_quantity=None, item_serial_number=None,
+                           sell_price=None):
+        """
+        :param item_id:
+        :param catalog_item_id:
+        :param stock_quantity:
+        :param item_serial_number:
+        :param sell_price:
+        :return:
+        """
+
+        query = "INSERT INTO InventoryItems ( "
+        parameters = []
+        values_position = " "
+
+        if catalog_item_id is not None:
+            query += "CatalogItemID, "
+            values_position += " ?, "
+            parameters.append(catalog_item_id)
+        if stock_quantity is not None:
+            query += "StockQuantity, "
+            values_position += " ?, "
+            parameters.append(stock_quantity)
+        if item_serial_number is not None:
+            query += "ItemSerialNumber, "
+            values_position += " ?, "
+            parameters.append(item_serial_number)
+        if sell_price is not None:
+            query += "SellPrice, "
+            values_position += " ?, "
+            parameters.append(sell_price)
+
+
+            # Remove the trailing comma and space
+        query = query[:-2]
+        values_position = values_position[:-2]
+
+        query += f" ) VALUES ( {values_position} );"
+
+
+        log_it = list()
+        log_it.append(query)
+        log_it.append(parameters)
+        self._log_it(log_it)
+
+        # self._update(query, parameters)
+        self.cursor.execute(query, parameters)
+        self.connection.commit()
+        return self.cursor.lastrowid
+
+    def add_address(self, address_id='NoID', street_address=None, city=None, state=None, country=None, postal_code=None):
         """
 
         :param address_id:
@@ -265,29 +300,37 @@ class DBInsert:
         :return:
         """
 
-        query = "UPDATE Address SET "
+        query = "INSERT INTO Address ( "
         parameters = []
+        values_position = "  "
 
-        if street_address:
-            query += "StreetAddress = ?, "
+        if street_address is not None:
+            query += "StreetAddress, "
+            values_position += " ?, "
             parameters.append(street_address)
-        if city:
-            query += "City = ?, "
+        if city is not None:
+            query += "City, "
+            values_position += " ?, "
             parameters.append(city)
-        if state:
-            query += "State = ?, "
+        if state is not None:
+            query += "State, "
+            values_position += " ?, "
             parameters.append(state)
-        if country:
-            query += "Country = ?, "
+        if country is not None:
+            query += "Country, "
+            values_position += " ?, "
             parameters.append(country)
-        if postal_code:
-            query += "PostalCode = ?, "
+        if postal_code is not None:
+            query += "PostalCode, "
+            values_position += " ?, "
             parameters.append(postal_code)
 
-        query = query[:-2]  # remove the last comma and space
-        query += " WHERE AddressID = ?;"
-        parameters.append(address_id)
+            # Remove the trailing comma and space
+        query = query[:-2]
+        values_position = values_position[:-2]
 
+        query += f" ) VALUES ( {values_position} );"
+        print(query)
         log_it = list()
         log_it.append(query)
         log_it.append(parameters)
@@ -297,8 +340,9 @@ class DBInsert:
         self.cursor.execute(query, parameters)
         self.connection.commit()
         return self.cursor.lastrowid
-#########
-    def add_manufacturer(self, manufacturer_id, manufacturer_name=None, manufacturer_description=None, address_id=None):
+
+    #########
+    def add_manufacturer(self, manufacturer_id='NoID', manufacturer_name=None, manufacturer_description=None, address_id=None):
         """
 
         :param manufacturer_id:
@@ -307,42 +351,55 @@ class DBInsert:
         :param address_id:
         :return:
         """
-        query = "UPDATE Manufacturers SET"
-        params = []
+
+        query = "INSERT INTO Manufacturers ( "
+        parameters = []
+        values_position = " "
+
         if manufacturer_name:
-            query += " ManufacturerName = ?,"
-            params.append(manufacturer_name)
+            query += " ManufacturerName, "
+            values_position += " ?, "
+            parameters.append(manufacturer_name)
         if manufacturer_description:
-            query += " ManufacturerDescription = ?,"
-            params.append(manufacturer_description)
+            query += " ManufacturerDescription, "
+            values_position += " ?, "
+            parameters.append(manufacturer_description)
         if address_id:
-            query += " AddressID = ?,"
-            params.append(address_id)
-        query = query.rstrip(",") + " WHERE ManufacturerID = ?;"
-        params.append(manufacturer_id)
-        self.cursor.execute(query, params)
+            query += " AddressID, "
+            values_position += " ?, "
+            parameters.append(address_id)
+
+            # Remove the trailing comma and space
+        query = query[:-2]
+        values_position = values_position[:-2]
+
+        query += f" ) VALUES ( {values_position} );"
+
+        self.cursor.execute(query, parameters)
         self.connection.commit()
         return self.cursor.lastrowid
 
-    def add_customers(self, customer_id, address_id=None, customer_name=None):
-        query = "UPDATE Customers SET "
-        params = []
+    def add_customers(self, customer_id='NoID', address_id=None, customer_name=None):
+        query = "INSERT INTO Customers ( "
+        parameters = []
+        values_position = " "
 
         if address_id:
-            query += "AddressID = ?, "
-            params.append(address_id)
+            query += "AddressID, "
+            values_position += " ?, "
+            parameters.append(address_id)
 
         if customer_name:
-            query += "CustomerName = ?, "
-            params.append(customer_name)
+            query += "CustomerName , "
+            values_position += " ?, "
+            parameters.append(customer_name)
 
-        # Remove trailing comma and space
-        query = query.rstrip(", ")
+        # Remove the trailing comma and space
+        query = query[:-2]
+        values_position = values_position[:-2]
 
-        # Add WHERE clause to update only the specified customer
-        query += " WHERE CustomerID = ?"
-        params.append(customer_id)
+        query += f" ) VALUES ( {values_position} );"
 
-        self.cursor.execute(query, params)
+        self.cursor.execute(query, parameters)
         self.connection.commit()
         return self.cursor.lastrowid
