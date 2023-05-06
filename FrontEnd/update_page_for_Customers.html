@@ -1,12 +1,12 @@
 <form action='/general_update' method='POST'><h3>ID # 32<h3><label for=CustomerName>CustomerName:</label><br>
- <input type=text id="CustomerName" name="CustomerName" value="a New Customer"></input><br>
+ <input type=text id="CustomerName" name="CustomerName" value="Updated Customer"></input><br>
 <label for=Address>Address:</label><br>
  <select class="" name="Address" id="Address">
 
-<option value="0" >0|Default|Default|Default|None|Default</option>
+<option value="0" selected>0|Default|Default|Default|None|Default</option>
 <option value="10" >10|2-1 Kurosaki-Shiroishi|Yahatanishi-ku|Kitakyushu|None|806-0004</option>
 <option value="11" >11|1-3-1, Mabuchi, Tsuzuki-ku|Yokohama|Kanagawa|None|224-8523</option>
-<option value="12" selected>12|12-13, Nishi-Gotanda 7-chome|Shinagawa-ku|Tokyo|None|141-0031</option>
+<option value="12" >12|12-13, Nishi-Gotanda 7-chome|Shinagawa-ku|Tokyo|None|141-0031</option>
 <option value="13" >13|586 Fulling Mill Road|Middletown|PA|None|17057</option>
 <option value="14" >14|1050 Westlakes Drive, Suite 120|Berwyn|PA|None|19312</option>
 <option value="15" >15|10-1, Higashikotari 1-chome|Nagaokakyo|Kyoto|None|617-8555</option>
@@ -53,6 +53,6 @@
 <option value="79" >79|789 Cedar Avenue|Nashville|TN|USA|37219</option>
 <option value="7" >7|1000 Eaton Boulevard|Cleveland|OH|None|44122</option>
 <option value="80" >80|1010 Pinecrest Road|Indianapolis|IN|USA|46204</option>
-<option value="81" >81|12100 Tulip Grove Dr|Bowie|MD|USA|21146</option>
+<option value="82" >82|A12100 Tulip Grove Dr|Bowie|MD|United States|21146</option>
 <option value="8" >8|1201 South Second Street|Milwaukee|WI|None|53204</option>
-<option value="9" >9|2-3, Marunouchi 3-chome|Chiyoda-ku|Tokyo|None|100-8310</option></select><br><br><input type="hidden" name="table_name" value="Customers"></input><input type="hidden" name="id_column" value="CustomerID"></input><input type="hidden" name="id" value="32"></input><br><label for="delete">Delete Value:</label><input type="checkbox" value="delete"><br><input type='submit' value='Submit'></form><p><a href="/">[ Home ]</a><a href="/general_update?table_name=Customers&target_row_id=31">[ Previous ]</a><a href="/general_update?table_name=Customers&target_row_id=33">[ Next ]</a></p>
+<option value="9" >9|2-3, Marunouchi 3-chome|Chiyoda-ku|Tokyo|None|100-8310</option></select><br><br><input type="hidden" name="table_name" value="Customers"></input><input type="hidden" name="id_column" value="CustomerID"></input><input type="hidden" name="id" value="32"></input><br><label for="delete">Delete Value:</label><input type="checkbox" name='ck_delete' value="delete"><br><input type='submit' value='Submit'></form><p><a href="/">[ Home ]</a><a href="/general_update?table_name=Customers&target_row_id=31">[ Previous ]</a><a href="/general_update?table_name=Customers&target_row_id=33">[ Next ]</a></p>

@@ -289,10 +289,13 @@ class WebApp:
                                                                    table_name=table_name,
                                                                    target_row_id=target_row_id)
 
+                select_records = form_element.get_update_selection_div()
+
                 return render_template('general_update.html', config=self.config,
                                        table_name=table_name,
                                        css_class=self.css_class,
-                                       form_element=form_element)
+                                       form_element=form_element,
+                                       select_records=select_records)
 
 
             elif request.method == "GET" and table_name is not None and target_row_id is not None:
@@ -300,11 +303,12 @@ class WebApp:
                 form_element = FrontEnd.HTMLFormFactory.UpdateForm(db_name=self.db_name,
                                                                    table_name=table_name,
                                                                    target_row_id=target_row_id)
-
+                select_records = form_element.get_update_selection_div()
                 return render_template('general_update.html', config=self.config,
                                        table_name=table_name,
                                        css_class=self.css_class,
-                                       form_element=form_element)
+                                       form_element=form_element,
+                                       select_records=select_records)
 
             else:
 
@@ -333,11 +337,13 @@ class WebApp:
 
                 form_element = FrontEnd.HTMLFormFactory.UpdateForm(db_name=self.db_name, table_name=table_name,
                                                                    target_row_id=target_row_id)
+                select_records = form_element.get_update_selection_div()
 
                 return render_template('/general_update.html', config=self.config,
                                        table_name=table_name,
                                        css_class=self.css_class,
-                                       form_element=form_element)
+                                       form_element=form_element,
+                                       select_records=select_records)
             else:
                 form_element = FrontEnd.HTMLFormFactory.AddForm(db_name=self.db_name, table_name=table_name,
                                                                 target_row_id=target_row_id)

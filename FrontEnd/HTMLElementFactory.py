@@ -136,3 +136,32 @@ class SelectTag:
         :return:
         '''
         return self.object_result_string
+
+class HyperLinkTag:
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def create_hyperlink(css_class, base_href, key_values):
+        return_value = f'''<a href="https://{base_href}?{key_values}'''
+        return return_value
+
+
+
+class DivTagScrolling:
+    def __init__(self, css_class, raw_html):
+        self._css_class = css_class
+        # overflow:auto; width:800px;height:100px;
+        self._div_content = f'''<br><div class="{self._css_class}" style="overflow:auto; height:100px;">'''
+        self._div_content += f'''<p> Click on Record: <br> {raw_html}</div><br>'''
+
+    def get_html(self):
+        return self._div_content
+
+
+
+
+
+
+
+

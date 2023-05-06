@@ -39,6 +39,7 @@ class Form:
         return tables
 
 
+
 class UpdateForm(Form):
     def __init__(self, db_name: str, table_name: str, **kwargs):
         super().__init__(db_name)
@@ -47,8 +48,55 @@ class UpdateForm(Form):
         self._table_object = QueryBuilder.TableInfo(db_name, table_name, target_row_id=self.target_row_id)
         self._form_select_tags = []
         self._form_input_tags = []
+        #self._build_update_selection_div()
         self.build_input_tag()
         self.build_select_tags()
+
+    def _build_update_selection_div(self):
+        href_formatter = '''<ul><a href="/general_update?table_name={}&target_row_id={}">{}</a></ul>\n'''
+        result_set = self.table_object.get_items_pk_headers()
+        hrefs = ''
+        for item in result_set:
+            hrefs += href_formatter.format(self.table_object.table_name,item[0], item[1])
+
+        html = HTMLElementFactory.DivTagScrolling("", hrefs).get_html()
+
+        return html
+
+    def get_update_selection_div(self):
+        return self._build_update_selection_div()
+
+
+
+
+
+
+
+
+    def build_select_tags(self, **kwargs):
+
+        fk_table_headers = self.table_object.fk_headers
+        fk_table_object_list = []
+        for fk_table_header in fk_table_headers:
+            for table in self._tables:
+                if fk_table_header in table.pk_headers:
+                    print(table)
+                    fk_table_object_list.append(table)
+
+            table: TableInfo
+        for table in fk_table_object_list:
+            selected_value = -1
+            select_element_data: list
+            select_element_data = table.get_items_pk_headers()
+            label = HTMLElementFactory.LabelTag(f"{table.table_name}", f"{table.table_name}")
+            self._form_select_tags.append(str(label))
+            selected_value = self.table_object.record[table.pk_headers[0]]
+            select_element = HTMLElementFactory.SelectTag(select_element_data,
+                                                          selected=f"{selected_value}",
+                                                          html_id=f"{table.table_name}",
+                                                          html_name=f"{table.table_name}",
+                                                          css_class=f"")
+            self._form_select_tags.append(str(select_element))
 
     @property
     def table_object(self):
@@ -93,6 +141,7 @@ class UpdateForm(Form):
 
     def get_html(self):
         # Create Form
+        html = f'''{self._build_update_selection_div()}'''
         html = f'''<form action='/general_update' method='POST'>'''
         html += f'''<h3>ID # {self.table_object.record[self.table_object.pk_headers[0]]}<h3>'''
         html += f'''{' '.join(self._form_input_tags)}'''
