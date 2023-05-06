@@ -244,6 +244,12 @@ class WebApp:
 
             # tables = ["Address", "CatalogItems", "Customers", "ItemCategories", "Manufacturers",
             #           "Users", "UserType"]
+            tables.remove("PriceAdjustment")
+            tables.remove("LineItems")
+            tables.remove("Invoices")
+            tables.remove("InventoryItems")
+
+
 
 
             if request.method == "POST":
