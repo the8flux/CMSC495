@@ -1,6 +1,23 @@
-{% print('hello') %}
-{%  for i in inventoryItems %}
-
-{% print(i) %}
-
-{% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>{{ css_class | safe  }}</style>
+    <title>Omega Inventory System</title>
+<body>
+<h1>Welcome to the Omega Inventory System</h1>
+<div class="view-div">
+    <h2>Select the table for which you would like to add or update an entry</h2>
+    <form method="post">
+        {% for i in tables %}
+        <input type="radio" name="table" value="{{i}}">{{i}}</input><br>
+        {% endfor %}
+        <br>
+        <button type="submit" name="action" value="add">ADD</button>
+        <button type="submit" name="action" value="update">UPDATE</button>
+    </form>
+    <!--<h2> Add an item to {{ table_name | safe }}</h2>
+    {{ form_element | safe }}-->
+</div>
+</body>
+</html>

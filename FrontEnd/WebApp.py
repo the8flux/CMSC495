@@ -6,7 +6,7 @@ import DB.DBUpdate
 import DB.DBInsert
 import configparser
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 
 import FrontEnd.QueryBuilder
 import FrontEnd.HTMLElementFactory
@@ -233,13 +233,18 @@ class WebApp:
                 #return last_row_id
                 pass
 
-
-
-
-        @self.app.route('/')
+        @self.app.route('/', methods=['GET', 'POST'])
         def index():
-            update_frontend_table_info()
-            return render_template('index.html', config=self.config, inventoryItems=self.inventoryItems)
+            # update_frontend_table_info()
+            tables = ["Address", "CatalogItems", "Customers", "ItemCategories", "Manufacturers",
+                      "Users", "UserType"]
+            if request.method == "POST":
+                if request.form['table']:
+                    if request.form['action'] == 'add':
+                        return redirect(url_for('general_add', table_name=request.form['table']))
+                    if request.form['action'] == 'update':
+                        return redirect(url_for('add_general_update', table_name=request.form['table'], target_row_id=1))
+            return render_template('index.html', config=self.config, tables=tables, inventoryItems=self.inventoryItems)
 
         @self.app.route('/general_update', methods=['GET', 'POST'])
         def add_general_update():
