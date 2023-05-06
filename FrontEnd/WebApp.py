@@ -236,8 +236,16 @@ class WebApp:
         @self.app.route('/', methods=['GET', 'POST'])
         def index():
             # update_frontend_table_info()
-            tables = ["Address", "CatalogItems", "Customers", "ItemCategories", "Manufacturers",
-                      "Users", "UserType"]
+
+            tables = list()
+            result_set = DB.DBExtract.DBExtract(self.db_name).get_table_names()
+            for table in result_set:
+                tables.append(table[0])
+
+            # tables = ["Address", "CatalogItems", "Customers", "ItemCategories", "Manufacturers",
+            #           "Users", "UserType"]
+
+
             if request.method == "POST":
                 if request.form['table']:
                     if request.form['action'] == 'add':
