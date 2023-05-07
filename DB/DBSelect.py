@@ -133,6 +133,11 @@ class DBSelect:
         query = " SELECT * FROM VIEW_UserManufacturers;"
         return self._fetch(query)
 
+    def View_InventoryItems(self):
+        query = " SELECT * FROM VIEW_InventoryItems"
+        return self._fetch(query)
+
+
     def ItemCategories(self):
         """"
         """

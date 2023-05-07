@@ -200,8 +200,11 @@ class WebApp:
 
 
             elif table_name == 'InventoryItems':
-                # updater.update_inventory_item()
-                pass
+                last_row_id = adder.add_inventory_item(get_post_key(key='id'), get_post_key(key='CatalogItems'),
+                                                     get_post_key(key='StockQuantity'),
+                                                     get_post_key(key='ItemSerialNumber'),
+                                                     get_post_key(key='SellPrice'))
+                return last_row_id
 
             elif table_name == 'Address':
                 last_row_id = adder.add_address(get_post_key(key='id'), get_post_key(key='StreetAddress'), get_post_key(key='City'),
@@ -249,7 +252,13 @@ class WebApp:
                 headers = db_info.get_table_headers(view_name)
                 rows = viewer.VIEW_ManufacturersCatalogItems()
 
+            elif view_name =="VIEW_InventoryItems":
+                headers = db_info.get_table_headers(view_name)
+                rows = viewer.View_InventoryItems()
+
             return {'headers': headers, 'rows': rows}
+
+
 
 
 

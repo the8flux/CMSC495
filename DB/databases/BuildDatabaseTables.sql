@@ -325,4 +325,23 @@ CREATE VIEW VIEW_UserCustomers AS
      WHERE UserType.UserTypeID = 3
      ORDER BY Users.LastName ASC, Users.FirstName ASC;
 
+
+
+  DROP VIEW IF EXISTS VIEW_InventoryItems;
+ CREATE VIEW VIEW_InventoryItems AS
+    SELECT InventoryItems.InventoryItemID,
+           CatalogItems.CatalogItemName,
+           InventoryItems.StockQuantity,
+           InventoryItems.ItemSerialNumber,
+           InventoryItems.SellPrice,
+           CataLogItems.BuyCost,
+           Manufacturers.ManufacturerName
+      FROM InventoryItems
+           INNER JOIN
+           CatalogItems ON InventoryItems.CatalogItemID = CatalogItems.CatalogItemID
+           INNER JOIN
+           Manufacturers ON CataLogITems.ManufacturerID = Manufacturers.ManufacturerID;
+
+
+
 COMMIT;

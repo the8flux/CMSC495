@@ -1,20 +1,22 @@
-<form action='/general_update' method='POST'><h3>ID # 17<h3><label for=FirstName>FirstName:</label><br>
- <input type=text id="FirstName" name="FirstName" value="Odo"></input><br>
- <label for=LastName>LastName:</label><br>
- <input type=text id="LastName" name="LastName" value=""></input><br>
- <label for=Telephone>Telephone:</label><br>
- <input type=text id="Telephone" name="Telephone" value="5195552828"></input><br>
- <label for=Email>Email:</label><br>
- <input type=text id="Email" name="Email" value="odo@example.com"></input><br>
- <label for=UserLogon>UserLogon:</label><br>
- <input type=text id="UserLogon" name="UserLogon" value="odo"></input><br>
-<label for=UserType>UserType:</label><br>
+<form action='/general_update' method='POST'><h3>ID # 21<h3><label for=FirstName>FirstName:</label><br>
+ <input type=text id="FirstName" name="FirstName" value="William"></input><br>
+ <br> <label for=LastName>LastName:</label><br>
+ <input type=text id="LastName" name="LastName" value="Riker"></input><br>
+ <br> <label for=Telephone>Telephone:</label><br>
+ <input type=text id="Telephone" name="Telephone" value="5195551313"></input><br>
+ <br> <label for=Email>Email:</label><br>
+ <input type=text id="Email" name="Email" value="william.riker@example.com"></input><br>
+ <br> <label for=UserLogon>UserLogon:</label><br>
+ <input type=text id="UserLogon" name="UserLogon" value="wriker"></input><br>
+ <br> <label for=UserPasswordHash>UserPasswordHash:</label><br>
+ <input type=text id="UserPasswordHash" name="UserPasswordHash" value="password"></input><br>
+ <br><a href="/general_add?table_name=UserType">[+]</a> <label for=UserType><a href="/general_update?table_name=UserType&target_row_id=2">UserType</a>:</label><br>
  <select class="" name="UserType" id="UserType">
 
 <option value="1" >1 | System Admin</option>
 <option value="2" selected>2 | Employee</option>
 <option value="3" >3 | Customer</option>
-<option value="4" >4 | Manufacturer</option></select><br><br> <label for=Manufacturers>Manufacturers:</label><br>
+<option value="4" >4 | Manufacturer</option></select><br><br> <a href="/general_add?table_name=Manufacturers">[+]</a> <label for=Manufacturers><a href="/general_update?table_name=Manufacturers&target_row_id=0">Manufacturers</a>:</label><br>
  <select class="" name="Manufacturers" id="Manufacturers">
 
 <option value="1" >1 | 1 | General Electric | Manufacturer of appliances, lighting, and power systems</option>
@@ -29,14 +31,14 @@
 <option value="18" >18 | 18 | Advanced Micro Devices (AMD) | Manufacturer of microprocessors and computer hardware</option>
 <option value="19" >19 | 19 | Nvidia | Manufacturer of graphics processing units (GPUs) and artificial intelligence (AI) chips</option>
 <option value="2" >2 | 2 | Siemens | Manufacturer of industrial automation and energy systems</option>
-<option value="21" >21 | 14 | New Manufacturerwertewr | dfasdfasdfsertwert</option>
-<option value="3" >3 | 10 | zzzABB | zzzManufacturer of power grids and industrial automation</option>
+<option value="20" >20 | 20 | Micron Technology | Manufacturer of memory and storage solutions</option>
+<option value="3" >3 | 3 | ABB | Manufacturer of power grids and industrial automation</option>
 <option value="4" >4 | 4 | Schneider Electric | Manufacturer of electrical distribution and automation systems</option>
 <option value="5" >5 | 5 | Emerson Electric | Manufacturer of automation and control systems</option>
 <option value="6" >6 | 6 | Honeywell | Manufacturer of building automation and control systems</option>
 <option value="7" >7 | 7 | Eaton | Manufacturer of power management and industrial automation systems</option>
 <option value="8" >8 | 8 | Rockwell Automation | Manufacturer of industrial automation and control systems</option>
-<option value="9" >9 | 9 | Mitsubishi Electric | Manufacturer of automation and control systems</option></select><br><br> <label for=Customers>Customers:</label><br>
+<option value="9" >9 | 9 | Mitsubishi Electric | Manufacturer of automation and control systems</option></select><br><br> <a href="/general_add?table_name=Customers">[+]</a> <label for=Customers><a href="/general_update?table_name=Customers&target_row_id=1">Customers</a>:</label><br>
  <select class="" name="Customers" id="Customers">
 
 <option value="1" selected>1 | 0 | Employees</option>
@@ -50,7 +52,7 @@
 <option value="17" >17 | 66 | Dynamic Robotics & Automation</option>
 <option value="18" >18 | 67 | Quantum Computing Technologies</option>
 <option value="19" >19 | 68 | Global Solutions Group</option>
-<option value="2" >2 | 10 | Update Global Energy Solutions</option>
+<option value="2" >2 | 51 | Global Energy Solutions</option>
 <option value="20" >20 | 69 | Intelligent Manufacturing Systems</option>
 <option value="21" >21 | 70 | Precision Components Inc</option>
 <option value="22" >22 | 71 | Smart Tech Innovations</option>
@@ -62,15 +64,14 @@
 <option value="28" >28 | 77 | Quantum Information Technologies</option>
 <option value="29" >29 | 78 | Global Engineering Solutions</option>
 <option value="3" >3 | 52 | Dynamic Manufacturing Inc</option>
-<option value="30" >30 | 10 | ttttIntelligent Automation Inc</option>
+<option value="30" >30 | 79 | Intelligent Automation Inc</option>
 <option value="31" >31 | 80 | Precision Automation Group</option>
-<option value="32" >32 | 0 | Updated Customer</option>
 <option value="4" >4 | 53 | Integrated Systems & Automation</option>
 <option value="5" >5 | 54 | Smart Home Innovations</option>
 <option value="6" >6 | 55 | Quantum Technologies LLC</option>
 <option value="7" >7 | 56 | Precision Engineering Group</option>
 <option value="8" >8 | 57 | Global Automation Services</option>
-<option value="9" >9 | 58 | High Performance Systems Inc</option></select><br><br> <label for=Address>Address:</label><br>
+<option value="9" >9 | 58 | High Performance Systems Inc</option></select><br><br> <a href="/general_add?table_name=Address">[+]</a> <label for=Address><a href="/general_update?table_name=Address&target_row_id=0">Address</a>:</label><br>
  <select class="" name="Address" id="Address">
 
 <option value="0" selected>0 | Default | Default | Default | None | Default</option>
@@ -87,7 +88,7 @@
 <option value="19" >19 | 2788 San Tomas Expressway | Santa Clara | CA | None | 95051</option>
 <option value="2" >2 | Siemensstraße 6 | Munich | Bavaria | None | 80333</option>
 <option value="20" >20 | 8000 S Federal Way | Boise | ID | None | 83707</option>
-<option value="3" >3 | aaasdfgdfg | cccsdfgdsfg | dddsdfdgfdgd | eeedsfgfg | fffsdfgds</option>
+<option value="3" >3 | Affolternstrasse 44 | Zurich | None | None | 8050</option>
 <option value="4" >4 | 35 rue Joseph Monier | Rueil-Malmaison | Ile-de-France | None | 92500</option>
 <option value="5" >5 | 8000 West Florissant Avenue | St. Louis | MO | None | 63136</option>
 <option value="50" >50 | 345 Rosewood Lane | Los Angeles | CA | USA | 90017</option>
@@ -124,5 +125,4 @@
 <option value="79" >79 | 789 Cedar Avenue | Nashville | TN | USA | 37219</option>
 <option value="8" >8 | 1201 South Second Street | Milwaukee | WI | None | 53204</option>
 <option value="80" >80 | 1010 Pinecrest Road | Indianapolis | IN | USA | 46204</option>
-<option value="82" >82 | A12100 Tulip Grove Dr | Bowie | MD | United States | 21146</option>
-<option value="9" >9 | 2-3, Marunouchi 3-chome | Chiyoda-ku | Tokyo | None | 100-8310</option></select><br><br><input type="hidden" name="table_name" value="Users"></input><input type="hidden" name="id_column" value="UserID"></input><input type="hidden" name="id" value="17"></input><br><label for="delete">Delete Value:</label><input type="checkbox" name='ck_delete' value="delete"><br><input type='submit' value='Submit'></form><p><a href="/">[ Home ]</a><a href="/general_update?table_name=Users&target_row_id=16">[ Previous ]</a><a href="/general_update?table_name=Users&target_row_id=18">[ Next ]</a></p>
+<option value="9" >9 | 2-3, Marunouchi 3-chome | Chiyoda-ku | Tokyo | None | 100-8310</option></select><br><br><input type="hidden" name="table_name" value="Users"></input><input type="hidden" name="id_column" value="UserID"></input><input type="hidden" name="id" value="21"></input><br><label for="delete">Delete Value:</label><input type="checkbox" name='ck_delete' value="delete"><br><input type='submit' value='Submit'></form><p><a href="/">[ Home ]</a>
