@@ -4,6 +4,7 @@ import DB.DBExtract
 import DB.DBSelect
 import DB.DBUpdate
 import DB.DBInsert
+import DB.DBInfo
 import configparser
 
 from flask import Flask, render_template, request, redirect, url_for
@@ -34,38 +35,38 @@ class WebApp:
         self.table = dict()
         self.current_record = dict()
 
-        #################
-        # Testing lists #
-        #################
-        self.inventoryItems = [
-            {"InventoryItemID": 1, "CatalogItemID": 1, "StockQuantity": 10, "ItemSerialNumber": "123ABC",
-             "SellPrice": 10000},
-            {"InventoryItemID": 2, "CatalogItemID": 2, "StockQuantity": 100, "ItemSerialNumber": "456DEF",
-             "SellPrice": 1000},
-            {"InventoryItemID": 3, "CatalogItemID": 3, "StockQuantity": 1000, "ItemSerialNumber": "789GHI",
-             "SellPrice": 100},
-            {"InventoryItemID": 4, "CatalogItemID": 4, "StockQuantity": 10000, "ItemSerialNumber": "999ZYX",
-             "SellPrice": 10}]
-
-        self.catalog_items = [
-            {"ItemCatagoryID": 1, "ItemCatagoryTitle": "Electronics", "ItemCatagoryDescription": "Electronic gadgets"},
-            {"ItemCatagoryID": 2, "ItemCatagoryTitle": "Home", "ItemCatagoryDescription": "Goes in the home"},
-            {"ItemCatagoryID": 3, "ItemCatagoryTitle": "Food", "ItemCatagoryDescription": "Nom nom"},
-            {"ItemCatagoryID": 4, "ItemCatagoryTitle": "Clothing", "ItemCatagoryDescription": "You wear it!"}]
-        self.manufacturers = [
-            {"ManufacturerID": 1, "ManufacturerName": "Intel", "ManufacturerDescription": "Team Blue"},
-            {"ManufacturerID": 2, "ManufacturerName": "AMD", "ManufacturerDescription": "Team Red"},
-            {"ManufacturerID": 3, "ManufacturerName": "Nvidia", "ManufacturerDescription": "Team Green"},
-            {"ManufacturerID": 4, "ManufacturerName": "Microsoft", "ManufacturerDescription": "Windows"}]
-        self.catalog_items = [
-            {"CatalogItemID": 1, "ManufacturerID": 1, "CatalogItemName": "i9 9990XE", "ItemCatagoryID": 1,
-             "BuyCost": 1000},
-            {"CatalogItemID": 2, "ManufacturerID": 2, "CatalogItemName": "R9 7950X3D", "ItemCatagoryID": 1,
-             "BuyCost": 750},
-            {"CatalogItemID": 3, "ManufacturerID": 3, "CatalogItemName": "RTX 4090", "ItemCatagoryID": 1,
-             "BuyCost": 1500},
-            {"CatalogItemID": 4, "ManufacturerID": 4, "CatalogItemName": "Surface Pro", "ItemCatagoryID": 1,
-             "BuyCost": 2000}]
+        # #################
+        # # Testing lists #
+        # #################
+        # self.inventoryItems = [
+        #     {"InventoryItemID": 1, "CatalogItemID": 1, "StockQuantity": 10, "ItemSerialNumber": "123ABC",
+        #      "SellPrice": 10000},
+        #     {"InventoryItemID": 2, "CatalogItemID": 2, "StockQuantity": 100, "ItemSerialNumber": "456DEF",
+        #      "SellPrice": 1000},
+        #     {"InventoryItemID": 3, "CatalogItemID": 3, "StockQuantity": 1000, "ItemSerialNumber": "789GHI",
+        #      "SellPrice": 100},
+        #     {"InventoryItemID": 4, "CatalogItemID": 4, "StockQuantity": 10000, "ItemSerialNumber": "999ZYX",
+        #      "SellPrice": 10}]
+        #
+        # self.catalog_items = [
+        #     {"ItemCatagoryID": 1, "ItemCatagoryTitle": "Electronics", "ItemCatagoryDescription": "Electronic gadgets"},
+        #     {"ItemCatagoryID": 2, "ItemCatagoryTitle": "Home", "ItemCatagoryDescription": "Goes in the home"},
+        #     {"ItemCatagoryID": 3, "ItemCatagoryTitle": "Food", "ItemCatagoryDescription": "Nom nom"},
+        #     {"ItemCatagoryID": 4, "ItemCatagoryTitle": "Clothing", "ItemCatagoryDescription": "You wear it!"}]
+        # self.manufacturers = [
+        #     {"ManufacturerID": 1, "ManufacturerName": "Intel", "ManufacturerDescription": "Team Blue"},
+        #     {"ManufacturerID": 2, "ManufacturerName": "AMD", "ManufacturerDescription": "Team Red"},
+        #     {"ManufacturerID": 3, "ManufacturerName": "Nvidia", "ManufacturerDescription": "Team Green"},
+        #     {"ManufacturerID": 4, "ManufacturerName": "Microsoft", "ManufacturerDescription": "Windows"}]
+        # self.catalog_items = [
+        #     {"CatalogItemID": 1, "ManufacturerID": 1, "CatalogItemName": "i9 9990XE", "ItemCatagoryID": 1,
+        #      "BuyCost": 1000},
+        #     {"CatalogItemID": 2, "ManufacturerID": 2, "CatalogItemName": "R9 7950X3D", "ItemCatagoryID": 1,
+        #      "BuyCost": 750},
+        #     {"CatalogItemID": 3, "ManufacturerID": 3, "CatalogItemName": "RTX 4090", "ItemCatagoryID": 1,
+        #      "BuyCost": 1500},
+        #     {"CatalogItemID": 4, "ManufacturerID": 4, "CatalogItemName": "Surface Pro", "ItemCatagoryID": 1,
+        #      "BuyCost": 2000}]
 
         def update_frontend_table_info():
             db_info = DB.DBExtract.DBExtract(self.db_name)
@@ -233,6 +234,35 @@ class WebApp:
                 #return last_row_id
                 pass
 
+
+        def switch_view(view_name) -> dict:
+            viewer = DB.DBSelect.DBSelect(self.db_name)
+            db_info = DB.DBInfo.DBInfo(self.db_name)
+            headers = list()
+            rows = list()
+
+            if view_name == 'VIEW_CustomersAddress':
+                headers = db_info.get_table_headers(view_name)
+                rows = viewer.VIEW_CustomersAddress()
+
+            elif view_name == 'VIEW_ManufacturersCatalogItems':
+                headers = db_info.get_table_headers(view_name)
+                rows = viewer.VIEW_ManufacturersCatalogItems()
+
+            return {'headers': headers, 'rows': rows}
+
+
+
+
+
+
+
+
+
+
+
+
+
         @self.app.route('/', methods=['GET', 'POST'])
         def index():
             # update_frontend_table_info()
@@ -258,7 +288,20 @@ class WebApp:
                         return redirect(url_for('general_add', table_name=request.form['table']))
                     if request.form['action'] == 'update':
                         return redirect(url_for('add_general_update', table_name=request.form['table'], target_row_id=1))
-            return render_template('index.html', config=self.config, tables=tables, inventoryItems=self.inventoryItems)
+            return render_template('index.html', config=self.config, tables=tables)#, inventoryItems=self.inventoryItems)
+
+        @self.app.route('/general_view',  methods=['GET', 'POST'])
+        def view_general():
+            view_name = get_get_key(key='view_name', default='Customers')
+            view_data = switch_view(view_name)
+
+            return render_template('general_read.html', config=self.config, view_name=view_name,
+                                   headers=view_data['headers'],
+                                   rows=view_data['rows'])
+
+
+
+
 
         @self.app.route('/general_update', methods=['GET', 'POST'])
         def add_general_update():
@@ -351,6 +394,74 @@ class WebApp:
                                        table_name=table_name,
                                        css_class=self.css_class,
                                        form_element=form_element)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         ###################################################################################
         #

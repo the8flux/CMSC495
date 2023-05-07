@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>{{ view_name }}</title>
+        <style>
+          /* Define colors */
+          .color-1 {
+            color: #333366;
+          }
+
+          .color-2 {
+            color: #336699;
+          }
+
+          .color-3 {
+            color: #0099CC;
+          }
+
+          /* Define div styles */
+          .view-div {
+            # max-width: 3000px;
+            overflow: auto;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 2px #ddd;
+          }
+
+          .view-div h2 {
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+          }
+
+          .view-div table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+          }
+
+          .view-div table th,
+          .view-div table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+          }
+
+          .view-div table th {
+            background-color: #333366;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+
+          .view-div table tr:nth-child(even) {
+            background-color: #f2f2f2;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="view-div">
+          <h1>Omega Inventory System:</h1>
+          <p></p><a href="/" > [ Home ]</a></p><hr>
+          <h2>{{ view_name | safe }}</h2>
+          <table>
+            <thead>
+            <tr>
+              {% for i in headers %}
+                <th class="color-2">{{i}}</th>
+              {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for i in rows %}
+              <tr class="color-2">
+                {% for j in i %}
+                  <td>
+                    {{j}}
+                  </td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

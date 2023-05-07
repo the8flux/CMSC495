@@ -71,6 +71,9 @@ class DBInfo(DBSelect.DBSelect):
         self._log_it(output)
         return output
 
+
+
+
     def get_table_pk_headers_from_table(self, table_name):
         query = f"PRAGMA table_info({table_name})"
         result = self.db.fetch_all(query)
