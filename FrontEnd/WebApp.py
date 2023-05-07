@@ -277,7 +277,7 @@ class WebApp:
             tables.remove("PriceAdjustment")
             tables.remove("LineItems")
             tables.remove("Invoices")
-            tables.remove("InventoryItems")
+            #tables.remove("InventoryItems")
 
 
 
