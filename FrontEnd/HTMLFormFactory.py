@@ -120,14 +120,22 @@ class UpdateForm(Form):
             selected_value = -1
             select_element_data: list
             select_element_data = table.get_items_pk_headers()
-            label = HTMLElementFactory.LabelTag(f"{table.table_name}", f"{table.table_name}")
-            self._form_select_tags.append(str(label))
+
+
             selected_value = self.table_object.record[table.pk_headers[0]]
+            edit_url = f'''<a href="/general_update?table_name={table.table_name}&target_row_id={selected_value}">{table.table_name}</a>'''
+
+            label = HTMLElementFactory.LabelTag(f"{table.table_name}", edit_url)
+            self._form_select_tags.append(f'''<a href="/general_add?table_name={table.table_name}">[+]</a>''')
+            self._form_select_tags.append(str(label))
+
+
             select_element = HTMLElementFactory.SelectTag(select_element_data,
                                                           selected=f"{selected_value}",
                                                           html_id=f"{table.table_name}",
                                                           html_name=f"{table.table_name}",
                                                           css_class=f"")
+
             self._form_select_tags.append(str(select_element))
 
     def build_input_tag(self):
@@ -138,6 +146,7 @@ class UpdateForm(Form):
             input_tag = HTMLElementFactory.InputTag("text", data_header, data_header, self.table_object.record[data_header])
             self._form_input_tags.append(str(label_tag))
             self._form_input_tags.append(str(input_tag))
+            self._form_input_tags.append("<br>")
 
     def get_html(self):
         # Create Form
@@ -154,8 +163,8 @@ class UpdateForm(Form):
         html += "<br><input type='submit' value='Submit'>"
         html += "</form>"
         html += f'''<p><a href="/">[ Home ]</a>'''
-        html += f'''<a href="/general_update?table_name={self.table_object.table_name}&target_row_id={int(self.table_object.record[self.table_object.pk_headers[0]]) - 1}">[ Previous ]</a>'''
-        html += f'''<a href="/general_update?table_name={self.table_object.table_name}&target_row_id={int(self.table_object.record[self.table_object.pk_headers[0]]) + 1}">[ Next ]</a></p>'''
+        #html += f'''<a href="/general_update?table_name={self.table_object.table_name}&target_row_id={int(self.table_object.record[self.table_object.pk_headers[0]]) - 1}">[ Previous ]</a>'''
+        #html += f'''<a href="/general_update?table_name={self.table_object.table_name}&target_row_id={int(self.table_object.record[self.table_object.pk_headers[0]]) + 1}">[ Next ]</a></p>'''
 
         return html
 

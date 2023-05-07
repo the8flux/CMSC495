@@ -7,7 +7,21 @@
 <body>
 <h1>Welcome to the Omega Inventory System</h1>
 <div class="view-div">
-    <h3>Select the table for which you would like to add or update an entry</h3>
+    <h2><a href="/general_view?view_name=VIEW_CustomersAddress">View Inventory</a></h2>
+    <br>
+    <table style="border:none;">
+        <tr>
+            <td style="border:none"></td>
+            <td style="border:none"><h3><a href="/general_view?view_name=VIEW_CustomersAddress">View Customer and Addresses</a></h3></td>
+            <td style="border:none"><h3><a href="/general_view?view_name=VIEW_ManufacturersCatalogItems">View Manufacturers and their Catalog Items</a></h3></li></td>
+            <td style="border:none"></td>
+        </tr>
+    </table>
+
+</div>
+<br><br>
+<div class="view-div">
+    <h3>Select the table for which you would like to add, update, or delete an entry</h3>
     <form method="post">
         {% for i in tables %}
         <input type="radio" name="table" value="{{i}}">{{i}}</input><br>
@@ -18,8 +32,7 @@
     </form>
     <!--<h2> Add an item to {{ table_name | safe }}</h2>
     {{ form_element | safe }}-->
-    <h3><a href="/general_view?view_name=VIEW_CustomersAddress">View Customer and Addresses</a></h3>
-    <h3><a href="/general_view?view_name=VIEW_ManufacturersCatalogItems">View Manufacturers and their Catalog Items</a></h3>
+
 
 </div>
 </body>

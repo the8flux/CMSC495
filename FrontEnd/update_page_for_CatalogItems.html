@@ -1,8 +1,8 @@
-<form action='/general_update' method='POST'><h3>ID # 10<h3><label for=CatalogItemName>CatalogItemName:</label><br>
- <input type=text id="CatalogItemName" name="CatalogItemName" value="CATID10_MANID1_ITEM_#10"></input><br>
- <label for=BuyCost>BuyCost:</label><br>
- <input type=text id="BuyCost" name="BuyCost" value="912.06"></input><br>
-<label for=ItemCategories>ItemCategories:</label><br>
+<form action='/general_update' method='POST'><h3>ID # 1<h3><label for=CatalogItemName>CatalogItemName:</label><br>
+ <input type=text id="CatalogItemName" name="CatalogItemName" value="CATID1_MANID1_ITEM_#1"></input><br>
+ <br> <label for=BuyCost>BuyCost:</label><br>
+ <input type=text id="BuyCost" name="BuyCost" value="209.55"></input><br>
+ <br><a href="/general_add?table_name=ItemCategories">[+]</a> <label for=ItemCategories><a href="/general_update?table_name=ItemCategories&target_row_id=21">ItemCategories</a>:</label><br>
  <select class="" name="ItemCategories" id="ItemCategories">
 
 <option value="1" >1 | Electronics | Items related to electronic devices and gadgets</option>
@@ -14,11 +14,11 @@
 <option value="15" >15 | Art and Crafts | Supplies for artists and crafters</option>
 <option value="16" >16 | Jewelry | Rings, necklaces, and bracelets</option>
 <option value="17" >17 | Office Supplies | Stationery, writing utensils, and organizational tools</option>
-<option value="18" selected>18 | Travel | Luggage, accessories, and travel gear</option>
+<option value="18" >18 | Travel | Luggage, accessories, and travel gear</option>
 <option value="19" >19 | Wedding and Events | Supplies for weddings and special occasions</option>
 <option value="2" >2 | ItemC Update | Update test</option>
 <option value="20" >20 | Industrial and Scientific | Supplies for scientific research and industrial manufacturing</option>
-<option value="21" >21 | Cell Phones and Accessories | Devices and accessories for mobile communication</option>
+<option value="21" selected>21 | Cell Phones and Accessories | Devices and accessories for mobile communication</option>
 <option value="22" >22 | Computers and Accessories | Devices and accessories for personal computing</option>
 <option value="23" >23 | Tools and Home Improvement | Tools and supplies for home repairs and improvements</option>
 <option value="24" >24 | Arts and Entertainment | Tickets and admission to concerts, shows, and events</option>
@@ -45,10 +45,10 @@
 <option value="6" >6 | Toys and Games | Games, puzzles, and toys for all ages</option>
 <option value="7" >7 | Books | Fiction, non-fiction, and educational books</option>
 <option value="8" >8 | Music | CDs, records, and digital music</option>
-<option value="9" >9 | Movies | DVDs, Blu-Rays, and digital movies</option></select><br><br> <label for=Manufacturers>Manufacturers:</label><br>
+<option value="9" >9 | Movies | DVDs, Blu-Rays, and digital movies</option></select><br><br> <a href="/general_add?table_name=Manufacturers">[+]</a> <label for=Manufacturers><a href="/general_update?table_name=Manufacturers&target_row_id=5">Manufacturers</a>:</label><br>
  <select class="" name="Manufacturers" id="Manufacturers">
 
-<option value="1" selected>1 | 1 | General Electric | Manufacturer of appliances, lighting, and power systems</option>
+<option value="1" >1 | 1 | General Electric | Manufacturer of appliances, lighting, and power systems</option>
 <option value="10" >10 | 10 | Yaskawa Electric | Manufacturer of motion control and robotics systems</option>
 <option value="11" >11 | 11 | FANUC | Manufacturer of industrial robots and automation systems</option>
 <option value="12" >12 | 12 | Keyence | Manufacturer of sensors and automation equipment</option>
@@ -63,8 +63,8 @@
 <option value="21" >21 | 14 | New Manufacturerwertewr | dfasdfasdfsertwert</option>
 <option value="3" >3 | 10 | zzzABB | zzzManufacturer of power grids and industrial automation</option>
 <option value="4" >4 | 4 | Schneider Electric | Manufacturer of electrical distribution and automation systems</option>
-<option value="5" >5 | 5 | Emerson Electric | Manufacturer of automation and control systems</option>
+<option value="5" selected>5 | 5 | Emerson Electric | Manufacturer of automation and control systems</option>
 <option value="6" >6 | 6 | Honeywell | Manufacturer of building automation and control systems</option>
 <option value="7" >7 | 7 | Eaton | Manufacturer of power management and industrial automation systems</option>
 <option value="8" >8 | 8 | Rockwell Automation | Manufacturer of industrial automation and control systems</option>
-<option value="9" >9 | 9 | Mitsubishi Electric | Manufacturer of automation and control systems</option></select><br><br><input type="hidden" name="table_name" value="CatalogItems"></input><input type="hidden" name="id_column" value="CatalogItemID"></input><input type="hidden" name="id" value="10"></input><br><label for="delete">Delete Value:</label><input type="checkbox" name='ck_delete' value="delete"><br><input type='submit' value='Submit'></form><p><a href="/">[ Home ]</a><a href="/general_update?table_name=CatalogItems&target_row_id=9">[ Previous ]</a><a href="/general_update?table_name=CatalogItems&target_row_id=11">[ Next ]</a></p>
+<option value="9" >9 | 9 | Mitsubishi Electric | Manufacturer of automation and control systems</option></select><br><br><input type="hidden" name="table_name" value="CatalogItems"></input><input type="hidden" name="id_column" value="CatalogItemID"></input><input type="hidden" name="id" value="1"></input><br><label for="delete">Delete Value:</label><input type="checkbox" name='ck_delete' value="delete"><br><input type='submit' value='Submit'></form><p><a href="/">[ Home ]</a>

@@ -288,7 +288,7 @@ class WebApp:
                         return redirect(url_for('general_add', table_name=request.form['table']))
                     if request.form['action'] == 'update':
                         return redirect(url_for('add_general_update', table_name=request.form['table'], target_row_id=1))
-            return render_template('index.html', config=self.config, tables=tables)#, inventoryItems=self.inventoryItems)
+            return render_template('index.html', config=self.config, css_class=self.css_class ,tables=tables)#, inventoryItems=self.inventoryItems)
 
         @self.app.route('/general_view',  methods=['GET', 'POST'])
         def view_general():
