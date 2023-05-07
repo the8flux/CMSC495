@@ -261,6 +261,12 @@ class WebApp:
                 rows = viewer.View_InventoryItems()
                 self.table_name = 'InventoryItems'
 
+            elif view_name =="VIEW_CatalogItemsManufacturers":
+                headers = db_info.get_table_headers(view_name)
+                rows = viewer.VIEW_CatalogItemsManufacturers()
+                self.table_name = 'CatalogItems'
+
+
             return {'headers': headers, 'rows': rows}
 
 

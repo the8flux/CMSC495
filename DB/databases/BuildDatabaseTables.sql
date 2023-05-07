@@ -340,8 +340,23 @@ CREATE VIEW VIEW_UserCustomers AS
            INNER JOIN
            CatalogItems ON InventoryItems.CatalogItemID = CatalogItems.CatalogItemID
            INNER JOIN
-           Manufacturers ON CataLogITems.ManufacturerID = Manufacturers.ManufacturerID;
+           Manufacturers ON CataLogItems.ManufacturerID = Manufacturers.ManufacturerID;
 
 
+DROP VIEW IF EXISTS VIEW_CatalogItemsManufacturers;
+CREATE VIEW VIEW_CatalogItemsManufacturers AS
+    SELECT CatalogItems.CatalogItemID,
+           CatalogItems.CatalogItemName,
+           CatalogItems.BuyCost,
+           ItemCategories.ItemCategoryTitle,
+           ItemCategories.ItemCategoryDescription,
+           Manufacturers.ManufacturerName,
+           Manufacturers.ManufacturerDescription
+      FROM CatalogItems
+           INNER JOIN
+           Manufacturers ON CataLogItems.ManufacturerID = Manufacturers.ManufacturerID
+           INNER JOIN
+           ItemCategories ON CataLogItems.ItemCategoryID = ItemCategories.ItemCategoryID
+     ORDER BY CatalogItems.CatalogItemName ASC;
 
 COMMIT;

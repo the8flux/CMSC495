@@ -97,6 +97,14 @@ class DBSelect:
         query = " SELECT * FROM VIEW_ManufacturersCatalogItems;"
         return self._fetch(query)
 
+    def VIEW_CatalogItemsManufacturers(self):
+        """
+
+        :return:
+        """
+        query = " SELECT * FROM VIEW_CatalogItemsManufacturers;"
+        return self._fetch(query)
+
     def VIEW_ManufacturersUser(self):
         """
 
