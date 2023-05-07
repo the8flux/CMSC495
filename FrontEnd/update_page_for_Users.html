@@ -1,22 +1,23 @@
-<form action='/general_update' method='POST'><h3>ID # 21<h3><label for=FirstName>FirstName:</label><br>
- <input type=text id="FirstName" name="FirstName" value="William"></input><br>
+<form action='/general_update' method='POST'><h3>ID # 1<h3><label for=FirstName>FirstName:</label><br>
+ <input type=text id="FirstName" name="FirstName" value="Glenn"></input><br>
  <br> <label for=LastName>LastName:</label><br>
- <input type=text id="LastName" name="LastName" value="Riker"></input><br>
+ <input type=text id="LastName" name="LastName" value="Admin"></input><br>
  <br> <label for=Telephone>Telephone:</label><br>
- <input type=text id="Telephone" name="Telephone" value="5195551313"></input><br>
+ <input type=text id="Telephone" name="Telephone" value="111-1111"></input><br>
  <br> <label for=Email>Email:</label><br>
- <input type=text id="Email" name="Email" value="william.riker@example.com"></input><br>
+ <input type=text id="Email" name="Email" value="Glenn@email.com"></input><br>
  <br> <label for=UserLogon>UserLogon:</label><br>
- <input type=text id="UserLogon" name="UserLogon" value="wriker"></input><br>
+ <input type=text id="UserLogon" name="UserLogon" value="glenn"></input><br>
  <br> <label for=UserPasswordHash>UserPasswordHash:</label><br>
  <input type=text id="UserPasswordHash" name="UserPasswordHash" value="password"></input><br>
- <br><a href="/general_add?table_name=UserType">[+]</a> <label for=UserType><a href="/general_update?table_name=UserType&target_row_id=2">UserType</a>:</label><br>
+ <br><a href="/general_add?table_name=UserType">[+]</a> <label for=UserType><a href="/general_update?table_name=UserType&target_row_id=1">UserType</a>:</label><br>
  <select class="" name="UserType" id="UserType">
 
-<option value="1" >1 | System Admin</option>
-<option value="2" selected>2 | Employee</option>
+<option value="1" selected>1 | System Admin</option>
+<option value="2" >2 | Employee</option>
 <option value="3" >3 | Customer</option>
-<option value="4" >4 | Manufacturer</option></select><br><br> <a href="/general_add?table_name=Manufacturers">[+]</a> <label for=Manufacturers><a href="/general_update?table_name=Manufacturers&target_row_id=0">Manufacturers</a>:</label><br>
+<option value="4" >4 | Manufacturer</option>
+<option value="5" >5 | Test</option></select><br><br> <a href="/general_add?table_name=Manufacturers">[+]</a> <label for=Manufacturers><a href="/general_update?table_name=Manufacturers&target_row_id=0">Manufacturers</a>:</label><br>
  <select class="" name="Manufacturers" id="Manufacturers">
 
 <option value="1" >1 | 1 | General Electric | Manufacturer of appliances, lighting, and power systems</option>
@@ -125,4 +126,4 @@
 <option value="79" >79 | 789 Cedar Avenue | Nashville | TN | USA | 37219</option>
 <option value="8" >8 | 1201 South Second Street | Milwaukee | WI | None | 53204</option>
 <option value="80" >80 | 1010 Pinecrest Road | Indianapolis | IN | USA | 46204</option>
-<option value="9" >9 | 2-3, Marunouchi 3-chome | Chiyoda-ku | Tokyo | None | 100-8310</option></select><br><br><input type="hidden" name="table_name" value="Users"></input><input type="hidden" name="id_column" value="UserID"></input><input type="hidden" name="id" value="21"></input><br><label for="delete">Delete Value:</label><input type="checkbox" name='ck_delete' value="delete"><br><input type='submit' value='Submit'></form><p><a href="/">[ Home ]</a>
+<option value="9" >9 | 2-3, Marunouchi 3-chome | Chiyoda-ku | Tokyo | None | 100-8310</option></select><br><br><input type="hidden" name="table_name" value="Users"></input><input type="hidden" name="id_column" value="UserID"></input><input type="hidden" name="id" value="1"></input><br><label for="delete">Delete Value:</label><input type="checkbox" name='ck_delete' value="delete"><br><input type='submit' value='Submit'></form><p><a href="/">[ Home ]</a>

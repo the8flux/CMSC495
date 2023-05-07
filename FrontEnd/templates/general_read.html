@@ -68,6 +68,7 @@
           <table>
             <thead>
             <tr>
+              <th class="color-2">Edit</th>
               {% for i in headers %}
                 <th class="color-2">{{i}}</th>
               {% endfor %}
@@ -76,6 +77,7 @@
             <tbody>
             {% for i in rows %}
               <tr class="color-2">
+                <td><a href="/general_update?table_name={{ table_name }}&target_row_id={{i[0]}}">[Edit]</a></td>
                 {% for j in i %}
                   <td>
                     {{j}}

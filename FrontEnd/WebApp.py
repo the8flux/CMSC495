@@ -30,6 +30,7 @@ class WebApp:
         self.config.set('systemSettings', 'version', version)
         self.css_class = FrontEnd.CSSLoader.CSSLoader().get_css()
         self.db_name = '../DB/databases/test_db3.db'
+        self.table_name = ''
 
         self.tables = list()
         self.table = dict()
@@ -196,6 +197,7 @@ class WebApp:
                 last_row_id = adder.add_catalog_item(get_post_key(key='id'), get_post_key(key='Manufacturers'),
                                        get_post_key(key='CatalogItemName'), get_post_key(key='ItemCategories'),
                                        get_post_key(key='BuyCost'))
+
                 return last_row_id
 
 
@@ -247,27 +249,19 @@ class WebApp:
             if view_name == 'VIEW_CustomersAddress':
                 headers = db_info.get_table_headers(view_name)
                 rows = viewer.VIEW_CustomersAddress()
+                self.table_name = 'Customers'
 
             elif view_name == 'VIEW_ManufacturersCatalogItems':
                 headers = db_info.get_table_headers(view_name)
                 rows = viewer.VIEW_ManufacturersCatalogItems()
+                self.table_name = 'Manufacturers'
 
             elif view_name =="VIEW_InventoryItems":
                 headers = db_info.get_table_headers(view_name)
                 rows = viewer.View_InventoryItems()
+                self.table_name = 'InventoryItems'
 
             return {'headers': headers, 'rows': rows}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -306,7 +300,8 @@ class WebApp:
 
             return render_template('general_read.html', config=self.config, view_name=view_name,
                                    headers=view_data['headers'],
-                                   rows=view_data['rows'])
+                                   rows=view_data['rows'],
+                                   table_name=self.table_name)
 
 
 

@@ -7,6 +7,19 @@
 <body>
 <h1>Omega Inventory System:</h1>
     <div class="view-div">
+        <h2><a href="/general_view?view_name=VIEW_InventoryItems">View Inventory</a></h2>
+        <br>
+        <table style="border:none;">
+            <tr>
+                <td style="border:none"></td>
+                <td style="border:none"><h3><a href="/general_view?view_name=VIEW_CustomersAddress">View Customer and Addresses</a></h3></td>
+                <td style="border:none"><h3><a href="/general_view?view_name=VIEW_ManufacturersCatalogItems">View Manufacturers and their Catalog Items</a></h3></li></td>
+                <td style="border:none"></td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="view-div">
         <h2> Select Record for {{ table_name | safe }}</h2>
         {{ select_records | safe }}
     </div>

@@ -139,6 +139,9 @@ class TableInfo(QueryBuilder):
         # self._log_it(query_part)
         return query_part
 
+
+
+
     def _get_query_select_pk__headers_as_name(self):
         table_name = self.table_name
         table_id = self.pk_headers[0]
